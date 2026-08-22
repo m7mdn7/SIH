@@ -1,0 +1,22 @@
+[
+  {
+    "description": "We need scientific studies to understand how rising water salinity affects local legume germination.",
+    "expectedGap": "research"
+  },
+  {
+    "description": "Vegetables spoil rapidly under the sun because we lack zero-energy evaporative cooling adaptation.",
+    "expectedGap": "adaptation"
+  },
+  {
+    "description": "Traffic lights are static and cause traffic jams. We require adaptive computer vision software.",
+    "expectedGap": "technology"
+  },
+  {
+    "description": "We lack baseline tests recording the fluoride contamination metrics over the last five years.",
+    "expectedGap": "data"
+  },
+  {
+    "description": "Local health clinics lack technical training in operating and maintaining neonatal ventilators.",
+    "expectedGap": "expertise"
+  }
+]

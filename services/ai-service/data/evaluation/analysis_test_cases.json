@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Evaporative crop refrigeration",
+    "description": "Farmers require passive sand-clay cooling chambers to stop vegetables from rotting in local coops.",
+    "expectedDomain": "Agriculture",
+    "expectedSeverity": "high"
+  },
+  {
+    "title": "Fluoride in primary school well water",
+    "description": "Borewell drinking water tests show high natural fluoride levels causing tooth decay in children.",
+    "expectedDomain": "Water Management",
+    "expectedSeverity": "high"
+  },
+  {
+    "title": "Traffic signal coordination circle",
+    "description": "Heavy traffic gridlocks daily near the subway exit because signals run on static timers instead of vehicle density.",
+    "expectedDomain": "Urban Infrastructure",
+    "expectedSeverity": "medium"
+  },
+  {
+    "title": "Ramp access municipal archives",
+    "description": "Wheelchair users are unable to enter the government library due to absence of accessible ramps.",
+    "expectedDomain": "Accessibility",
+    "expectedSeverity": "medium"
+  },
+  {
+    "title": "E-waste dumping at city margins",
+    "description": "Discarded toxic circuit boards and monitors are leached directly into topsoil without regulation.",
+    "expectedDomain": "Environment",
+    "expectedSeverity": "medium"
+  }
+]
