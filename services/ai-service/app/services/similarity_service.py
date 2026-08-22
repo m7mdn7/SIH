@@ -63,11 +63,21 @@ class SimilarityService:
         limit: int = 10,
     ) -> list[SimilarityMatch]:
         query_title = title or ""
+        query_domain = domain
+
+        if challenge_id:
+            stored = self.repo.get_challenge(challenge_id)
+            if stored:
+                if not query_title:
+                    query_title = stored.get("title") or ""
+                if not query_domain:
+                    query_domain = stored.get("domain")
+
         logger.info(f"Finding similar challenges for '{query_title}' (limit={limit})")
 
         # 1. Compute embedding of the query challenge
         text_rep = embedding_service.get_challenge_text_representation(
-            query_title, description, domain
+            query_title, description, query_domain
         )
         target_vector = embedding_service.encode(text_rep)
 
@@ -104,8 +114,8 @@ class SimilarityService:
                 1.0
                 if (
                     ch_dom
-                    and domain
-                    and ch_dom.strip().lower() == domain.strip().lower()
+                    and query_domain
+                    and ch_dom.strip().lower() == query_domain.strip().lower()
                 )
                 else 0.0
             )
@@ -113,7 +123,7 @@ class SimilarityService:
             context_boost_val = 0.0
 
             hybrid_score = self.calculate_hybrid_score(
-                sim, ch_dom, domain, ch_loc, None
+                sim, ch_dom, query_domain, ch_loc, None
             )
 
             # Determine relationship category based on thresholds

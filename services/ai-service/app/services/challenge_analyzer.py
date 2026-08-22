@@ -86,6 +86,12 @@ class ChallengeAnalyzer:
             if info not in analysis.missingInformation:
                 analysis.missingInformation.append(info)
 
+        # Run Evidence Validation
+        from app.services.evidence_validator import evidence_validator
+        analysis = evidence_validator.validate_analysis_against_input(
+            title, description, analysis
+        )
+
         return analysis
 
 
