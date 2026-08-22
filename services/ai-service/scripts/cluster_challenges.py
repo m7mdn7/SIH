@@ -1,5 +1,5 @@
-import sys
 from app.services.clustering_service import clustering_service
+
 
 def main():
     print("==================================================")
@@ -14,7 +14,9 @@ def main():
     outliers = results["outliers"]
 
     print(f"\nDiscovered {len(clusters)} distinct clusters.")
-    print(f"Discovered {len(outliers)} outliers (challenges not belonging to any cluster).\n")
+    print(
+        f"Discovered {len(outliers)} outliers (challenges not belonging to any cluster).\n"
+    )
 
     for c_id, summary in clusters.items():
         print(f"Cluster {c_id}:")
@@ -30,6 +32,7 @@ def main():
         print("\nSample Outliers (Noise Points):")
         for ch in outliers[:5]:
             print(f"  - [{ch['id']}] {ch['title']} (Domain: {ch['domain']})")
+
 
 if __name__ == "__main__":
     main()

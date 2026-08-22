@@ -1,48 +1,54 @@
 import json
 import os
-from typing import List, Dict, Any, Optional
+
 from app.core.config import settings
 from app.core.logging import logger
-from app.schemas.models import UniversityMatch, InnovationGap
+from app.schemas.models import InnovationGap, UniversityMatch
+
 
 class MatchingService:
     def __init__(self):
-        self.universities_file = os.path.join(settings.DATA_DIR, "universities", "sample_universities.json")
+        self.universities_file = os.path.join(
+            settings.DATA_DIR, "universities", "sample_universities.json"
+        )
         self.universities = []
         self._load_universities()
 
     def _load_universities(self):
         if os.path.exists(self.universities_file):
             try:
-                with open(self.universities_file, 'r', encoding='utf-8') as f:
+                with open(self.universities_file, "r", encoding="utf-8") as f:
                     self.universities = json.load(f)
-                logger.info(f"[MatchingService] Loaded {len(self.universities)} university profiles.")
+                logger.info(
+                    f"[MatchingService] Loaded {len(self.universities)} university profiles."
+                )
             except Exception as e:
-                logger.error(f"[MatchingService] Failed to load universities dataset: {e}")
+                logger.error(
+                    f"[MatchingService] Failed to load universities dataset: {e}"
+                )
         else:
-            logger.warning(f"[MatchingService] Universities dataset not found at {self.universities_file}")
+            logger.warning(
+                f"[MatchingService] Universities dataset not found at {self.universities_file}"
+            )
 
     def find_matches(
-        self, 
-        domain: str, 
-        description: str, 
-        gap_analysis: Optional[InnovationGap] = None
-    ) -> List[UniversityMatch]:
+        self, domain: str, description: str, gap_analysis: InnovationGap | None = None
+    ) -> list[UniversityMatch]:
         logger.info(f"Matching universities for domain: {domain}")
-        
+
         required_expertise = gap_analysis.requiredExpertise if gap_analysis else []
         matches = []
 
         for uni in self.universities:
             reasons = []
-            
+
             # 1. Domain Match (30%)
             domain_score = 0.0
             uni_domains = [d.lower() for d in uni.get("domains", [])]
             if domain.lower() in uni_domains:
                 domain_score = 100.0
                 reasons.append(f"Strong match for the {domain} domain")
-            
+
             # 2. Expertise Match (25%)
             expertise_score = 0.0
             uni_expertise = [e.lower() for e in uni.get("expertise", [])]
@@ -52,7 +58,9 @@ class MatchingService:
                     if req.lower() in uni_expertise:
                         matched_exp.append(req)
                 if len(required_expertise) > 0:
-                    expertise_score = (len(matched_exp) / len(required_expertise)) * 100.0
+                    expertise_score = (
+                        len(matched_exp) / len(required_expertise)
+                    ) * 100.0
                 if matched_exp:
                     reasons.append(f"Expertise in: {', '.join(matched_exp)}")
 
@@ -102,31 +110,37 @@ class MatchingService:
                     infra_score = 100.0
                     matched_infra.append(infra.title())
             if matched_infra:
-                reasons.append(f"Specialized facilities: {', '.join(matched_infra[:2])}")
+                reasons.append(
+                    f"Specialized facilities: {', '.join(matched_infra[:2])}"
+                )
 
             # 6. Location / Context Match (5%)
             location_score = 50.0  # Default moderate location score
-            
+            reasons.append(f"Located in the {uni.get('locationContext')} region")
+
             # Compute final weighted score
             final_score = (
-                domain_score * 0.30 +
-                expertise_score * 0.25 +
-                dept_score * 0.15 +
-                project_score * 0.15 +
-                infra_score * 0.10 +
-                location_score * 0.05
+                domain_score * 0.30
+                + expertise_score * 0.25
+                + dept_score * 0.15
+                + project_score * 0.15
+                + infra_score * 0.10
+                + location_score * 0.05
             )
 
             if final_score > 0:
-                matches.append(UniversityMatch(
-                    universityId=uni.get("id"),
-                    name=uni.get("name"),
-                    matchScore=round(final_score, 1),
-                    reasons=reasons
-                ))
+                matches.append(
+                    UniversityMatch(
+                        universityId=uni.get("id"),
+                        name=uni.get("name"),
+                        matchScore=round(final_score, 1),
+                        reasons=reasons,
+                    )
+                )
 
         # Sort matches in descending order of matchScore
         matches.sort(key=lambda x: x.matchScore, reverse=True)
         return matches
+
 
 matching_service = MatchingService()

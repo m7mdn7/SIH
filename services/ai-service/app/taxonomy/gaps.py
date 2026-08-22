@@ -1,7 +1,1 @@
-GAPS = [
-    "research",
-    "technology",
-    "adaptation",
-    "data",
-    "expertise"
-]
+GAPS = ["research", "technology", "adaptation", "data", "expertise"]

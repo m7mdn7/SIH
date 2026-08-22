@@ -17,7 +17,7 @@ EXPERTISE_TAGS = [
     "Education Technology",
     "Urban Planning",
     "Accessibility Engineering",
-    "Social Sciences"
+    "Social Sciences",
 ]
 
 EXPERTISE_ALIASES = {
@@ -67,5 +67,5 @@ EXPERTISE_ALIASES = {
     "screen readers": "Accessibility Engineering",
     "sociology": "Social Sciences",
     "surveys": "Social Sciences",
-    "policy analysis": "Social Sciences"
+    "policy analysis": "Social Sciences",
 }

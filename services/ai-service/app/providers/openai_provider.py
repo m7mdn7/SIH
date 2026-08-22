@@ -1,9 +1,10 @@
 import uuid
-from typing import Optional
-from app.providers.base import BaseLLMProvider
-from app.schemas.models import ChallengeAIAnalysis, InnovationGap
+
 from app.core.config import settings
 from app.core.logging import logger
+from app.providers.base import BaseLLMProvider
+from app.schemas.models import ChallengeAIAnalysis, InnovationGap
+
 
 class OpenAICompatibleProvider(BaseLLMProvider):
     def __init__(self):
@@ -11,17 +12,24 @@ class OpenAICompatibleProvider(BaseLLMProvider):
         if settings.OPENAI_API_KEY:
             try:
                 from openai import OpenAI
+
                 self.client = OpenAI(api_key=settings.OPENAI_API_KEY)
                 logger.info("[OpenAIProvider] Initialized successfully.")
             except ImportError:
-                logger.warning("[OpenAIProvider] OpenAI SDK not installed. Falling back.")
+                logger.warning(
+                    "[OpenAIProvider] OpenAI SDK not installed. Falling back."
+                )
 
-    def analyze_challenge(self, challenge_id: str, title: str, description: str) -> ChallengeAIAnalysis:
+    def analyze_challenge(
+        self, challenge_id: str, title: str, description: str
+    ) -> ChallengeAIAnalysis:
         if not self.client:
-            raise ValueError("OpenAI client not initialized. Check OPENAI_API_KEY environment variable.")
-        
+            raise ValueError(
+                "OpenAI client not initialized. Check OPENAI_API_KEY environment variable."
+            )
+
         logger.info(f"[OpenAIProvider] Analyzing challenge: {title}")
-        
+
         prompt = (
             f"Analyze the following societal challenge:\n"
             f"Title: {title}\n"
@@ -38,8 +46,11 @@ class OpenAICompatibleProvider(BaseLLMProvider):
             response = self.client.beta.chat.completions.parse(
                 model=settings.OPENAI_MODEL,
                 messages=[
-                    {"role": "system", "content": "You are a professional societal challenge classifier and AI analyst."},
-                    {"role": "user", "content": prompt}
+                    {
+                        "role": "system",
+                        "content": "You are a professional societal challenge classifier and AI analyst.",
+                    },
+                    {"role": "user", "content": prompt},
                 ],
                 response_format=ChallengeAIAnalysis,
             )
@@ -52,15 +63,24 @@ class OpenAICompatibleProvider(BaseLLMProvider):
         except Exception as e:
             logger.error(f"[OpenAIProvider] Failed to analyze challenge: {e}")
             raise RuntimeError(f"OpenAI analysis failed: {e}")
-        
+
         raise RuntimeError("OpenAI returned empty message parse response.")
 
-    def analyze_gap(self, challenge_id: str, description: str, ai_analysis: Optional[ChallengeAIAnalysis] = None) -> InnovationGap:
+    def analyze_gap(
+        self,
+        challenge_id: str,
+        description: str,
+        ai_analysis: ChallengeAIAnalysis | None = None,
+    ) -> InnovationGap:
         if not self.client:
-            raise ValueError("OpenAI client not initialized. Check OPENAI_API_KEY environment variable.")
-            
-        logger.info(f"[OpenAIProvider] Analyzing innovation gap for challenge ID: {challenge_id}")
-        
+            raise ValueError(
+                "OpenAI client not initialized. Check OPENAI_API_KEY environment variable."
+            )
+
+        logger.info(
+            f"[OpenAIProvider] Analyzing innovation gap for challenge ID: {challenge_id}"
+        )
+
         analysis_context = ""
         if ai_analysis:
             analysis_context = (
@@ -82,8 +102,11 @@ class OpenAICompatibleProvider(BaseLLMProvider):
             response = self.client.beta.chat.completions.parse(
                 model=settings.OPENAI_MODEL,
                 messages=[
-                    {"role": "system", "content": "You are an expert in social innovation and research-university technology translation loops."},
-                    {"role": "user", "content": prompt}
+                    {
+                        "role": "system",
+                        "content": "You are an expert in social innovation and research-university technology translation loops.",
+                    },
+                    {"role": "user", "content": prompt},
                 ],
                 response_format=InnovationGap,
             )

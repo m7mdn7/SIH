@@ -1,10 +1,11 @@
-from pydantic import BaseModel, Field
-from typing import List, Optional
+from pydantic import BaseModel
+
 
 class ChallengeInput(BaseModel):
     id: str
     title: str
     description: str
+
 
 class ChallengeAIAnalysis(BaseModel):
     id: str
@@ -15,44 +16,50 @@ class ChallengeAIAnalysis(BaseModel):
     severity: str
     affectedPopulation: str
     scale: str
-    keyFactors: List[str]
-    missingInformation: List[str]
+    keyFactors: list[str]
+    missingInformation: list[str]
     confidence: float
+
 
 class InnovationGap(BaseModel):
     id: str
     challengeId: str
-    gapType: str # 'research' | 'technology' | 'adaptation' | 'data' | 'expertise'
+    gapType: str  # 'research' | 'technology' | 'adaptation' | 'data' | 'expertise'
     description: str
     rationale: str
     recommendedAction: str
-    requiredExpertise: List[str]
+    requiredExpertise: list[str]
     confidence: float
 
+
 class SimilarityInput(BaseModel):
-    challengeId: Optional[str] = None
-    title: Optional[str] = None
+    challengeId: str | None = None
+    title: str | None = None
     description: str
-    domain: Optional[str] = None
-    limit: Optional[int] = 10
+    domain: str | None = None
+    limit: int | None = 10
+
 
 class SimilarityMatch(BaseModel):
     challengeId: str
     score: float
-    relationship: Optional[str] = None
+    relationship: str | None = None
+
 
 class GapAnalysisInput(BaseModel):
     challengeId: str
     description: str
-    aiAnalysis: Optional[ChallengeAIAnalysis] = None
+    aiAnalysis: ChallengeAIAnalysis | None = None
+
 
 class MatchesInput(BaseModel):
     challengeId: str
     description: str
-    gapAnalysis: Optional[InnovationGap] = None
+    gapAnalysis: InnovationGap | None = None
+
 
 class UniversityMatch(BaseModel):
     universityId: str
     name: str
     matchScore: float
-    reasons: Optional[List[str]] = None
+    reasons: list[str] | None = None

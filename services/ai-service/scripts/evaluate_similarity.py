@@ -1,20 +1,24 @@
-import os
 import json
+import os
+
+from app.core.config import settings
 from app.services.embedding_service import embedding_service
 from app.services.similarity_service import similarity_service
-from app.core.config import settings
+
 
 def main():
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    test_file = os.path.join(base_dir, "data", "evaluation", "similarity_test_cases.json")
-    
+    test_file = os.path.join(
+        base_dir, "data", "evaluation", "similarity_test_cases.json"
+    )
+
     if not os.path.exists(test_file):
         print(f"Test cases file not found at {test_file}")
         return
-        
-    with open(test_file, 'r', encoding='utf-8') as f:
+
+    with open(test_file, "r", encoding="utf-8") as f:
         cases = json.load(f)
-        
+
     print("==================================================")
     print("Evaluating Challenge Semantic Similarity Metrics")
     print("==================================================")
@@ -33,14 +37,20 @@ def main():
         ch_b = case["challengeB"]
         true_label = case["label"]  # 'duplicate', 'related', or 'unrelated'
 
-        rep_a = embedding_service.get_challenge_text_representation(ch_a["title"], ch_a["description"], ch_a.get("domain"))
-        rep_b = embedding_service.get_challenge_text_representation(ch_b["title"], ch_b["description"], ch_b.get("domain"))
-        
+        rep_a = embedding_service.get_challenge_text_representation(
+            ch_a["title"], ch_a["description"], ch_a.get("domain")
+        )
+        rep_b = embedding_service.get_challenge_text_representation(
+            ch_b["title"], ch_b["description"], ch_b.get("domain")
+        )
+
         vec_a = embedding_service.encode(rep_a)
         vec_b = embedding_service.encode(rep_b)
-        
+
         sim = similarity_service.get_cosine_similarity(vec_a, vec_b)
-        hybrid_score = similarity_service.calculate_hybrid_score(sim, ch_a.get("domain"), ch_b.get("domain"), None, None)
+        hybrid_score = similarity_service.calculate_hybrid_score(
+            sim, ch_a.get("domain"), ch_b.get("domain"), None, None
+        )
 
         # Classification prediction
         if hybrid_score >= settings.SIMILARITY_DUPLICATE_THRESHOLD:
@@ -70,12 +80,18 @@ def main():
 
         print(f"Pair #{idx+1}: A='{ch_a['title']}' | B='{ch_b['title']}'")
         print(f"  Similarity Score: {sim:.4f} | Hybrid Score: {hybrid_score:.4f}")
-        print(f"  Ground Truth: {true_label:<10} | Prediction: {pred_label:<10} | [{status}]")
+        print(
+            f"  Ground Truth: {true_label:<10} | Prediction: {pred_label:<10} | [{status}]"
+        )
         print("-" * 60)
 
     precision = tp / (tp + fp) if (tp + fp) > 0 else 0.0
     recall = tp / (tp + fn) if (tp + fn) > 0 else 0.0
-    f1 = (2 * precision * recall / (precision + recall)) if (precision + recall) > 0 else 0.0
+    f1 = (
+        (2 * precision * recall / (precision + recall))
+        if (precision + recall) > 0
+        else 0.0
+    )
 
     print("\nSimilarity Evaluation Summary:")
     print(f"True Positives  : {tp}")
@@ -85,6 +101,7 @@ def main():
     print(f"Precision       : {precision*100:.1f}%")
     print(f"Recall          : {recall*100:.1f}%")
     print(f"F1-Score        : {f1*100:.1f}%")
+
 
 if __name__ == "__main__":
     main()
