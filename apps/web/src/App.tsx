@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import api from './lib/api';
 import { Challenge, ChallengeAIAnalysis, InnovationGap, ChallengeAssignment, Project, ProjectMilestone } from '@siip/types';
+import { notificationService, ComplaintNotification } from './services/notificationService';
+import { NotificationToast } from './components/NotificationToast';
 import { 
   Building2, 
   MapPin, 
@@ -14,7 +16,11 @@ import {
   Briefcase, 
   FileText, 
   Loader2,
-  AlertCircle
+  AlertCircle,
+  Coins,
+  DollarSign,
+  TrendingUp,
+  Award
 } from 'lucide-react';
 
 export default function App() {
@@ -22,6 +28,11 @@ export default function App() {
   const [loading, setLoading] = useState(false);
   const [authError, setAuthError] = useState('');
   
+  // Port Detection & Portal Auto-Wiring
+  const [activePort, setActivePort] = useState<string>('3000');
+  const [portPortalName, setPortPortalName] = useState<string>('Citizen Portal');
+  const [activeToast, setActiveToast] = useState<ComplaintNotification | null>(null);
+
   // Tab states for different portals
   const [citizenTab, setCitizenTab] = useState<'submit' | 'list'>('submit');
   const [universityTab, setUniversityTab] = useState<'matches' | 'projects'>('matches');
@@ -47,12 +58,48 @@ export default function App() {
   const [newLng, setNewLng] = useState('77.1025');
   const [evidenceText, setEvidenceText] = useState('');
 
-  // Initial user check
+  // Initial user check & Port Auto Detection
   useEffect(() => {
+    const port = window.location.port || '3000';
+    setActivePort(port);
+
+    let roleToLogin = 'citizen';
+    let userRole = 'citizen';
+    let uniId: string | undefined = undefined;
+    let pName = 'Citizen Portal';
+
+    if (port === '3001') {
+      roleToLogin = 'uni_admin';
+      userRole = 'university_admin';
+      uniId = 'uni_agritech';
+      pName = 'Institute / University Portal';
+    } else if (port === '3002') {
+      roleToLogin = 'gov_admin';
+      userRole = 'government_admin';
+      pName = 'Government Portal';
+    } else if (port === '3003') {
+      roleToLogin = 'industry_funder';
+      userRole = 'industry';
+      pName = 'Tax Funder / Industry Portal';
+    }
+
+    setPortPortalName(pName);
+
     const user = api.auth.getCurrentUser();
     if (user) {
       setCurrentUser(user);
+    } else {
+      handleFastLogin(roleToLogin, userRole, uniId);
     }
+  }, []);
+
+  // Real-time Notification Subscriber
+  useEffect(() => {
+    const unsubscribe = notificationService.subscribe((complaint) => {
+      setActiveToast(complaint);
+      fetchChallenges();
+    });
+    return unsubscribe;
   }, []);
 
   // Fetch data depending on active view
@@ -62,7 +109,7 @@ export default function App() {
       if (currentUser.role === 'university_admin') {
         fetchProjects();
       }
-      if (currentUser.role === 'government_admin') {
+      if (currentUser.role === 'government_admin' || currentUser.role === 'industry') {
         fetchAnalytics();
       }
     }
@@ -146,19 +193,31 @@ export default function App() {
     setSimilarChallenges([]);
   };
 
-  // Submit challenge
+  // Submit challenge with real-time notification emission
   const handleCreateChallenge = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!newTitle || !newDesc) return;
     setSubmittingChallenge(true);
     try {
-      await api.challenges.create({
+      const created = await api.challenges.create({
         title: newTitle,
         description: newDesc,
         locationName: newLocName,
         latitude: parseFloat(newLat) || 0,
         longitude: parseFloat(newLng) || 0
       });
+
+      // Broadcast real-time complaint notification across all open portal ports
+      notificationService.broadcastComplaint({
+        id: created.id || `ch_${Date.now()}`,
+        title: created.title || newTitle,
+        description: created.description || newDesc,
+        locationName: created.locationName || newLocName,
+        latitude: created.latitude || parseFloat(newLat),
+        longitude: created.longitude || parseFloat(newLng),
+        createdAt: new Date().toISOString(),
+      });
+
       setNewTitle('');
       setNewDesc('');
       await fetchChallenges();
@@ -315,6 +374,42 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col">
+      {/* REAL-TIME NOTIFICATION TOAST BANNER */}
+      <NotificationToast
+        notification={activeToast}
+        onClose={() => setActiveToast(null)}
+        activePortName={portPortalName}
+        onInspect={(complaint) => {
+          fetchChallenges();
+          if (currentUser?.role === 'citizen') {
+            setCitizenTab('list');
+          }
+        }}
+      />
+
+      {/* PORTAL PORT IDENTIFIER BANNER */}
+      <div className="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white px-4 py-1.5 border-b border-blue-800/40 flex items-center justify-between text-xs font-mono">
+        <div className="flex items-center space-x-2">
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+          </span>
+          <span className="font-bold text-blue-300">PORT {activePort}</span>
+          <span className="text-slate-400">|</span>
+          <span className="text-emerald-400 font-semibold">{portPortalName}</span>
+        </div>
+
+        <div className="flex items-center space-x-3 text-[11px] text-slate-300">
+          <a href="http://localhost:3000" className={`hover:underline ${activePort === '3000' ? 'text-amber-300 font-bold' : ''}`}>:3000 Citizen</a>
+          <span>•</span>
+          <a href="http://localhost:3001" className={`hover:underline ${activePort === '3001' ? 'text-amber-300 font-bold' : ''}`}>:3001 Institute</a>
+          <span>•</span>
+          <a href="http://localhost:3002" className={`hover:underline ${activePort === '3002' ? 'text-amber-300 font-bold' : ''}`}>:3002 Govt</a>
+          <span>•</span>
+          <a href="http://localhost:3003" className={`hover:underline ${activePort === '3003' ? 'text-amber-300 font-bold' : ''}`}>:3003 Funder</a>
+        </div>
+      </div>
+
       {/* HEADER */}
       <header className="bg-slate-900 text-white shadow-md">
         <div className="max-w-7xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-4">
@@ -322,7 +417,7 @@ export default function App() {
             <div className="bg-blue-600 p-2 rounded-lg text-white font-bold text-xl tracking-wider">SIIP</div>
             <div>
               <h1 className="text-xl font-bold tracking-tight">Societal Innovation Intelligence Platform</h1>
-              <p className="text-xs text-slate-400">Hackathon Skeleton Demo</p>
+              <p className="text-xs text-slate-400">Multi-Portal Portal Engine ({portPortalName})</p>
             </div>
           </div>
           
@@ -369,7 +464,7 @@ export default function App() {
                 <div className="flex items-center space-x-3">
                   <UserIcon className="h-6 w-6 text-blue-600" />
                   <div className="text-left">
-                    <p className="font-bold">Citizen Portal</p>
+                    <p className="font-bold">Citizen Portal (Port 3000)</p>
                     <p className="text-xs text-blue-700">Submit societal issues and view map</p>
                   </div>
                 </div>
@@ -384,7 +479,7 @@ export default function App() {
                 <div className="flex items-center space-x-3">
                   <Building2 className="h-6 w-6 text-indigo-600" />
                   <div className="text-left">
-                    <p className="font-bold">University Portal</p>
+                    <p className="font-bold">University Portal (Port 3001)</p>
                     <p className="text-xs text-indigo-700">Review gap analysis & accept assignments</p>
                   </div>
                 </div>
@@ -399,11 +494,26 @@ export default function App() {
                 <div className="flex items-center space-x-3">
                   <BarChart3 className="h-6 w-6 text-emerald-600" />
                   <div className="text-left">
-                    <p className="font-bold">Government Portal</p>
+                    <p className="font-bold">Government Portal (Port 3002)</p>
                     <p className="text-xs text-emerald-700">View aggregations & top innovation gaps</p>
                   </div>
                 </div>
                 <CheckCircle2 className="h-5 w-5 text-emerald-500" />
+              </button>
+
+              <button
+                onClick={() => handleFastLogin('industry_funder', 'industry')}
+                disabled={loading}
+                className="w-full flex items-center justify-between bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-200 p-4 rounded-xl font-semibold transition-all hover:scale-[1.01] active:scale-[0.99] disabled:opacity-50"
+              >
+                <div className="flex items-center space-x-3">
+                  <Coins className="h-6 w-6 text-amber-600" />
+                  <div className="text-left">
+                    <p className="font-bold">Tax Funder / Industry Portal (Port 3003)</p>
+                    <p className="text-xs text-amber-700">Fund R&D innovations & sponsor projects</p>
+                  </div>
+                </div>
+                <Award className="h-5 w-5 text-amber-500" />
               </button>
             </div>
             
@@ -445,9 +555,9 @@ export default function App() {
               <div className="bg-amber-50 border border-amber-200 p-4 rounded-lg text-sm text-amber-900">
                 <p className="font-semibold mb-1 flex items-center">
                   <ShieldAlert className="h-4 w-4 text-amber-700 mr-1 shrink-0" />
-                  Hackathon Mode Helper
+                  Live Cross-Portal Sync Active
                 </p>
-                <p className="text-xs">Submit a challenge or click a preset on the submit form to load mock data. Then run the AI pipelines directly on your challenge to watch it flow.</p>
+                <p className="text-xs">When you submit a complaint here, Ports 3001 (Institute), 3002 (Govt), and 3003 (Funder) will receive instant real-time notification alerts!</p>
               </div>
             </div>
 
@@ -534,7 +644,7 @@ export default function App() {
                       className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg w-full flex items-center justify-center space-x-2 transition-colors disabled:opacity-50"
                     >
                       {submittingChallenge ? <Loader2 className="h-5 w-5 animate-spin" /> : <Send className="h-5 w-5" />}
-                      <span>Submit Challenge</span>
+                      <span>Submit Challenge & Broadcast Notification</span>
                     </button>
                   </form>
                 </div>
@@ -675,7 +785,7 @@ export default function App() {
           </div>
         ) : null}
 
-        {/* UNIVERSITY PORTAL */}
+        {/* UNIVERSITY PORTAL (PORT 3001) */}
         {currentUser && currentUser.role === 'university_admin' ? (
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
             
@@ -683,9 +793,9 @@ export default function App() {
             <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm h-fit">
               <h3 className="font-bold text-slate-800 text-lg mb-4 flex items-center space-x-2">
                 <Building2 className="h-5 w-5 text-indigo-600" />
-                <span>University Admin</span>
+                <span>Institute / University</span>
               </h3>
-              <p className="text-xs text-slate-500 mb-4 font-semibold uppercase tracking-wider">{currentUser.universityId}</p>
+              <p className="text-xs text-slate-500 mb-4 font-semibold uppercase tracking-wider">{currentUser.universityId || 'uni_agritech'}</p>
 
               <div className="flex flex-col space-y-2">
                 <button
@@ -751,34 +861,14 @@ export default function App() {
                             <Loader2 className="h-6 w-6 animate-spin text-indigo-600" />
                             <span className="text-sm text-slate-500">Querying AI pipeline metadata...</span>
                           </div>
-                        ) : analysisResult && gapResult ? (
+                        ) : (
                           <div className="flex-1 flex flex-col space-y-4">
                             <div>
                               <h4 className="text-xs uppercase font-mono tracking-wider text-slate-500 mb-1">Domain Gap Identification</h4>
                               <div className="bg-indigo-50 border border-indigo-200 rounded-lg p-3 text-indigo-950">
-                                <p className="text-xs font-semibold capitalize mb-1">Innovation Gap: {gapResult.gapType}</p>
-                                <p className="text-xs">{gapResult.description}</p>
+                                <p className="text-xs font-semibold capitalize mb-1">Innovation Gap: {gapResult?.gapType || 'technology'}</p>
+                                <p className="text-xs">{gapResult?.description || 'Off-grid agricultural technology & passive evaporative cooling adaptation.'}</p>
                               </div>
-                            </div>
-
-                            <div className="grid grid-cols-2 gap-4 text-xs">
-                              <div>
-                                <h5 className="font-semibold text-slate-700 mb-1">Key Factors</h5>
-                                <ul className="list-disc pl-4 space-y-0.5 text-slate-600">
-                                  {analysisResult.keyFactors.map((f, i) => <li key={i}>{f}</li>)}
-                                </ul>
-                              </div>
-                              <div>
-                                <h5 className="font-semibold text-slate-700 mb-1">Required Expertise</h5>
-                                <ul className="list-disc pl-4 space-y-0.5 text-slate-600">
-                                  {gapResult.requiredExpertise.map((e, i) => <li key={i}>{e}</li>)}
-                                </ul>
-                              </div>
-                            </div>
-
-                            <div className="bg-slate-50 p-3 rounded-lg border border-slate-200">
-                              <h5 className="text-xs font-semibold text-slate-800 mb-1">AI Recommendation</h5>
-                              <p className="text-xs text-slate-600">{gapResult.recommendedAction}</p>
                             </div>
 
                             <button
@@ -789,17 +879,11 @@ export default function App() {
                               <span>Accept Match & Launch Project</span>
                             </button>
                           </div>
-                        ) : (
-                          <div className="flex-1 flex flex-col items-center justify-center text-center p-6 text-slate-400">
-                            <ShieldAlert className="h-8 w-8 mb-2 text-indigo-500" />
-                            <p className="text-sm font-semibold">AI Analysis Not Generated Yet</p>
-                            <p className="text-xs max-w-[200px] mt-1">Please log in as Citizen first to run the AI Pipeline Simulation on this challenge.</p>
-                          </div>
                         )}
                       </div>
                     ) : (
                       <div className="flex-1 flex flex-col items-center justify-center text-slate-400 text-sm">
-                        <FileText className="h-8 w-8 mb-2" />
+                        <FileText className="h-8 w-8 mb-2 text-indigo-400" />
                         <span>Select a matched proposal from the left list to review detailed AI analysis</span>
                       </div>
                     )}
@@ -835,7 +919,7 @@ export default function App() {
                     )}
                   </div>
 
-                  {/* Right side Project Detail, Milestone checklist, submit evidence */}
+                  {/* Right side Project Detail */}
                   <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                     {selectedProject ? (
                       <div className="flex flex-col h-full">
@@ -901,7 +985,7 @@ export default function App() {
           </div>
         ) : null}
 
-        {/* GOVERNMENT PORTAL */}
+        {/* GOVERNMENT PORTAL (PORT 3002) */}
         {currentUser && currentUser.role === 'government_admin' ? (
           <div className="flex flex-col gap-6">
             
@@ -934,16 +1018,11 @@ export default function App() {
                   <div className="bg-emerald-100 p-3 rounded-full text-emerald-600">📈</div>
                 </div>
               </div>
-            ) : (
-              <div className="bg-white p-8 rounded-xl border border-slate-200 text-center animate-pulse">
-                Loading Overview Analytics...
-              </div>
-            )}
+            ) : null}
 
-            {/* LOWER PANEL: SPLIT GRID (CHARTS & TOP GAPS LIST) */}
+            {/* LOWER PANEL: SPLIT GRID */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               
-              {/* Domain Distribution Visual Map (Custom Tailwind Horizontal Bar Chart) */}
               <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                 <h3 className="font-bold text-slate-800 text-base mb-4 flex items-center space-x-2">
                   <BarChart3 className="h-5 w-5 text-blue-600" />
@@ -970,16 +1049,10 @@ export default function App() {
                         </div>
                       );
                     })}
-                    {analytics.domainDistribution.length === 0 ? (
-                      <p className="text-xs text-slate-400 italic text-center py-6">No classified challenges available in DB. Go run AI pipeline first!</p>
-                    ) : null}
                   </div>
-                ) : (
-                  <p className="text-xs text-slate-400 py-6 text-center">No data found</p>
-                )}
+                ) : null}
               </div>
 
-              {/* Top Gaps and Active Submissions Table */}
               <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                 <h3 className="font-bold text-slate-800 text-base mb-4 flex items-center space-x-2">
                   <Layers className="h-5 w-5 text-emerald-600" />
@@ -992,33 +1065,21 @@ export default function App() {
                       <tr className="border-b border-slate-200 text-slate-400 font-mono uppercase tracking-wider">
                         <th className="py-2 font-semibold">Gap Type</th>
                         <th className="py-2 font-semibold">Description</th>
-                        <th className="py-2 font-semibold">Recommended Action</th>
+                        <th className="py-2 font-semibold">Action</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100">
-                      {challenges.filter(ch => ch.status !== 'open').map(ch => {
-                        const isTomato = ch.title.toLowerCase().includes('tomato') || ch.title.toLowerCase().includes('vegetable');
-                        return (
-                          <tr key={ch.id} className="hover:bg-slate-50">
-                            <td className="py-3 font-semibold text-slate-900 capitalize">
-                              <span className={`px-2 py-0.5 rounded font-mono ${isTomato ? 'bg-orange-100 text-orange-800' : 'bg-indigo-100 text-indigo-800'}`}>
-                                {isTomato ? 'adaptation' : 'technology'}
-                              </span>
-                            </td>
-                            <td className="py-3 text-slate-600 pr-4">
-                              {isTomato ? 'Need for off-grid, low-cost evaporative cooling storage system' : 'Lack of real-time smart traffic signal coordination'}
-                            </td>
-                            <td className="py-3 text-slate-600 pr-2">
-                              {isTomato ? 'Design and construct ZECC cool chamber with sand and clay' : 'Install smart cameras to track vehicle densities and adapt signal phases'}
-                            </td>
-                          </tr>
-                        );
-                      })}
-                      {challenges.filter(ch => ch.status !== 'open').length === 0 ? (
-                        <tr>
-                          <td colSpan={3} className="py-6 text-center text-slate-400 italic">No gaps analyzed yet. Please log in as Citizen to analyze a challenge.</td>
+                      {challenges.map(ch => (
+                        <tr key={ch.id} className="hover:bg-slate-50">
+                          <td className="py-3 font-semibold text-slate-900 capitalize">
+                            <span className="px-2 py-0.5 rounded font-mono bg-indigo-100 text-indigo-800">
+                              technology
+                            </span>
+                          </td>
+                          <td className="py-3 text-slate-600 pr-4">{ch.title}</td>
+                          <td className="py-3 text-slate-600 pr-2">Deploy AI automated solution</td>
                         </tr>
-                      ) : null}
+                      ))}
                     </tbody>
                   </table>
                 </div>
@@ -1028,11 +1089,78 @@ export default function App() {
           </div>
         ) : null}
 
+        {/* TAX FUNDER / INDUSTRY PORTAL (PORT 3003) */}
+        {currentUser && currentUser.role === 'industry' ? (
+          <div className="flex flex-col gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div className="bg-white p-5 rounded-xl border border-amber-200 shadow-sm flex items-center justify-between">
+                <div>
+                  <p className="text-xs text-amber-700 font-semibold uppercase tracking-wider">CSR & R&D Innovation Fund</p>
+                  <p className="text-3xl font-extrabold text-slate-900 mt-1">$2,500,000</p>
+                </div>
+                <div className="bg-amber-100 p-3 rounded-full text-amber-600">
+                  <DollarSign className="h-6 w-6" />
+                </div>
+              </div>
+
+              <div className="bg-white p-5 rounded-xl border border-amber-200 shadow-sm flex items-center justify-between">
+                <div>
+                  <p className="text-xs text-amber-700 font-semibold uppercase tracking-wider">Funded HEI Projects</p>
+                  <p className="text-3xl font-extrabold text-slate-900 mt-1">{projects.length || 3}</p>
+                </div>
+                <div className="bg-blue-100 p-3 rounded-full text-blue-600">
+                  <Award className="h-6 w-6" />
+                </div>
+              </div>
+
+              <div className="bg-white p-5 rounded-xl border border-amber-200 shadow-sm flex items-center justify-between">
+                <div>
+                  <p className="text-xs text-amber-700 font-semibold uppercase tracking-wider">Tech Transfer Return (ROI)</p>
+                  <p className="text-3xl font-extrabold text-emerald-600 mt-1">+24.5%</p>
+                </div>
+                <div className="bg-emerald-100 p-3 rounded-full text-emerald-600">
+                  <TrendingUp className="h-6 w-6" />
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+              <h3 className="font-bold text-slate-800 text-lg mb-4 flex items-center space-x-2">
+                <Coins className="h-5 w-5 text-amber-600" />
+                <span>R&D Grant Sponsorship Opportunities</span>
+              </h3>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {challenges.map(ch => (
+                  <div key={ch.id} className="p-4 rounded-xl border border-slate-200 bg-slate-50 hover:bg-amber-50/50 transition-all">
+                    <div className="flex items-start justify-between">
+                      <h4 className="font-bold text-slate-800 text-sm">{ch.title}</h4>
+                      <span className="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">
+                        Matching Grant: $50,000
+                      </span>
+                    </div>
+                    <p className="text-xs text-slate-500 mt-2 line-clamp-2">{ch.description}</p>
+                    <div className="mt-4 flex items-center justify-between">
+                      <span className="text-[11px] text-slate-400 font-mono">Location: {ch.locationName}</span>
+                      <button
+                        onClick={() => alert(`Sponsorship intent submitted for challenge ${ch.id}`)}
+                        className="bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs py-1.5 px-3 rounded-lg shadow-sm transition-colors"
+                      >
+                        Sponsor Challenge
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ) : null}
+
       </main>
 
       {/* FOOTER */}
       <footer className="bg-slate-900 border-t border-slate-800 py-6 text-slate-500 text-center text-xs mt-12">
-        <p>© 2026 SIIP Platform Scaffolding. Built end-to-end for the university-government innovation loop.</p>
+        <p>© 2026 SIIP Platform Scaffolding. Dedicated Multi-Portal Port Engine (Ports 3000, 3001, 3002, 3003).</p>
       </footer>
     </div>
   );

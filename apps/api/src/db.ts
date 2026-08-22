@@ -38,6 +38,7 @@ function translateQuery(sql: string): string {
 
 // Initialize Database
 export async function initDb() {
+  const useSqlite = process.env.USE_SQLITE === 'true';
   if (useSqlite) {
     try {
       const { DatabaseSync } = require('node:sqlite');

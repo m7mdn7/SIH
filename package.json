@@ -8,6 +8,10 @@
   ],
   "scripts": {
     "dev:web": "npm run dev --workspace=apps/web",
+    "dev:citizen": "npm run dev:citizen --workspace=apps/web",
+    "dev:institute": "npm run dev:institute --workspace=apps/web",
+    "dev:government": "npm run dev:government --workspace=apps/web",
+    "dev:funder": "npm run dev:funder --workspace=apps/web",
     "dev:api": "npm run dev --workspace=apps/api",
     "build:types": "npm run build --workspace=packages/types",
     "install:all": "npm install"

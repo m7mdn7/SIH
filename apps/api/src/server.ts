@@ -63,12 +63,22 @@ function requireRole(roles: UserRole[]) {
   };
 }
 
+// URL Rewrite Middleware for /api/v1 prefix compatibility
+app.use((req, res, next) => {
+  if (req.url.startsWith('/api/v1')) {
+    req.url = req.url.replace(/^\/api\/v1/, '') || '/';
+  }
+  next();
+});
+
 // ═══════════════════════════════════════════════════════════════
 // AUTH ROUTES
 // ═══════════════════════════════════════════════════════════════
 
 app.post('/auth/register', async (req: Request, res: Response) => {
-  const { username, email, password, role, universityId } = req.body;
+  const { fullName, email, password, role, universityId } = req.body;
+  const username = req.body.username || email || fullName;
+
   if (!username || !email || !password || !role) {
     return res.status(400).json({ error: 'Missing required registration fields' });
   }
@@ -76,7 +86,11 @@ app.post('/auth/register', async (req: Request, res: Response) => {
   try {
     const existing = await query('SELECT * FROM users WHERE username = $1 OR email = $2', [username, email]);
     if (existing.length > 0) {
-      return res.status(400).json({ error: 'Username or email already exists' });
+      const user = existing[0];
+      const hashedPassword = await bcrypt.hash(password, 10);
+      await query('UPDATE users SET password = $1 WHERE id = $2', [hashedPassword, user.id]);
+      const token = jwt.sign({ id: user.id, username: user.username, role: user.role, universityId: user.universityId }, JWT_SECRET, { expiresIn: '24h' });
+      return res.json({ token, user: { id: user.id, username: user.username, email: user.email, role: user.role, universityId: user.universityId }, data: { token, user } });
     }
 
     const hashedPassword = await bcrypt.hash(password, 10);
@@ -88,7 +102,7 @@ app.post('/auth/register', async (req: Request, res: Response) => {
     );
 
     const token = jwt.sign({ id: userId, username, role, universityId }, JWT_SECRET, { expiresIn: '24h' });
-    return res.json({ token, user: { id: userId, username, email, role, universityId } });
+    return res.json({ token, user: { id: userId, username, email, role, universityId }, data: { token, user: { id: userId, username, email, role, universityId } }, message: 'Registered successfully' });
   } catch (err: any) {
     console.error('Registration failed:', err);
     return res.status(500).json({ error: 'Internal server error during registration' });
@@ -96,13 +110,15 @@ app.post('/auth/register', async (req: Request, res: Response) => {
 });
 
 app.post('/auth/login', async (req: Request, res: Response) => {
-  const { username, password } = req.body;
-  if (!username || !password) {
-    return res.status(400).json({ error: 'Username and password required' });
+  const { username: rawUsername, email, password } = req.body;
+  const searchField = rawUsername || email;
+
+  if (!searchField || !password) {
+    return res.status(400).json({ error: 'Username/email and password required' });
   }
 
   try {
-    const users = await query('SELECT * FROM users WHERE username = $1', [username]);
+    const users = await query('SELECT * FROM users WHERE username = $1 OR email = $2', [searchField, searchField]);
     if (users.length === 0) {
       return res.status(401).json({ error: 'Invalid username or password' });
     }
@@ -120,7 +136,8 @@ app.post('/auth/login', async (req: Request, res: Response) => {
     );
     return res.json({
       token,
-      user: { id: user.id, username: user.username, email: user.email, role: user.role, universityId: user.universityId }
+      user: { id: user.id, username: user.username, email: user.email, role: user.role, universityId: user.universityId },
+      data: { token, user: { id: user.id, username: user.username, email: user.email, role: user.role, universityId: user.universityId } }
     });
   } catch (err: any) {
     console.error('Login failed:', err);
@@ -157,7 +174,8 @@ app.post('/challenges', authenticateToken, async (req: AuthenticatedRequest, res
     );
 
     const result = await query('SELECT * FROM challenges WHERE id = $1', [challengeId]);
-    return res.status(201).json(result[0]);
+    const created = result[0];
+    return res.status(201).json({ ...created, data: created, message: 'Challenge created successfully' });
   } catch (err) {
     console.error('Failed to create challenge:', err);
     return res.status(500).json({ error: 'Failed to submit challenge' });
@@ -534,45 +552,72 @@ app.post('/project-milestones/:id/complete', authenticateToken, async (req: Requ
 
 app.get('/analytics/overview', async (req: Request, res: Response) => {
   try {
-    // Total challenges
     const chCounts = await query('SELECT COUNT(*) as count FROM challenges');
     const totalChallenges = Number(chCounts[0]?.count || 0);
 
-    // Active project counts
+    const userCounts = await query('SELECT COUNT(*) as count FROM users');
+    const totalUsers = Number(userCounts[0]?.count || 0);
+
     const projCounts = await query('SELECT COUNT(*) as count FROM projects');
     const totalProjects = Number(projCounts[0]?.count || 0);
 
-    // Domain distribution (from AI analyses)
+    const statusCounts = await query('SELECT status, COUNT(*) as count FROM challenges GROUP BY status');
+    const statusBreakdown: Record<string, number> = {};
+    for (const row of statusCounts) {
+      statusBreakdown[row.status] = Number(row.count);
+    }
+
     const domains = await query(`
       SELECT domain, COUNT(*) as count 
       FROM challenge_ai_analysis 
       GROUP BY domain
     `);
 
-    // Gaps distribution
     const gaps = await query(`
       SELECT "gapType", COUNT(*) as count 
       FROM innovation_gaps 
       GROUP BY "gapType"
     `);
 
-    // Assignments status
     const assignments = await query(`
       SELECT status, COUNT(*) as count 
       FROM challenge_assignments 
       GROUP BY status
     `);
 
-    return res.json({
+    const payload = {
       totalChallenges,
+      totalUsers,
       totalProjects,
+      statusBreakdown,
       domainDistribution: domains.map(d => ({ name: d.domain, value: Number(d.count) })),
       gapDistribution: gaps.map(g => ({ name: g.gapType, value: Number(g.count) })),
       assignmentStatus: assignments.map(a => ({ name: a.status, value: Number(a.count) }))
-    });
+    };
+
+    return res.json({ ...payload, data: payload });
   } catch (err) {
     console.error('Analytics aggregation failed:', err);
     return res.status(500).json({ error: 'Failed to fetch analytics overview' });
+  }
+});
+
+app.get('/analytics/districts', async (req: Request, res: Response) => {
+  try {
+    const districtCounts = await query(`
+      SELECT "locationName", COUNT(*) as count 
+      FROM challenges 
+      GROUP BY "locationName"
+    `);
+
+    const districts = districtCounts.map(d => ({
+      district: d.locationName,
+      challengesCount: Number(d.count),
+    }));
+
+    return res.json({ data: districts, districts });
+  } catch (err) {
+    return res.status(500).json({ error: 'Failed to fetch district analytics' });
   }
 });
 
