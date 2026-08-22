@@ -30,12 +30,16 @@ class InnovationGap(BaseModel):
     confidence: float
 
 class SimilarityInput(BaseModel):
-    challengeId: str
+    challengeId: Optional[str] = None
+    title: Optional[str] = None
     description: str
+    domain: Optional[str] = None
+    limit: Optional[int] = 10
 
 class SimilarityMatch(BaseModel):
     challengeId: str
     score: float
+    relationship: Optional[str] = None
 
 class GapAnalysisInput(BaseModel):
     challengeId: str

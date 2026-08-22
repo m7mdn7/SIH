@@ -1,0 +1,411 @@
+[
+  {
+    "id": "uni_agritech",
+    "name": "State AgriTech University",
+    "domains": [
+      "Agriculture",
+      "Water Management",
+      "Rural Livelihoods"
+    ],
+    "expertise": [
+      "Agricultural Engineering",
+      "Agronomy",
+      "Water Resources",
+      "Thermal Engineering"
+    ],
+    "departments": [
+      "Department of Agriculture",
+      "Department of Thermal Science",
+      "Department of Rural Economics"
+    ],
+    "infrastructure": [
+      "Cold storage prototype lab",
+      "Evaporative cooling testing chambers",
+      "Soil analysis lab"
+    ],
+    "previousProjects": [
+      "Post-harvest grain dryer systems",
+      "Solar water pump installations"
+    ],
+    "locationContext": "Northern Plains"
+  },
+  {
+    "id": "uni_metrotech",
+    "name": "Metro Tech Institute",
+    "domains": [
+      "Urban Infrastructure",
+      "Energy",
+      "Accessibility"
+    ],
+    "expertise": [
+      "Computer Science",
+      "Artificial Intelligence",
+      "Electrical Engineering",
+      "Urban Planning"
+    ],
+    "departments": [
+      "Department of Computer Science",
+      "Department of Electrical Engineering",
+      "Department of Urban Planning"
+    ],
+    "infrastructure": [
+      "Smart city sensor testbed",
+      "High-performance computing cluster",
+      "Traffic signal controller lab"
+    ],
+    "previousProjects": [
+      "Adaptive signal control in New Delhi",
+      "IoT transit tracking nodes"
+    ],
+    "locationContext": "Metropolitan Capital"
+  },
+  {
+    "id": "uni_ecoscience",
+    "name": "Green Valley Eco-Science College",
+    "domains": [
+      "Environment",
+      "Water Management",
+      "Healthcare"
+    ],
+    "expertise": [
+      "Environmental Science",
+      "Public Health",
+      "Water Resources",
+      "Biotechnology"
+    ],
+    "departments": [
+      "Department of Environmental Studies",
+      "Department of Microbiology",
+      "Department of Community Health"
+    ],
+    "infrastructure": [
+      "Water quality testing lab",
+      "Microbial assay cleanroom",
+      "Organic compost pilot yard"
+    ],
+    "previousProjects": [
+      "Fluoride filtration beds",
+      "Village sewage bio-filtration ponds"
+    ],
+    "locationContext": "Forest Range Block"
+  },
+  {
+    "id": "uni_ruraldev",
+    "name": "National Rural Development Institute",
+    "domains": [
+      "Rural Livelihoods",
+      "Education",
+      "Public Administration"
+    ],
+    "expertise": [
+      "Social Sciences",
+      "Education Technology",
+      "Renewable Energy"
+    ],
+    "departments": [
+      "Department of Rural Sociology",
+      "Department of Distance Education",
+      "Department of Public Policy"
+    ],
+    "infrastructure": [
+      "Vocational training workshops",
+      "Translation studio",
+      "Mobile classrooms"
+    ],
+    "previousProjects": [
+      "Digital trade portals for weavers",
+      "Rural subsidy application forms refactor"
+    ],
+    "locationContext": "Central Dry Block"
+  },
+  {
+    "id": "uni_mechanical_sciences",
+    "name": "Indian Institute of Mechanical Sciences",
+    "domains": [
+      "Energy",
+      "Urban Infrastructure",
+      "Agriculture"
+    ],
+    "expertise": [
+      "Mechanical Engineering",
+      "Thermal Engineering",
+      "Renewable Energy",
+      "Civil Engineering"
+    ],
+    "departments": [
+      "Department of Mechanical Engineering",
+      "Department of Civil Engineering"
+    ],
+    "infrastructure": [
+      "Wind tunnel",
+      "Solar thermal materials test yard",
+      "Hydraulic press workshops"
+    ],
+    "previousProjects": [
+      "Low-cost pedal threshers",
+      "Off-grid wind pump gearboxes"
+    ],
+    "locationContext": "Southern Industrial Belt"
+  },
+  {
+    "id": "uni_healthtech",
+    "name": "Apex Health Sciences University",
+    "domains": [
+      "Healthcare",
+      "Accessibility"
+    ],
+    "expertise": [
+      "Healthcare Technology",
+      "Biotechnology",
+      "Accessibility Engineering",
+      "Computer Science"
+    ],
+    "departments": [
+      "Department of Biomedical Engineering",
+      "Department of Nursing Studies"
+    ],
+    "infrastructure": [
+      "Neonatal medical device lab",
+      "Assistive prototype studio",
+      "Medical software sandbox"
+    ],
+    "previousProjects": [
+      "Low-cost infant warmers",
+      "Screen reader accessibility compliance kits"
+    ],
+    "locationContext": "Metro Hospital District"
+  },
+  {
+    "id": "uni_delhi_academic",
+    "name": "Delhi Central Academic Institute",
+    "domains": [
+      "Education",
+      "Public Administration",
+      "Accessibility"
+    ],
+    "expertise": [
+      "Social Sciences",
+      "Education Technology",
+      "Accessibility Engineering"
+    ],
+    "departments": [
+      "Department of Education",
+      "Department of Human Rights",
+      "Department of Languages"
+    ],
+    "infrastructure": [
+      "Braille printing lab",
+      "Digital recording studio",
+      "Curriculum design center"
+    ],
+    "previousProjects": [
+      "Dialect learning textbooks",
+      "Visual impairment elevator guidance grids"
+    ],
+    "locationContext": "Metropolitan Hub"
+  },
+  {
+    "id": "uni_water_eng",
+    "name": "Institute of Groundwater & Water Engineering",
+    "domains": [
+      "Water Management",
+      "Environment"
+    ],
+    "expertise": [
+      "Water Resources",
+      "Environmental Science",
+      "Civil Engineering"
+    ],
+    "departments": [
+      "Department of Hydrogeology",
+      "Department of Sanitation Engineering"
+    ],
+    "infrastructure": [
+      "Drilling core analysis facility",
+      "Heavy metal spectrophotometer lab"
+    ],
+    "previousProjects": [
+      "Nitrate remediation using biochar",
+      "Urban water leakage maps"
+    ],
+    "locationContext": "Arid Plains Block"
+  },
+  {
+    "id": "uni_energy_tech",
+    "name": "Advanced Energy Research Academy",
+    "domains": [
+      "Energy",
+      "Environment"
+    ],
+    "expertise": [
+      "Renewable Energy",
+      "Electrical Engineering",
+      "Thermal Engineering"
+    ],
+    "departments": [
+      "Department of Solar Thermal Studies",
+      "Department of Grid Dynamics"
+    ],
+    "infrastructure": [
+      "Microgrid simulator",
+      "Battery stress test lab"
+    ],
+    "previousProjects": [
+      "Hybrid solar-biomass minigrids",
+      "High-capacity supercapacitor banks"
+    ],
+    "locationContext": "Western Desert Fringe"
+  },
+  {
+    "id": "uni_craft_design",
+    "name": "National Craft and Design Institute",
+    "domains": [
+      "Rural Livelihoods",
+      "Education"
+    ],
+    "expertise": [
+      "Social Sciences",
+      "Mechanical Engineering"
+    ],
+    "departments": [
+      "Department of Design Innovation",
+      "Department of Craft Technology"
+    ],
+    "infrastructure": [
+      "Artisan tooling workshops",
+      "Packaging design test rigs"
+    ],
+    "previousProjects": [
+      "Ergonomic bamboo knives",
+      "High-efficiency spinning wheel pedal jigs"
+    ],
+    "locationContext": "Handloom Craft Corridor"
+  },
+  {
+    "id": "uni_coop_mgmt",
+    "name": "Rural Cooperative Management Institute",
+    "domains": [
+      "Rural Livelihoods",
+      "Public Administration"
+    ],
+    "expertise": [
+      "Social Sciences",
+      "Data Science"
+    ],
+    "departments": [
+      "Department of Cooperative Economics",
+      "Department of Welfare Administration"
+    ],
+    "infrastructure": [
+      "Socio-economic research databank"
+    ],
+    "previousProjects": [
+      "Microfinance ledger automation",
+      "Cooperative budget visual maps"
+    ],
+    "locationContext": "Agricultural Trade Hub"
+  },
+  {
+    "id": "uni_oceanic",
+    "name": "Coastal Ecology and Marine Studies Institute",
+    "domains": [
+      "Environment",
+      "Rural Livelihoods"
+    ],
+    "expertise": [
+      "Environmental Science",
+      "Thermal Engineering"
+    ],
+    "departments": [
+      "Department of Coastal Ecology",
+      "Department of Cold Chain Design"
+    ],
+    "infrastructure": [
+      "Marine biology aquarium",
+      "Solar absorption refrigeration lab"
+    ],
+    "previousProjects": [
+      "Sea level rise warning sensors",
+      "Beach sand solar chillers for fisherman"
+    ],
+    "locationContext": "Southern Peninsula Coast"
+  },
+  {
+    "id": "uni_traffic_sci",
+    "name": "Academy of Transport & Traffic Sciences",
+    "domains": [
+      "Urban Infrastructure"
+    ],
+    "expertise": [
+      "Civil Engineering",
+      "Urban Planning",
+      "Computer Science"
+    ],
+    "departments": [
+      "Department of Traffic Engineering",
+      "Department of Transit Management"
+    ],
+    "infrastructure": [
+      "High-definition camera field network",
+      "Signal telemetry database"
+    ],
+    "previousProjects": [
+      "Adaptive green waves on arterial roads",
+      "Bus station pedestrian safety lanes"
+    ],
+    "locationContext": "Metro Ring Road Corridor"
+  },
+  {
+    "id": "uni_spec_needs",
+    "name": "National Special Needs Education Center",
+    "domains": [
+      "Education",
+      "Accessibility"
+    ],
+    "expertise": [
+      "Accessibility Engineering",
+      "Education Technology",
+      "Social Sciences"
+    ],
+    "departments": [
+      "Department of Inclusive Education",
+      "Department of Sign Language Studies"
+    ],
+    "infrastructure": [
+      "Tactile print facility",
+      "Eye-tracking software suites"
+    ],
+    "previousProjects": [
+      "Audio-tactile maps for blind",
+      "Clinic sign language avatars"
+    ],
+    "locationContext": "Capital Suburb"
+  },
+  {
+    "id": "uni_bio_innovations",
+    "name": "Apex Biological Innovations Laboratory",
+    "domains": [
+      "Healthcare",
+      "Environment",
+      "Agriculture"
+    ],
+    "expertise": [
+      "Biotechnology",
+      "Agronomy",
+      "Public Health"
+    ],
+    "departments": [
+      "Department of Bio-Remediation",
+      "Department of Molecular Diagnostics"
+    ],
+    "infrastructure": [
+      "DNA sequencing cleanroom",
+      "Fungal assay greenhouse"
+    ],
+    "previousProjects": [
+      "Snake antivenom synthesis kits",
+      "Biodegradable agricultural films"
+    ],
+    "locationContext": "Science Park Block"
+  }
+]

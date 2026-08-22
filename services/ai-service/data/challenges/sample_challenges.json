@@ -1,0 +1,902 @@
+[
+  {
+    "id": "ch_tomato_spoilage",
+    "title": "Tomato spoilage at North Mandi Market",
+    "description": "Farmers lose massive quantities of fresh tomatoes daily due to lack of cold storage facilities and extreme heat during transport.",
+    "domain": "Agriculture",
+    "subdomain": "Post-Harvest Management",
+    "locationContext": "North Mandi Market, New Delhi",
+    "expectedSeverity": "high"
+  },
+  {
+    "id": "ch_vegetable_rot",
+    "title": "Vegetable rot at farmer coop yard due to heat",
+    "description": "Our agricultural cooperative yard has no refrigeration. Vegetables, particularly spinach and tomatoes, spoil rapidly under afternoon sun. We need a low-cost, off-grid cooling solution.",
+    "domain": "Agriculture",
+    "subdomain": "Post-Harvest Management",
+    "locationContext": "Outer Delhi Farmer Coop",
+    "expectedSeverity": "high"
+  },
+  {
+    "id": "ch_tomato_trans_damage",
+    "title": "Tomato damage during distribution transit",
+    "description": "Freshly harvested tomatoes get crushed and rot during shipping to central markets because of non-insulated packaging and unrefrigerated trucks.",
+    "domain": "Agriculture",
+    "subdomain": "Supply Chain Logistics",
+    "locationContext": "Delhi-Haryana highway corridor",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_well_nitrate_1",
+    "title": "High nitrate contamination in community wells",
+    "description": "Recent drinking water tests show high levels of nitrates and chemical runoff in several community tubewells, likely from nearby farms.",
+    "domain": "Water Management",
+    "subdomain": "Drinking Water Security",
+    "locationContext": "Green Valley Village Wells",
+    "expectedSeverity": "high"
+  },
+  {
+    "id": "ch_well_nitrate_2",
+    "title": "Agricultural fertilizer runoff polluting village drinking wells",
+    "description": "Our well water is unsafe for infants. Tests show dangerous levels of nitrate pollutants originating from surrounding crop fields' fertilizer runoff.",
+    "domain": "Water Management",
+    "subdomain": "Drinking Water Security",
+    "locationContext": "Green Valley Village Rural Wells",
+    "expectedSeverity": "high"
+  },
+  {
+    "id": "ch_traffic_signal_1",
+    "title": "Traffic gridlock at Metro Station Circle",
+    "description": "Major traffic jams occur daily at the Metro Station junction due to uncoordinated signal timing and passenger boarding congestion.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "Transportation Systems",
+    "locationContext": "Metro Station Circle, Delhi",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_traffic_signal_2",
+    "title": "Congestion and signal delay at metro boarding hub",
+    "description": "Fixed timers on traffic lights at the metro junction cause massive rush hour delays. Signals don't adapt to changing vehicle densities.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "Transportation Systems",
+    "locationContext": "Metro Station Intersection",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_agriculture_1",
+    "title": "Crop loss due to pest infestation",
+    "description": "Unusual insect swarms are destroying legume crops in the block, and local pesticide treatments are failing.",
+    "domain": "Agriculture",
+    "subdomain": "General Agriculture",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_agriculture_2",
+    "title": "Lack of soil nutrient analysis labs",
+    "description": "Smallholder farmers are applying incorrect ratios of nitrogen fertilizers because soil testing services are 50km away.",
+    "domain": "Agriculture",
+    "subdomain": "General Agriculture",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_agriculture_3",
+    "title": "Inefficient solar crop drying",
+    "description": "Grain farmers suffer mold damage post-harvest. Traditional sun-drying takes too long and exposes crops to rain.",
+    "domain": "Agriculture",
+    "subdomain": "General Agriculture",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_agriculture_4",
+    "title": "Fodder shortage in dry seasons",
+    "description": "Dairy farmers lack high-nutrition silage storage solutions to keep milk yields consistent during summer droughts.",
+    "domain": "Agriculture",
+    "subdomain": "General Agriculture",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_agriculture_5",
+    "title": "Soil salinity in coastal farms",
+    "description": "Rising sea levels have caused salt intrusion in arable lands, preventing traditional paddy germination.",
+    "domain": "Agriculture",
+    "subdomain": "General Agriculture",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_agriculture_6",
+    "title": "Delayed crop harvesting bottlenecks",
+    "description": "Lack of shared mechanical harvesters forces small farm owners to delay harvesting, causing grain shattering.",
+    "domain": "Agriculture",
+    "subdomain": "General Agriculture",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_agriculture_7",
+    "title": "Low milk yield due to cattle heat stress",
+    "description": "Milch cows suffer from thermal stress in poorly ventilated sheds, reducing summer milk yields by 30%.",
+    "domain": "Agriculture",
+    "subdomain": "General Agriculture",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_water_management_1",
+    "title": "Fluoride poisoning in school supply",
+    "description": "Primary school borewell tests indicate toxic levels of natural fluoride, leading to dental fluorosis in children.",
+    "domain": "Water Management",
+    "subdomain": "General Water Management",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_water_management_2",
+    "title": "Rainwater harvesting system failures",
+    "description": "Rooftop storage tanks installed in public buildings are leaking and have silted up due to poor filter design.",
+    "domain": "Water Management",
+    "subdomain": "General Water Management",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_water_management_3",
+    "title": "Groundwater depletion in irrigation zone",
+    "description": "Heavy deep-bore tubewell operation has dropped the local water table by 15 meters, drying out shallow hand pumps.",
+    "domain": "Water Management",
+    "subdomain": "General Water Management",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_water_management_4",
+    "title": "Urban lake eutrophication",
+    "description": "Discharge of raw sewage and detergent effluents has caused massive algal blooms, choking local fish populations.",
+    "domain": "Water Management",
+    "subdomain": "General Water Management",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_water_management_5",
+    "title": "Siltation of community irrigation canal",
+    "description": "Monsoon mudslides have filled the main irrigation channel with clay silt, blocking flow to downstream farmlands.",
+    "domain": "Water Management",
+    "subdomain": "General Water Management",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_water_management_6",
+    "title": "Drinking water pipe leakage losses",
+    "description": "Old cast iron water mains are leaking over 40% of treated municipal water into subterranean sand layers.",
+    "domain": "Water Management",
+    "subdomain": "General Water Management",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_water_management_7",
+    "title": "Waterborne pathogen outbreak after flood",
+    "description": "Contamination of open drinking water tanks has caused gastroenteritis cases among villagers.",
+    "domain": "Water Management",
+    "subdomain": "General Water Management",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_water_management_8",
+    "title": "Industrial heavy metal dumping in canal",
+    "description": "Small scale plating factories dump untreated chromium effluents into the common drainage canal.",
+    "domain": "Water Management",
+    "subdomain": "General Water Management",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_healthcare_1",
+    "title": "Lack of neonatal warming devices",
+    "description": "Rural primary health centers lack functional incubators, leading to hypothermia risks in preterm infants.",
+    "domain": "Healthcare",
+    "subdomain": "General Healthcare",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_healthcare_2",
+    "title": "Delayed tuberculosis diagnosis",
+    "description": "Sputum test samples take two weeks to return results from the district hospital, causing transmission risks.",
+    "domain": "Healthcare",
+    "subdomain": "General Healthcare",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_healthcare_3",
+    "title": "High incidence of anemia in adolescent girls",
+    "description": "Local schools report high absenteeism due to severe iron-deficiency anemia among teenage students.",
+    "domain": "Healthcare",
+    "subdomain": "General Healthcare",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_healthcare_4",
+    "title": "No ambulance access across river",
+    "description": "During monsoon washouts, villages across the local river are cut off from emergency obstetric care.",
+    "domain": "Healthcare",
+    "subdomain": "General Healthcare",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_healthcare_5",
+    "title": "Improper medical waste incineration",
+    "description": "Community clinics are burning medical plastics in open pits, releasing toxic dioxin fumes near residential yards.",
+    "domain": "Healthcare",
+    "subdomain": "General Healthcare",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_healthcare_6",
+    "title": "Insulin storage failures in power cuts",
+    "description": "Diabetes patients in remote clinics lose cold-chain integrity for stored insulin during extended power failures.",
+    "domain": "Healthcare",
+    "subdomain": "General Healthcare",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_healthcare_7",
+    "title": "Mental health counseling shortage",
+    "description": "Stress levels are high among rural youth, but the nearest psychiatric consultation is at the state capital.",
+    "domain": "Healthcare",
+    "subdomain": "General Healthcare",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_healthcare_8",
+    "title": "Snakebite antivenom supply shortage",
+    "description": "Monsoon season sees high snakebite incidents, but health sub-centers do not stock cold-chain antivenom vials.",
+    "domain": "Healthcare",
+    "subdomain": "General Healthcare",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_healthcare_9",
+    "title": "Societal challenge in Healthcare - 8",
+    "description": "Detailed description of local issues in the domain of Healthcare. Needs multidisciplinary team solving.",
+    "domain": "Healthcare",
+    "subdomain": "General Block",
+    "locationContext": "Rural District Block",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_healthcare_10",
+    "title": "Societal challenge in Healthcare - 9",
+    "description": "Detailed description of local issues in the domain of Healthcare. Needs multidisciplinary team solving.",
+    "domain": "Healthcare",
+    "subdomain": "General Block",
+    "locationContext": "Rural District Block",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_education_1",
+    "title": "High dropout rates among rural girls",
+    "description": "Lack of functioning separate toilets at secondary schools causes female students to drop out at puberty.",
+    "domain": "Education",
+    "subdomain": "General Education",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_education_2",
+    "title": "Lack of science experiment kits",
+    "description": "Government high schools teach chemistry and physics theoretically because of zero laboratory budgets.",
+    "domain": "Education",
+    "subdomain": "General Education",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_education_3",
+    "title": "Dysfunctional computer lab hardware",
+    "description": "Donated computers are lying unused due to lack of local technical maintenance support and power surges.",
+    "domain": "Education",
+    "subdomain": "General Education",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_education_4",
+    "title": "Illiteracy in local tribal dialects",
+    "description": "Children from tribal communities fall behind early because instruction materials are not in their native tongue.",
+    "domain": "Education",
+    "subdomain": "General Education",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_education_5",
+    "title": "Inadequate braille reading textbooks",
+    "description": "Visually impaired students in public schools receive printed braille books months after the term starts.",
+    "domain": "Education",
+    "subdomain": "General Education",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_education_6",
+    "title": "Poor teacher attendance in remote hamlets",
+    "description": "Teachers struggle with long commutes to hill schools, leading to frequent classroom closures.",
+    "domain": "Education",
+    "subdomain": "General Education",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_education_7",
+    "title": "Lack of vocational career counseling",
+    "description": "High school graduates migrate to cities for manual labor due to zero awareness of technical trade training.",
+    "domain": "Education",
+    "subdomain": "General Education",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_education_8",
+    "title": "No internet connectivity for e-learning",
+    "description": "Broadband lines do not reach the rural school block, making government digital learning portals useless.",
+    "domain": "Education",
+    "subdomain": "General Education",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_education_9",
+    "title": "Societal challenge in Education - 8",
+    "description": "Detailed description of local issues in the domain of Education. Needs multidisciplinary team solving.",
+    "domain": "Education",
+    "subdomain": "General Block",
+    "locationContext": "Rural District Block",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_education_10",
+    "title": "Societal challenge in Education - 9",
+    "description": "Detailed description of local issues in the domain of Education. Needs multidisciplinary team solving.",
+    "domain": "Education",
+    "subdomain": "General Block",
+    "locationContext": "Rural District Block",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_environment_1",
+    "title": "Open garbage burning in market yards",
+    "description": "Municipal workers burn mixed plastic waste daily, creating heavy toxic smog over neighboring residential blocks.",
+    "domain": "Environment",
+    "subdomain": "General Environment",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_environment_2",
+    "title": "Deforestation of catchment hills",
+    "description": "Illegal firewood logging has cleared the slope forest, causing mudslides during heavy monsoons.",
+    "domain": "Environment",
+    "subdomain": "General Environment",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_environment_3",
+    "title": "Plastic bag choking storm drains",
+    "description": "Single-use shopping bags block the underground gutter system, causing flash floods in streets.",
+    "domain": "Environment",
+    "subdomain": "General Environment",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_environment_4",
+    "title": "E-waste accumulation in landfill",
+    "description": "Discarded electronics are mixed with regular household waste, leaching lead and mercury into ground soil.",
+    "domain": "Environment",
+    "subdomain": "General Environment",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_environment_5",
+    "title": "Air pollution from brick kilns",
+    "description": "Unregulated clay brick manufacturing kilns emit thick black soot, causing respiratory issues in surrounding villages.",
+    "domain": "Environment",
+    "subdomain": "General Environment",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_environment_6",
+    "title": "Loss of local honeybee populations",
+    "description": "Excessive neonicotinoid pesticide sprays on mustard crops have decimated native pollinator colonies.",
+    "domain": "Environment",
+    "subdomain": "General Environment",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_environment_7",
+    "title": "Riverbank erosion washing houses",
+    "description": "Fast currents during monsoon floods erode the soft sandy banks, destroying riverside settlements.",
+    "domain": "Environment",
+    "subdomain": "General Environment",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_environment_8",
+    "title": "Methane emission from organic dump",
+    "description": "Wet food waste from the city market decays anaerobically, creating strong odor and fire hazards.",
+    "domain": "Environment",
+    "subdomain": "General Environment",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_environment_9",
+    "title": "Societal challenge in Environment - 8",
+    "description": "Detailed description of local issues in the domain of Environment. Needs multidisciplinary team solving.",
+    "domain": "Environment",
+    "subdomain": "General Block",
+    "locationContext": "Rural District Block",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_environment_10",
+    "title": "Societal challenge in Environment - 9",
+    "description": "Detailed description of local issues in the domain of Environment. Needs multidisciplinary team solving.",
+    "domain": "Environment",
+    "subdomain": "General Block",
+    "locationContext": "Rural District Block",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_energy_1",
+    "title": "Frequent load shedding in school blocks",
+    "description": "Schools lose 6 hours of power daily, disrupting evening classes and digital learning modules.",
+    "domain": "Energy",
+    "subdomain": "General Energy",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_energy_2",
+    "title": "High cost of diesel generator pumping",
+    "description": "Farmers rely on expensive diesel fuel to run water pumps because of zero agricultural grid connections.",
+    "domain": "Energy",
+    "subdomain": "General Energy",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_energy_3",
+    "title": "Biomass cookstove smoke pollution",
+    "description": "Women suffer chronic respiratory diseases due to soot from traditional wood-burning stoves in unventilated kitchens.",
+    "domain": "Energy",
+    "subdomain": "General Energy",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_energy_4",
+    "title": "Solar microgrid battery failures",
+    "description": "Community solar installations stop working within 18 months due to battery overheating and lack of replacements.",
+    "domain": "Energy",
+    "subdomain": "General Energy",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_energy_5",
+    "title": "Voltage fluctuations damaging pumps",
+    "description": "Unstable grid voltages burn out agricultural pump motors, requiring expensive rewinding repairs.",
+    "domain": "Energy",
+    "subdomain": "General Energy",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_energy_6",
+    "title": "No street lighting in high crime zones",
+    "description": "Absence of public illumination on dark lanes increases safety risks for night shift workers.",
+    "domain": "Energy",
+    "subdomain": "General Energy",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_energy_7",
+    "title": "Biogas digester winter failure",
+    "description": "Cow dung digesters stop generating cooking gas during cold winter months due to drop in bacterial activity.",
+    "domain": "Energy",
+    "subdomain": "General Energy",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_energy_8",
+    "title": "Lack of wind turbine maintenance",
+    "description": "Coastal community wind pumps are locked up due to rusted gearboxes and no local technicians.",
+    "domain": "Energy",
+    "subdomain": "General Energy",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_energy_9",
+    "title": "Societal challenge in Energy - 8",
+    "description": "Detailed description of local issues in the domain of Energy. Needs multidisciplinary team solving.",
+    "domain": "Energy",
+    "subdomain": "General Block",
+    "locationContext": "Rural District Block",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_energy_10",
+    "title": "Societal challenge in Energy - 9",
+    "description": "Detailed description of local issues in the domain of Energy. Needs multidisciplinary team solving.",
+    "domain": "Energy",
+    "subdomain": "General Block",
+    "locationContext": "Rural District Block",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_urban_infrastructure_1",
+    "title": "Open manholes on main walkways",
+    "description": "Pavement storm covers are broken or stolen, creating severe hazards for pedestrians, especially at night.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "General Urban Infrastructure",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_urban_infrastructure_2",
+    "title": "Inadequate sewage treatment capacity",
+    "description": "The municipal treatment plant overflows during rains, releasing raw sewage into the public river corridor.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "General Urban Infrastructure",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_urban_infrastructure_3",
+    "title": "Unpaved road dust causing allergies",
+    "description": "Heavy truck traffic on unpaved bypass roads kicks up fine silica dust, causing widespread asthma.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "General Urban Infrastructure",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_urban_infrastructure_4",
+    "title": "Pothole damage causing motorcycle crashes",
+    "description": "Monsoon rains wash away asphalt, leaving deep craters that cause frequent two-wheeler accidents.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "General Urban Infrastructure",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_urban_infrastructure_5",
+    "title": "Lack of public drinking fountains",
+    "description": "Commuters suffer heat exhaustion due to zero access to clean drinking water stations in transit hubs.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "General Urban Infrastructure",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_urban_infrastructure_6",
+    "title": "Overcrowded public bus boarding gates",
+    "description": "Bus stops lack queue lanes or platforms, causing dangerous stampedes during peak office hours.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "General Urban Infrastructure",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_urban_infrastructure_7",
+    "title": "No fire hydrant network in dense slums",
+    "description": "Narrow lanes prevent fire engines from entering, and there are no pressurized water mains nearby.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "General Urban Infrastructure",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_urban_infrastructure_8",
+    "title": "Corrosion of iron pedestrian bridges",
+    "description": "Humid weather and saline air have rusted the support beams of the city walkover bridges, threatening collapse.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "General Urban Infrastructure",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_accessibility_1",
+    "title": "No wheelchair ramp at public library",
+    "description": "The municipal archive has only steep stone stairs, blocking access for citizens with mobility impairments.",
+    "domain": "Accessibility",
+    "subdomain": "General Accessibility",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_accessibility_2",
+    "title": "Absence of audio signals at crosswalks",
+    "description": "Visually impaired pedestrians cannot safely cross the busy metro station intersection without assistance.",
+    "domain": "Accessibility",
+    "subdomain": "General Accessibility",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_accessibility_3",
+    "title": "Lack of sign language translators in clinics",
+    "description": "Deaf patients struggle to explain symptoms to doctors due to absence of translation services.",
+    "domain": "Accessibility",
+    "subdomain": "General Accessibility",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_accessibility_4",
+    "title": "Non-accessible government website forms",
+    "description": "Screen readers cannot parse the dropdowns on the state portal, preventing disabled users from applying for pensions.",
+    "domain": "Accessibility",
+    "subdomain": "General Accessibility",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_accessibility_5",
+    "title": "High steps on public transit buses",
+    "description": "Bus entry steps are 40cm high, making boarding impossible for wheelchair users and senior citizens.",
+    "domain": "Accessibility",
+    "subdomain": "General Accessibility",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_accessibility_6",
+    "title": "Braille markings missing on elevators",
+    "description": "Elevator buttons in the public court complex lack tactile markings, disorienting blind visitors.",
+    "domain": "Accessibility",
+    "subdomain": "General Accessibility",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_accessibility_7",
+    "title": "Heavy heavy doors at bank entrances",
+    "description": "Spring-loaded entry doors require too much force, blocking access for frail individuals.",
+    "domain": "Accessibility",
+    "subdomain": "General Accessibility",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_accessibility_8",
+    "title": "Non-adjustable school desks for disabled",
+    "description": "Students using wheelchairs are forced to sit far away from whiteboards due to fixed seating.",
+    "domain": "Accessibility",
+    "subdomain": "General Accessibility",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_accessibility_9",
+    "title": "Societal challenge in Accessibility - 8",
+    "description": "Detailed description of local issues in the domain of Accessibility. Needs multidisciplinary team solving.",
+    "domain": "Accessibility",
+    "subdomain": "General Block",
+    "locationContext": "Rural District Block",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_accessibility_10",
+    "title": "Societal challenge in Accessibility - 9",
+    "description": "Detailed description of local issues in the domain of Accessibility. Needs multidisciplinary team solving.",
+    "domain": "Accessibility",
+    "subdomain": "General Block",
+    "locationContext": "Rural District Block",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_public_administration_1",
+    "title": "Delayed pension disbursement cycles",
+    "description": "Elderly citizens wait up to 4 months for monthly pension deposits due to manual bank verification loops.",
+    "domain": "Public Administration",
+    "subdomain": "General Public Administration",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_public_administration_2",
+    "title": "Corruption in land record registries",
+    "description": "Farmers are forced to pay bribes to obtain copies of land title deeds required for bank loans.",
+    "domain": "Public Administration",
+    "subdomain": "General Public Administration",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_public_administration_3",
+    "title": "No digital portal for trade permits",
+    "description": "Artisans must travel 60km to the district headquarters to renew basic manufacturing license certificates.",
+    "domain": "Public Administration",
+    "subdomain": "General Public Administration",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_public_administration_4",
+    "title": "Mishandled community grievances",
+    "description": "Written complaints submitted to the municipality office are routinely misplaced or ignored without tracking IDs.",
+    "domain": "Public Administration",
+    "subdomain": "General Public Administration",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_public_administration_5",
+    "title": "Lack of transparency in school budgets",
+    "description": "Funds allocated for mid-day meals are diverted due to zero public audit reporting mechanisms.",
+    "domain": "Public Administration",
+    "subdomain": "General Public Administration",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_public_administration_6",
+    "title": "Complex application forms for subsidies",
+    "description": "Marginalized farmers fail to apply for crop subsidies due to highly complicated paperwork written in English.",
+    "domain": "Public Administration",
+    "subdomain": "General Public Administration",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_public_administration_7",
+    "title": "No local birth registration desk",
+    "description": "Parents in remote tribal blocks must travel long distances to register newborns, risking lost certificates.",
+    "domain": "Public Administration",
+    "subdomain": "General Public Administration",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_public_administration_8",
+    "title": "Slow disaster relief payments",
+    "description": "Compensation for crops lost to hail takes over a year to process through manual government verification.",
+    "domain": "Public Administration",
+    "subdomain": "General Public Administration",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_public_administration_9",
+    "title": "Societal challenge in Public Administration - 8",
+    "description": "Detailed description of local issues in the domain of Public Administration. Needs multidisciplinary team solving.",
+    "domain": "Public Administration",
+    "subdomain": "General Block",
+    "locationContext": "Rural District Block",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_public_administration_10",
+    "title": "Societal challenge in Public Administration - 9",
+    "description": "Detailed description of local issues in the domain of Public Administration. Needs multidisciplinary team solving.",
+    "domain": "Public Administration",
+    "subdomain": "General Block",
+    "locationContext": "Rural District Block",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_rural_livelihoods_1",
+    "title": "Low price realization for silk weavers",
+    "description": "Handloom weavers are forced to sell products to middlemen at thin margins due to zero direct market access.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "General Rural Livelihoods",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_rural_livelihoods_2",
+    "title": "Lack of cold storage for fish catch",
+    "description": "Artisanal fishermen must sell their catch immediately at throwaway prices or watch it rot on hot beaches.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "General Rural Livelihoods",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_rural_livelihoods_3",
+    "title": "Lack of credit history for women groups",
+    "description": "Women self-help groups fail to secure microloans because banks require collateral assets.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "General Rural Livelihoods",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_rural_livelihoods_4",
+    "title": "Decline in bamboo craft tool efficiency",
+    "description": "Artisans use manual knives that limit daily production volumes and cause hand injuries.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "General Rural Livelihoods",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_rural_livelihoods_5",
+    "title": "No packaging standards for honey harvest",
+    "description": "Forest gatherers sell honey in recycled plastic bottles, which fails food safety standards for retail.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "General Rural Livelihoods",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_rural_livelihoods_6",
+    "title": "Cocoa bean fermentation failures",
+    "description": "Small growers suffer losses due to mold during open-yard cocoa fermentation in unpredictable weather.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "General Rural Livelihoods",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_rural_livelihoods_7",
+    "title": "Absence of wool spinning card machines",
+    "description": "Hill weavers spend 70% of their labor carding wool by hand, reducing active weaving hours.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "General Rural Livelihoods",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_rural_livelihoods_8",
+    "title": "No marketing support for organic millet",
+    "description": "Dryland farmers grow nutritious millets but lack branding or distribution to reach high-value urban retail.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "General Rural Livelihoods",
+    "locationContext": "Rural Block Area",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_rural_livelihoods_9",
+    "title": "Societal challenge in Rural Livelihoods - 8",
+    "description": "Detailed description of local issues in the domain of Rural Livelihoods. Needs multidisciplinary team solving.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "General Block",
+    "locationContext": "Rural District Block",
+    "expectedSeverity": "medium"
+  },
+  {
+    "id": "ch_rural_livelihoods_10",
+    "title": "Societal challenge in Rural Livelihoods - 9",
+    "description": "Detailed description of local issues in the domain of Rural Livelihoods. Needs multidisciplinary team solving.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "General Block",
+    "locationContext": "Rural District Block",
+    "expectedSeverity": "medium"
+  }
+]
