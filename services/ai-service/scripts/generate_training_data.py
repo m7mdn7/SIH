@@ -1,3 +1,4 @@
+import hashlib
 import json
 import os
 import random
@@ -46,11 +47,9 @@ def inject_typos(text: str) -> str:
     new_words = []
     for w in words:
         w_lower = w.lower()
-        # strip punctuation
         clean_w = re.sub(r"[^\w]", "", w_lower)
         if clean_w in TYPOS and random.random() < 0.4:
             typo_w = random.choice(TYPOS[clean_w])
-            # keep capitalization pattern
             if w.istitle():
                 typo_w = typo_w.title()
             new_words.append(typo_w)
@@ -59,7 +58,7 @@ def inject_typos(text: str) -> str:
     return " ".join(new_words)
 
 
-# Grammatical issues
+# Templates
 POOR_GRAMMAR_PREFIXES = [
     "i am writing because",
     "need help very urgent for",
@@ -71,44 +70,42 @@ POOR_GRAMMAR_PREFIXES = [
     "some problem is coming in",
 ]
 
-# Clean structure templates
 CLEAN_TEMPLATES = [
-    "A major challenge in our area is the {issue} affecting {stakeholders}.",
-    "The community is experiencing {issue}, which directly impacts {stakeholders}.",
-    "We are facing severe {issue}. This is particularly difficult for {stakeholders}.",
-    "Due to {issue}, many {stakeholders} are unable to function properly.",
-    "The lack of adequate solutions for {issue} has left {stakeholders} vulnerable.",
+    "A major challenge in {sub} is the {issue} affecting {stakeholders}.",
+    "The community is experiencing {issue} in their {sub} systems, which directly impacts {stakeholders}.",
+    "We are facing severe {issue} under {sub}. This is particularly difficult for {stakeholders}.",
+    "Due to {issue} in {sub}, many {stakeholders} are unable to function properly.",
+    "The lack of adequate solutions for {issue} within {sub} has left {stakeholders} vulnerable.",
 ]
 
 SHORT_TEMPLATES = [
-    "no {issue} here",
-    "{issue} problem",
-    "bad {issue} for {stakeholders}",
-    "need {issue} support",
-    "suffering from {issue}",
+    "no {issue} in {sub} for {stakeholders}",
+    "{issue} problem in {sub} for {stakeholders}",
+    "bad {issue} under {sub} for {stakeholders}",
+    "need {issue} support for {sub} affecting {stakeholders}",
+    "suffering from {issue} in {sub} which affects {stakeholders}",
 ]
 
 LONG_TEMPLATES = [
-    "I want to report a critical issue regarding {issue}. Over the past few months, we have observed that {stakeholders} are struggling because of this. There are no proper systems in place to handle it, leading to widespread dissatisfaction. Local authorities have been informed but no action was taken. We urgently need expertise and assistance to resolve this.",
-    "This petition is on behalf of {stakeholders} who are severely impacted by {issue}. The current situation is unsustainable and requires immediate intervention. We believe a combination of local community effort and technical innovation is the only way forward. Currently, we lack any baseline data or plans to address this.",
-    "A detailed investigation into our local conditions shows that {issue} is the primary constraint. This affects {stakeholders} on a daily basis, causing economic loss and health concerns. We request the implementation team to perform a gap analysis and propose a suitable technology adaptation as soon as possible.",
+    "I want to report a critical issue regarding {issue} in our {sub} sector. Over the past few months, we have observed that {stakeholders} are struggling because of this. There are no proper systems in place to handle it, leading to widespread dissatisfaction. Local authorities have been informed but no action was taken. We urgently need expertise and assistance to resolve this.",
+    "This petition is on behalf of {stakeholders} who are severely impacted by {issue} within {sub}. The current situation is unsustainable and requires immediate intervention. We believe a combination of local community effort and technical innovation is the only way forward. Currently, we lack any baseline data or plans to address this.",
+    "A detailed investigation into our local {sub} conditions shows that {issue} is the primary constraint. This affects {stakeholders} on a daily basis, causing economic loss and health concerns. We request the implementation team to perform a gap analysis and propose a suitable technology adaptation as soon as possible.",
 ]
 
 AMBIGUOUS_TEMPLATES = [
-    "something is wrong with the {issue} and {stakeholders} are complaining.",
-    "we have a situation here regarding {issue}.",
-    "is anyone planning to fix {issue} for {stakeholders}?",
-    "the local {issue} is in very bad condition.",
+    "something is wrong with the {issue} in {sub} and {stakeholders} are complaining.",
+    "we have a situation here regarding {issue} affecting {sub} for {stakeholders}.",
+    "is anyone planning to fix {issue} in {sub} for {stakeholders}?",
+    "the local {issue} under {sub} is in very bad condition and hurts {stakeholders}.",
 ]
 
 
-def generate_cases_for_domain(domain_info, count):
-    generated = []
+def generate_pool_for_domain(domain_info):
+    pool = []
     dom_name = domain_info["name"]
     subdomains = domain_info["subdomains"]
     concepts = domain_info["representative_concepts"]
 
-    # stakeholder terms based on domain
     stakeholders_map = {
         "Agriculture": [
             "farmers",
@@ -210,96 +207,134 @@ def generate_cases_for_domain(domain_info, count):
         dom_name, ["citizens", "local people", "stakeholders"]
     )
 
-    # We will generate different types of challenges
-    for i in range(count):
-        # Pick random components
-        sub = random.choice(subdomains)
-        concept = random.choice(concepts)
-        st = random.choice(stakeholders)
+    # Generate exactly 12 unique parent groups to partition systematically
+    for group_idx in range(12):
+        sub = subdomains[group_idx % len(subdomains)]
+        concept = concepts[group_idx % len(concepts)]
+        st = stakeholders[group_idx % len(stakeholders)]
 
-        # Determine case type (0: clean, 1: poor grammar, 2: short, 3: long, 4: ambiguous, 5: typo, 6: missing info)
-        case_type = i % 7
+        fingerprint = hashlib.md5(f"{sub}_{concept}_{st}".encode()).hexdigest()
 
-        title = f"{sub} issue affecting {st}"
-
-        if case_type == 0:  # Clean
-            description = random.choice(CLEAN_TEMPLATES).format(
-                issue=concept, stakeholders=st
-            )
-            quality = "high"
-        elif case_type == 1:  # Poor grammar
-            prefix = random.choice(POOR_GRAMMAR_PREFIXES)
-            description = f"{prefix} {concept} which is bad for {st}."
-            # make grammar a bit broken
-            description = description.replace("is bad", "are bad").replace(
-                "problem is", "problem are"
-            )
+        for case_type_idx in range(7):
+            title = f"{sub} - {concept} issue affecting {st}"
             quality = "medium"
-        elif case_type == 2:  # Short
-            description = random.choice(SHORT_TEMPLATES).format(
-                issue=concept, stakeholders=st
+            gen_type = "clean"
+
+            if case_type_idx == 0:
+                description = random.choice(CLEAN_TEMPLATES).format(
+                    sub=sub, issue=concept, stakeholders=st
+                )
+                quality = "high"
+                gen_type = "clean"
+            elif case_type_idx == 1:
+                prefix = random.choice(POOR_GRAMMAR_PREFIXES)
+                description = f"{prefix} {concept} in {sub} which is bad for {st}."
+                description = description.replace("is bad", "are bad").replace(
+                    "problem is", "problem are"
+                )
+                quality = "medium"
+                gen_type = "poor_grammar"
+            elif case_type_idx == 2:
+                description = random.choice(SHORT_TEMPLATES).format(
+                    sub=sub, issue=concept, stakeholders=st
+                )
+                quality = "low"
+                gen_type = "short"
+            elif case_type_idx == 3:
+                description = random.choice(LONG_TEMPLATES).format(
+                    sub=sub, issue=concept, stakeholders=st
+                )
+                quality = "high"
+                gen_type = "long"
+            elif case_type_idx == 4:
+                description = random.choice(AMBIGUOUS_TEMPLATES).format(
+                    sub=sub, issue=concept, stakeholders=st
+                )
+                quality = "medium"
+                gen_type = "ambiguous"
+            elif case_type_idx == 5:
+                desc_raw = random.choice(CLEAN_TEMPLATES).format(
+                    sub=sub, issue=concept, stakeholders=st
+                )
+                description = inject_typos(desc_raw)
+                title = inject_typos(title)
+                quality = "medium"
+                gen_type = "typo"
+            else:
+                description = f"The community has some concerns about {concept} under {sub} affecting {st}."
+                quality = "low"
+                gen_type = "missing_info"
+
+            expected_key_factors = [f"Issue related to {concept}", f"Affects {st}"]
+            expected_missing_info = [
+                "Exact quantitative impact",
+                "Current storage/operational constraints",
+            ]
+
+            pool.append(
+                {
+                    "id": f"gen_{dom_name.lower().replace(' ', '_')}_{group_idx}_{case_type_idx}",
+                    "title": title,
+                    "description": description,
+                    "domain": dom_name,
+                    "subdomain": sub,
+                    "problemType": f"General {dom_name} Issue",
+                    "severity": random.choice(["low", "medium", "high"]),
+                    "expectedKeyFactors": expected_key_factors,
+                    "expectedMissingInformation": expected_missing_info,
+                    "quality": quality,
+                    "provenance": "synthetic_generator_v2",
+                    "generation_type": gen_type,
+                    "parent_example_id": fingerprint,
+                }
             )
-            quality = "low"
-        elif case_type == 3:  # Long
-            description = random.choice(LONG_TEMPLATES).format(
-                issue=concept, stakeholders=st
-            )
-            quality = "high"
-        elif case_type == 4:  # Ambiguous
-            description = random.choice(AMBIGUOUS_TEMPLATES).format(
-                issue=concept, stakeholders=st
-            )
-            quality = "medium"
-        elif case_type == 5:  # Typo
-            desc_raw = random.choice(CLEAN_TEMPLATES).format(
-                issue=concept, stakeholders=st
-            )
-            description = inject_typos(desc_raw)
-            title = inject_typos(title)
-            quality = "medium"
-        else:  # Missing info (very basic)
-            description = f"The community has some concerns about {concept}."
-            quality = "low"
 
-        # Key factors / missing info expectations
-        expected_key_factors = [f"Issue related to {concept}", f"Affects {st}"]
-        expected_missing_info = [
-            "Exact quantitative impact",
-            "Current storage/operational constraints",
-        ]
-
-        generated.append(
-            {
-                "id": f"gen_{dom_name.lower().replace(' ', '_')}_{i}",
-                "title": title,
-                "description": description,
-                "domain": dom_name,
-                "subdomain": sub,
-                "problemType": f"General {dom_name} Issue",
-                "severity": random.choice(["low", "medium", "high"]),
-                "expectedKeyFactors": expected_key_factors,
-                "expectedMissingInformation": expected_missing_info,
-                "quality": quality,
-            }
-        )
-
-    return generated
+    return pool
 
 
-# Programmatic data generation
-all_training_data = []
-all_evaluation_data = []
-
+# Run Pool Generation
+pools_by_domain = {}
 for dom in domains:
-    # 52 examples per domain for training -> 52 * 16 = 832 examples (matches 800+ requirement)
-    train_cases = generate_cases_for_domain(dom, 52)
-    all_training_data.extend(train_cases)
+    pools_by_domain[dom["name"]] = generate_pool_for_domain(dom)
 
-    # 10 examples per domain for evaluation -> 10 * 16 = 160 examples (matches 150+ requirement)
-    eval_cases = generate_cases_for_domain(dom, 10)
-    all_evaluation_data.extend(eval_cases)
+# Allocate splits ensuring no variations of the same parent_example_id cross splits!
+train_data = []
+val_data = []
+test_data = []
 
-# Add some explicitly multi-domain cases to training & evaluation
+for pool in pools_by_domain.values():
+    # Group by parent_example_id
+    grouped = {}
+    for item in pool:
+        pid = item["parent_example_id"]
+        if pid not in grouped:
+            grouped[pid] = []
+        grouped[pid].append(item)
+
+    pids = list(grouped.keys())
+    random.shuffle(pids)
+
+    # 8 groups to Train, 2 to Val, 2 to Test
+    train_pids = pids[:8]
+    val_pids = pids[8:10]
+    test_pids = pids[10:12]
+
+    for pid in train_pids:
+        for item in grouped[pid]:
+            item["split"] = "train"
+            train_data.append(item)
+
+    for pid in val_pids:
+        for item in grouped[pid]:
+            item["split"] = "val"
+            val_data.append(item)
+
+    for pid in test_pids:
+        for item in grouped[pid]:
+            item["split"] = "test"
+            test_data.append(item)
+
+# Add explicit multi-domain cases
 multi_domain_examples = [
     {
         "id": "gen_multidomain_0",
@@ -320,6 +355,10 @@ multi_domain_examples = [
             "Water filtration options",
         ],
         "quality": "high",
+        "provenance": "synthetic_generator_v2",
+        "generation_type": "multi_domain",
+        "parent_example_id": "multidomain_0",
+        "split": "train",
     },
     {
         "id": "gen_multidomain_1",
@@ -340,6 +379,10 @@ multi_domain_examples = [
             "School fees details",
         ],
         "quality": "high",
+        "provenance": "synthetic_generator_v2",
+        "generation_type": "multi_domain",
+        "parent_example_id": "multidomain_1",
+        "split": "val",
     },
     {
         "id": "gen_multidomain_2",
@@ -360,20 +403,32 @@ multi_domain_examples = [
             "Police patrol frequency",
         ],
         "quality": "high",
+        "provenance": "synthetic_generator_v2",
+        "generation_type": "multi_domain",
+        "parent_example_id": "multidomain_2",
+        "split": "test",
     },
 ]
 
-all_training_data.extend(multi_domain_examples)
-# add to evaluation too
-all_evaluation_data.extend(multi_domain_examples)
+for item in multi_domain_examples:
+    if item["split"] == "train":
+        train_data.append(item)
+    elif item["split"] == "val":
+        val_data.append(item)
+    elif item["split"] == "test":
+        test_data.append(item)
 
 # Save datasets
 with open("data/training/train_dataset.json", "w", encoding="utf-8") as f:
-    json.dump(all_training_data, f, indent=2, ensure_ascii=False)
+    json.dump(train_data, f, indent=2, ensure_ascii=False)
+
+with open("data/training/val_dataset.json", "w", encoding="utf-8") as f:
+    json.dump(val_data, f, indent=2, ensure_ascii=False)
 
 with open("data/evaluation/challenge_cases.json", "w", encoding="utf-8") as f:
-    json.dump(all_evaluation_data, f, indent=2, ensure_ascii=False)
+    json.dump(test_data, f, indent=2, ensure_ascii=False)
 
 print("Data Generation Successful!")
-print(f"Total training examples: {len(all_training_data)}")
-print(f"Total evaluation examples: {len(all_evaluation_data)}")
+print(f"Total train examples: {len(train_data)}")
+print(f"Total val examples: {len(val_data)}")
+print(f"Total test examples: {len(test_data)}")

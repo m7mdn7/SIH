@@ -74,12 +74,45 @@ def train():
     joblib.dump(clf, classifier_path)
     joblib.dump(label_encoder, label_encoder_path)
 
+    import datetime
+
+    import numpy as np
+    import pydantic
+    import sentence_transformers
+    import sklearn
+    from sklearn.metrics import confusion_matrix
+
+    # Compute training confusion matrix
+    y_pred = clf.predict(X)
+    cm = confusion_matrix(y, y_pred)
+
     metadata = {
+        "modelVersion": "1.0.0",
+        "datasetVersion": "v2",
+        "taxonomyVersion": "v1",
+        "createdAt": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         "embedding_model": settings.EMBEDDING_MODEL,
         "classes": label_encoder.classes_.tolist(),
-        "training_accuracy": float(train_acc),
-        "num_training_samples": len(dataset),
-        "feature_dimension": int(X.shape[1]),
+        "trainingConfig": {
+            "classifier": "LogisticRegression",
+            "C": 2.0,
+            "max_iter": 1000,
+            "random_state": 42,
+        },
+        "libraryVersions": {
+            "python": sys.version,
+            "joblib": joblib.__version__,
+            "scikit-learn": sklearn.__version__,
+            "sentence-transformers": sentence_transformers.__version__,
+            "numpy": np.__version__,
+            "pydantic": pydantic.__version__,
+        },
+        "metrics": {
+            "training_accuracy": float(train_acc),
+            "num_training_samples": len(dataset),
+            "feature_dimension": int(X.shape[1]),
+            "confusion_matrix": cm.tolist(),
+        },
     }
 
     with open(metadata_path, "w", encoding="utf-8") as f:

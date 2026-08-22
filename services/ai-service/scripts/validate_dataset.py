@@ -5,6 +5,7 @@ import sys
 # Validate dataset files
 datasets_to_validate = [
     "data/training/train_dataset.json",
+    "data/training/val_dataset.json",
     "data/evaluation/challenge_cases.json",
 ]
 

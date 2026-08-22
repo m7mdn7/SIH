@@ -1,10 +1,13 @@
 {
-  "data/training/train_dataset.json": {
-    "total_records": 897,
-    "missing_fields_count": 0,
-    "invalid_domains_count": 0,
-    "short_descriptions_count": 0,
-    "domain_coverage": {
+  "metrics": {
+    "exact_text_overlap": 0,
+    "normalized_text_overlap": 0,
+    "title_overlap": 0,
+    "parent_overlap": 0,
+    "near_duplicate_overlap": 0
+  },
+  "domain_distribution": {
+    "train": {
       "Agriculture": 56,
       "Water Management": 57,
       "Healthcare": 56,
@@ -21,14 +24,8 @@
       "Community Development": 56,
       "Public Safety": 56,
       "Other": 56
-    }
-  },
-  "data/training/val_dataset.json": {
-    "total_records": 225,
-    "missing_fields_count": 0,
-    "invalid_domains_count": 0,
-    "short_descriptions_count": 0,
-    "domain_coverage": {
+    },
+    "val": {
       "Agriculture": 15,
       "Water Management": 14,
       "Healthcare": 14,
@@ -45,14 +42,8 @@
       "Community Development": 14,
       "Public Safety": 14,
       "Other": 14
-    }
-  },
-  "data/evaluation/challenge_cases.json": {
-    "total_records": 225,
-    "missing_fields_count": 0,
-    "invalid_domains_count": 0,
-    "short_descriptions_count": 0,
-    "domain_coverage": {
+    },
+    "test": {
       "Agriculture": 14,
       "Water Management": 14,
       "Healthcare": 14,
@@ -70,5 +61,6 @@
       "Public Safety": 14,
       "Other": 14
     }
-  }
+  },
+  "status": "PASS"
 }

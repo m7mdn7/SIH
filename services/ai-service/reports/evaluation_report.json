@@ -1,119 +1,119 @@
 {
   "overall": {
-    "accuracy": 1.0,
-    "macro_f1": 1.0,
+    "accuracy": 0.9911111111111112,
+    "macro_f1": 0.9912196679438059,
     "multi_domain_accuracy": 1.0,
     "hallucination_resistance_pass_rate": 1.0
   },
   "per_domain": {
     "Accessibility": {
-      "precision": 1.0,
+      "precision": 0.9333333333333333,
       "recall": 1.0,
-      "f1-score": 1.0,
-      "support": 10.0
+      "f1-score": 0.9655172413793104,
+      "support": 14.0
     },
     "Agriculture": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
-      "support": 11.0
+      "support": 14.0
     },
     "Community Development": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
-      "support": 10.0
+      "support": 14.0
     },
     "Disaster Management": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
-      "support": 10.0
+      "support": 14.0
     },
     "Education": {
       "precision": 1.0,
-      "recall": 1.0,
-      "f1-score": 1.0,
-      "support": 10.0
+      "recall": 0.9285714285714286,
+      "f1-score": 0.9629629629629629,
+      "support": 14.0
     },
     "Energy": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
-      "support": 10.0
+      "support": 14.0
     },
     "Environment": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
-      "support": 10.0
+      "support": 14.0
     },
     "Healthcare": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
-      "support": 10.0
+      "support": 14.0
     },
     "Other": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
-      "support": 10.0
+      "support": 14.0
     },
     "Public Administration": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
-      "support": 10.0
+      "support": 14.0
     },
     "Public Safety": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
-      "support": 10.0
+      "support": 14.0
     },
     "Rural Livelihoods": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
-      "support": 10.0
+      "support": 14.0
     },
     "Sanitation": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
-      "support": 10.0
+      "support": 14.0
     },
     "Transportation": {
       "precision": 1.0,
-      "recall": 1.0,
-      "f1-score": 1.0,
-      "support": 11.0
+      "recall": 0.9333333333333333,
+      "f1-score": 0.9655172413793104,
+      "support": 15.0
     },
     "Urban Infrastructure": {
-      "precision": 1.0,
+      "precision": 0.9333333333333333,
       "recall": 1.0,
-      "f1-score": 1.0,
-      "support": 10.0
+      "f1-score": 0.9655172413793104,
+      "support": 14.0
     },
     "Water Management": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
-      "support": 11.0
+      "support": 14.0
     },
-    "accuracy": 1.0,
+    "accuracy": 0.9911111111111112,
     "macro avg": {
-      "precision": 1.0,
-      "recall": 1.0,
-      "f1-score": 1.0,
-      "support": 163.0
+      "precision": 0.9916666666666667,
+      "recall": 0.9913690476190476,
+      "f1-score": 0.9912196679438059,
+      "support": 225.0
     },
     "weighted avg": {
-      "precision": 1.0,
-      "recall": 1.0,
-      "f1-score": 1.0,
-      "support": 163.0
+      "precision": 0.9917037037037036,
+      "recall": 0.9911111111111112,
+      "f1-score": 0.9911054349368527,
+      "support": 225.0
     }
   }
 }

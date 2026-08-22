@@ -4,18 +4,19 @@ from typing import Any
 import numpy as np
 
 from app.core.logging import logger
-from app.repositories.local_repository import LocalRepository
+from app.repositories import get_repository
 from app.services.embedding_service import embedding_service
 
 
 class ClusteringService:
     def __init__(self):
         self._repo = None
+        self.is_experimental = True
 
     @property
-    def repo(self) -> LocalRepository:
+    def repo(self):
         if self._repo is None:
-            self._repo = LocalRepository()
+            self._repo = get_repository()
         return self._repo
 
     def _dbscan_fit_predict(

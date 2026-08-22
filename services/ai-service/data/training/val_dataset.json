@@ -1,0 +1,4957 @@
+[
+  {
+    "id": "gen_agriculture_11_0",
+    "title": "Soil Management - post-harvest loss issue affecting mandi vendors",
+    "description": "The lack of adequate solutions for post-harvest loss within Soil Management has left mandi vendors vulnerable.",
+    "domain": "Agriculture",
+    "subdomain": "Soil Management",
+    "problemType": "General Agriculture Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to post-harvest loss",
+      "Affects mandi vendors"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "a15849c8ebe7a28cc7409934cbde35b7",
+    "split": "val"
+  },
+  {
+    "id": "gen_agriculture_11_1",
+    "title": "Soil Management - post-harvest loss issue affecting mandi vendors",
+    "description": "people suffering from post-harvest loss in Soil Management which are bad for mandi vendors.",
+    "domain": "Agriculture",
+    "subdomain": "Soil Management",
+    "problemType": "General Agriculture Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to post-harvest loss",
+      "Affects mandi vendors"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "a15849c8ebe7a28cc7409934cbde35b7",
+    "split": "val"
+  },
+  {
+    "id": "gen_agriculture_11_2",
+    "title": "Soil Management - post-harvest loss issue affecting mandi vendors",
+    "description": "suffering from post-harvest loss in Soil Management which affects mandi vendors",
+    "domain": "Agriculture",
+    "subdomain": "Soil Management",
+    "problemType": "General Agriculture Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to post-harvest loss",
+      "Affects mandi vendors"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "a15849c8ebe7a28cc7409934cbde35b7",
+    "split": "val"
+  },
+  {
+    "id": "gen_agriculture_11_3",
+    "title": "Soil Management - post-harvest loss issue affecting mandi vendors",
+    "description": "I want to report a critical issue regarding post-harvest loss in our Soil Management sector. Over the past few months, we have observed that mandi vendors are struggling because of this. There are no proper systems in place to handle it, leading to widespread dissatisfaction. Local authorities have been informed but no action was taken. We urgently need expertise and assistance to resolve this.",
+    "domain": "Agriculture",
+    "subdomain": "Soil Management",
+    "problemType": "General Agriculture Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to post-harvest loss",
+      "Affects mandi vendors"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "a15849c8ebe7a28cc7409934cbde35b7",
+    "split": "val"
+  },
+  {
+    "id": "gen_agriculture_11_4",
+    "title": "Soil Management - post-harvest loss issue affecting mandi vendors",
+    "description": "is anyone planning to fix post-harvest loss in Soil Management for mandi vendors?",
+    "domain": "Agriculture",
+    "subdomain": "Soil Management",
+    "problemType": "General Agriculture Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to post-harvest loss",
+      "Affects mandi vendors"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "a15849c8ebe7a28cc7409934cbde35b7",
+    "split": "val"
+  },
+  {
+    "id": "gen_agriculture_11_5",
+    "title": "Soil Management - post-harvest loss issue affecting mandi vendors",
+    "description": "The lack of adequate solutions for post-harvest loss within Soil Management has left mandi vendors vulnerable.",
+    "domain": "Agriculture",
+    "subdomain": "Soil Management",
+    "problemType": "General Agriculture Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to post-harvest loss",
+      "Affects mandi vendors"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "a15849c8ebe7a28cc7409934cbde35b7",
+    "split": "val"
+  },
+  {
+    "id": "gen_agriculture_11_6",
+    "title": "Soil Management - post-harvest loss issue affecting mandi vendors",
+    "description": "The community has some concerns about post-harvest loss under Soil Management affecting mandi vendors.",
+    "domain": "Agriculture",
+    "subdomain": "Soil Management",
+    "problemType": "General Agriculture Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to post-harvest loss",
+      "Affects mandi vendors"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "a15849c8ebe7a28cc7409934cbde35b7",
+    "split": "val"
+  },
+  {
+    "id": "gen_agriculture_5_0",
+    "title": "Agricultural Supply Chain - silos issue affecting crop growers",
+    "description": "A major challenge in Agricultural Supply Chain is the silos affecting crop growers.",
+    "domain": "Agriculture",
+    "subdomain": "Agricultural Supply Chain",
+    "problemType": "General Agriculture Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to silos",
+      "Affects crop growers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "2e016e6d44e7b4a5098fe3a105c42baa",
+    "split": "val"
+  },
+  {
+    "id": "gen_agriculture_5_1",
+    "title": "Agricultural Supply Chain - silos issue affecting crop growers",
+    "description": "please resolve the issue of silos in Agricultural Supply Chain which are bad for crop growers.",
+    "domain": "Agriculture",
+    "subdomain": "Agricultural Supply Chain",
+    "problemType": "General Agriculture Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to silos",
+      "Affects crop growers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "2e016e6d44e7b4a5098fe3a105c42baa",
+    "split": "val"
+  },
+  {
+    "id": "gen_agriculture_5_2",
+    "title": "Agricultural Supply Chain - silos issue affecting crop growers",
+    "description": "silos problem in Agricultural Supply Chain for crop growers",
+    "domain": "Agriculture",
+    "subdomain": "Agricultural Supply Chain",
+    "problemType": "General Agriculture Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to silos",
+      "Affects crop growers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "2e016e6d44e7b4a5098fe3a105c42baa",
+    "split": "val"
+  },
+  {
+    "id": "gen_agriculture_5_3",
+    "title": "Agricultural Supply Chain - silos issue affecting crop growers",
+    "description": "This petition is on behalf of crop growers who are severely impacted by silos within Agricultural Supply Chain. The current situation is unsustainable and requires immediate intervention. We believe a combination of local community effort and technical innovation is the only way forward. Currently, we lack any baseline data or plans to address this.",
+    "domain": "Agriculture",
+    "subdomain": "Agricultural Supply Chain",
+    "problemType": "General Agriculture Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to silos",
+      "Affects crop growers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "2e016e6d44e7b4a5098fe3a105c42baa",
+    "split": "val"
+  },
+  {
+    "id": "gen_agriculture_5_4",
+    "title": "Agricultural Supply Chain - silos issue affecting crop growers",
+    "description": "is anyone planning to fix silos in Agricultural Supply Chain for crop growers?",
+    "domain": "Agriculture",
+    "subdomain": "Agricultural Supply Chain",
+    "problemType": "General Agriculture Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to silos",
+      "Affects crop growers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "2e016e6d44e7b4a5098fe3a105c42baa",
+    "split": "val"
+  },
+  {
+    "id": "gen_agriculture_5_5",
+    "title": "Agricultural Supply Chain - silos issue affecting crop growers",
+    "description": "The lack of adequate solutions for silos within Agricultural Supply Chain has left crop growers vulnerable.",
+    "domain": "Agriculture",
+    "subdomain": "Agricultural Supply Chain",
+    "problemType": "General Agriculture Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to silos",
+      "Affects crop growers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "2e016e6d44e7b4a5098fe3a105c42baa",
+    "split": "val"
+  },
+  {
+    "id": "gen_agriculture_5_6",
+    "title": "Agricultural Supply Chain - silos issue affecting crop growers",
+    "description": "The community has some concerns about silos under Agricultural Supply Chain affecting crop growers.",
+    "domain": "Agriculture",
+    "subdomain": "Agricultural Supply Chain",
+    "problemType": "General Agriculture Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to silos",
+      "Affects crop growers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "2e016e6d44e7b4a5098fe3a105c42baa",
+    "split": "val"
+  },
+  {
+    "id": "gen_water_management_3_0",
+    "title": "Water Distribution - groundwater contamination issue affecting school children",
+    "description": "The community is experiencing groundwater contamination in their Water Distribution systems, which directly impacts school children.",
+    "domain": "Water Management",
+    "subdomain": "Water Distribution",
+    "problemType": "General Water Management Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to groundwater contamination",
+      "Affects school children"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "4e50cd1f43c5a7dd1abc264a993530cf",
+    "split": "val"
+  },
+  {
+    "id": "gen_water_management_3_1",
+    "title": "Water Distribution - groundwater contamination issue affecting school children",
+    "description": "need help very urgent for groundwater contamination in Water Distribution which are bad for school children.",
+    "domain": "Water Management",
+    "subdomain": "Water Distribution",
+    "problemType": "General Water Management Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to groundwater contamination",
+      "Affects school children"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "4e50cd1f43c5a7dd1abc264a993530cf",
+    "split": "val"
+  },
+  {
+    "id": "gen_water_management_3_2",
+    "title": "Water Distribution - groundwater contamination issue affecting school children",
+    "description": "no groundwater contamination in Water Distribution for school children",
+    "domain": "Water Management",
+    "subdomain": "Water Distribution",
+    "problemType": "General Water Management Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to groundwater contamination",
+      "Affects school children"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "4e50cd1f43c5a7dd1abc264a993530cf",
+    "split": "val"
+  },
+  {
+    "id": "gen_water_management_3_3",
+    "title": "Water Distribution - groundwater contamination issue affecting school children",
+    "description": "I want to report a critical issue regarding groundwater contamination in our Water Distribution sector. Over the past few months, we have observed that school children are struggling because of this. There are no proper systems in place to handle it, leading to widespread dissatisfaction. Local authorities have been informed but no action was taken. We urgently need expertise and assistance to resolve this.",
+    "domain": "Water Management",
+    "subdomain": "Water Distribution",
+    "problemType": "General Water Management Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to groundwater contamination",
+      "Affects school children"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "4e50cd1f43c5a7dd1abc264a993530cf",
+    "split": "val"
+  },
+  {
+    "id": "gen_water_management_3_4",
+    "title": "Water Distribution - groundwater contamination issue affecting school children",
+    "description": "is anyone planning to fix groundwater contamination in Water Distribution for school children?",
+    "domain": "Water Management",
+    "subdomain": "Water Distribution",
+    "problemType": "General Water Management Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to groundwater contamination",
+      "Affects school children"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "4e50cd1f43c5a7dd1abc264a993530cf",
+    "split": "val"
+  },
+  {
+    "id": "gen_water_management_3_5",
+    "title": "Water Distribution - groundwater contamination issue affecting school children",
+    "description": "The lack of adequate solutions for groundwater contamnation within Water Distribution has left school children vulnerable.",
+    "domain": "Water Management",
+    "subdomain": "Water Distribution",
+    "problemType": "General Water Management Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to groundwater contamination",
+      "Affects school children"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "4e50cd1f43c5a7dd1abc264a993530cf",
+    "split": "val"
+  },
+  {
+    "id": "gen_water_management_3_6",
+    "title": "Water Distribution - groundwater contamination issue affecting school children",
+    "description": "The community has some concerns about groundwater contamination under Water Distribution affecting school children.",
+    "domain": "Water Management",
+    "subdomain": "Water Distribution",
+    "problemType": "General Water Management Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to groundwater contamination",
+      "Affects school children"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "4e50cd1f43c5a7dd1abc264a993530cf",
+    "split": "val"
+  },
+  {
+    "id": "gen_water_management_8_0",
+    "title": "Groundwater - chlorination issue affecting village residents",
+    "description": "A major challenge in Groundwater is the chlorination affecting village residents.",
+    "domain": "Water Management",
+    "subdomain": "Groundwater",
+    "problemType": "General Water Management Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to chlorination",
+      "Affects village residents"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "0951ca3dd1b55e850b31d53f337843ea",
+    "split": "val"
+  },
+  {
+    "id": "gen_water_management_8_1",
+    "title": "Groundwater - chlorination issue affecting village residents",
+    "description": "need help very urgent for chlorination in Groundwater which are bad for village residents.",
+    "domain": "Water Management",
+    "subdomain": "Groundwater",
+    "problemType": "General Water Management Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to chlorination",
+      "Affects village residents"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "0951ca3dd1b55e850b31d53f337843ea",
+    "split": "val"
+  },
+  {
+    "id": "gen_water_management_8_2",
+    "title": "Groundwater - chlorination issue affecting village residents",
+    "description": "no chlorination in Groundwater for village residents",
+    "domain": "Water Management",
+    "subdomain": "Groundwater",
+    "problemType": "General Water Management Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to chlorination",
+      "Affects village residents"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "0951ca3dd1b55e850b31d53f337843ea",
+    "split": "val"
+  },
+  {
+    "id": "gen_water_management_8_3",
+    "title": "Groundwater - chlorination issue affecting village residents",
+    "description": "I want to report a critical issue regarding chlorination in our Groundwater sector. Over the past few months, we have observed that village residents are struggling because of this. There are no proper systems in place to handle it, leading to widespread dissatisfaction. Local authorities have been informed but no action was taken. We urgently need expertise and assistance to resolve this.",
+    "domain": "Water Management",
+    "subdomain": "Groundwater",
+    "problemType": "General Water Management Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to chlorination",
+      "Affects village residents"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "0951ca3dd1b55e850b31d53f337843ea",
+    "split": "val"
+  },
+  {
+    "id": "gen_water_management_8_4",
+    "title": "Groundwater - chlorination issue affecting village residents",
+    "description": "something is wrong with the chlorination in Groundwater and village residents are complaining.",
+    "domain": "Water Management",
+    "subdomain": "Groundwater",
+    "problemType": "General Water Management Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to chlorination",
+      "Affects village residents"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "0951ca3dd1b55e850b31d53f337843ea",
+    "split": "val"
+  },
+  {
+    "id": "gen_water_management_8_5",
+    "title": "Groundwater - chlorination issue affecting vilage residents",
+    "description": "The community is experiencing chlorination in their Groundwater systems, which directly impacts village residents.",
+    "domain": "Water Management",
+    "subdomain": "Groundwater",
+    "problemType": "General Water Management Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to chlorination",
+      "Affects village residents"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "0951ca3dd1b55e850b31d53f337843ea",
+    "split": "val"
+  },
+  {
+    "id": "gen_water_management_8_6",
+    "title": "Groundwater - chlorination issue affecting village residents",
+    "description": "The community has some concerns about chlorination under Groundwater affecting village residents.",
+    "domain": "Water Management",
+    "subdomain": "Groundwater",
+    "problemType": "General Water Management Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to chlorination",
+      "Affects village residents"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "0951ca3dd1b55e850b31d53f337843ea",
+    "split": "val"
+  },
+  {
+    "id": "gen_healthcare_3_0",
+    "title": "Disease Prevention - vaccination issue affecting elderly patients",
+    "description": "We are facing severe vaccination under Disease Prevention. This is particularly difficult for elderly patients.",
+    "domain": "Healthcare",
+    "subdomain": "Disease Prevention",
+    "problemType": "General Healthcare Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to vaccination",
+      "Affects elderly patients"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "d856ad50f2626b7679fbf5d74edabb6d",
+    "split": "val"
+  },
+  {
+    "id": "gen_healthcare_3_1",
+    "title": "Disease Prevention - vaccination issue affecting elderly patients",
+    "description": "we do not have proper vaccination in Disease Prevention which are bad for elderly patients.",
+    "domain": "Healthcare",
+    "subdomain": "Disease Prevention",
+    "problemType": "General Healthcare Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to vaccination",
+      "Affects elderly patients"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "d856ad50f2626b7679fbf5d74edabb6d",
+    "split": "val"
+  },
+  {
+    "id": "gen_healthcare_3_2",
+    "title": "Disease Prevention - vaccination issue affecting elderly patients",
+    "description": "vaccination problem in Disease Prevention for elderly patients",
+    "domain": "Healthcare",
+    "subdomain": "Disease Prevention",
+    "problemType": "General Healthcare Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to vaccination",
+      "Affects elderly patients"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "d856ad50f2626b7679fbf5d74edabb6d",
+    "split": "val"
+  },
+  {
+    "id": "gen_healthcare_3_3",
+    "title": "Disease Prevention - vaccination issue affecting elderly patients",
+    "description": "I want to report a critical issue regarding vaccination in our Disease Prevention sector. Over the past few months, we have observed that elderly patients are struggling because of this. There are no proper systems in place to handle it, leading to widespread dissatisfaction. Local authorities have been informed but no action was taken. We urgently need expertise and assistance to resolve this.",
+    "domain": "Healthcare",
+    "subdomain": "Disease Prevention",
+    "problemType": "General Healthcare Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to vaccination",
+      "Affects elderly patients"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "d856ad50f2626b7679fbf5d74edabb6d",
+    "split": "val"
+  },
+  {
+    "id": "gen_healthcare_3_4",
+    "title": "Disease Prevention - vaccination issue affecting elderly patients",
+    "description": "the local vaccination under Disease Prevention is in very bad condition and hurts elderly patients.",
+    "domain": "Healthcare",
+    "subdomain": "Disease Prevention",
+    "problemType": "General Healthcare Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to vaccination",
+      "Affects elderly patients"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "d856ad50f2626b7679fbf5d74edabb6d",
+    "split": "val"
+  },
+  {
+    "id": "gen_healthcare_3_5",
+    "title": "Disease Prevention - vaccination issue affecting elderly patients",
+    "description": "The community is experiencing vaccination in their Disease Prevention systems, which directly impacts elderly patients.",
+    "domain": "Healthcare",
+    "subdomain": "Disease Prevention",
+    "problemType": "General Healthcare Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to vaccination",
+      "Affects elderly patients"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "d856ad50f2626b7679fbf5d74edabb6d",
+    "split": "val"
+  },
+  {
+    "id": "gen_healthcare_3_6",
+    "title": "Disease Prevention - vaccination issue affecting elderly patients",
+    "description": "The community has some concerns about vaccination under Disease Prevention affecting elderly patients.",
+    "domain": "Healthcare",
+    "subdomain": "Disease Prevention",
+    "problemType": "General Healthcare Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to vaccination",
+      "Affects elderly patients"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "d856ad50f2626b7679fbf5d74edabb6d",
+    "split": "val"
+  },
+  {
+    "id": "gen_healthcare_7_0",
+    "title": "Primary Care - medical supplies issue affecting elderly patients",
+    "description": "We are facing severe medical supplies under Primary Care. This is particularly difficult for elderly patients.",
+    "domain": "Healthcare",
+    "subdomain": "Primary Care",
+    "problemType": "General Healthcare Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to medical supplies",
+      "Affects elderly patients"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "5848269652478f70a7f8797cd91d2017",
+    "split": "val"
+  },
+  {
+    "id": "gen_healthcare_7_1",
+    "title": "Primary Care - medical supplies issue affecting elderly patients",
+    "description": "in our area there is medical supplies in Primary Care which are bad for elderly patients.",
+    "domain": "Healthcare",
+    "subdomain": "Primary Care",
+    "problemType": "General Healthcare Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to medical supplies",
+      "Affects elderly patients"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "5848269652478f70a7f8797cd91d2017",
+    "split": "val"
+  },
+  {
+    "id": "gen_healthcare_7_2",
+    "title": "Primary Care - medical supplies issue affecting elderly patients",
+    "description": "suffering from medical supplies in Primary Care which affects elderly patients",
+    "domain": "Healthcare",
+    "subdomain": "Primary Care",
+    "problemType": "General Healthcare Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to medical supplies",
+      "Affects elderly patients"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "5848269652478f70a7f8797cd91d2017",
+    "split": "val"
+  },
+  {
+    "id": "gen_healthcare_7_3",
+    "title": "Primary Care - medical supplies issue affecting elderly patients",
+    "description": "I want to report a critical issue regarding medical supplies in our Primary Care sector. Over the past few months, we have observed that elderly patients are struggling because of this. There are no proper systems in place to handle it, leading to widespread dissatisfaction. Local authorities have been informed but no action was taken. We urgently need expertise and assistance to resolve this.",
+    "domain": "Healthcare",
+    "subdomain": "Primary Care",
+    "problemType": "General Healthcare Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to medical supplies",
+      "Affects elderly patients"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "5848269652478f70a7f8797cd91d2017",
+    "split": "val"
+  },
+  {
+    "id": "gen_healthcare_7_4",
+    "title": "Primary Care - medical supplies issue affecting elderly patients",
+    "description": "we have a situation here regarding medical supplies affecting Primary Care for elderly patients.",
+    "domain": "Healthcare",
+    "subdomain": "Primary Care",
+    "problemType": "General Healthcare Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to medical supplies",
+      "Affects elderly patients"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "5848269652478f70a7f8797cd91d2017",
+    "split": "val"
+  },
+  {
+    "id": "gen_healthcare_7_5",
+    "title": "Primary Care - medical supplies issue affecting elderly patients",
+    "description": "A major challenge in Primary Care is the medical supplies affecting elderly patients.",
+    "domain": "Healthcare",
+    "subdomain": "Primary Care",
+    "problemType": "General Healthcare Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to medical supplies",
+      "Affects elderly patients"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "5848269652478f70a7f8797cd91d2017",
+    "split": "val"
+  },
+  {
+    "id": "gen_healthcare_7_6",
+    "title": "Primary Care - medical supplies issue affecting elderly patients",
+    "description": "The community has some concerns about medical supplies under Primary Care affecting elderly patients.",
+    "domain": "Healthcare",
+    "subdomain": "Primary Care",
+    "problemType": "General Healthcare Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to medical supplies",
+      "Affects elderly patients"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "5848269652478f70a7f8797cd91d2017",
+    "split": "val"
+  },
+  {
+    "id": "gen_education_4_0",
+    "title": "Educational Access - curriculum design issue affecting students",
+    "description": "The community is experiencing curriculum design in their Educational Access systems, which directly impacts students.",
+    "domain": "Education",
+    "subdomain": "Educational Access",
+    "problemType": "General Education Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to curriculum design",
+      "Affects students"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "ba66ee56dc002946e1e889f21bdc6f28",
+    "split": "val"
+  },
+  {
+    "id": "gen_education_4_1",
+    "title": "Educational Access - curriculum design issue affecting students",
+    "description": "please resolve the issue of curriculum design in Educational Access which are bad for students.",
+    "domain": "Education",
+    "subdomain": "Educational Access",
+    "problemType": "General Education Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to curriculum design",
+      "Affects students"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "ba66ee56dc002946e1e889f21bdc6f28",
+    "split": "val"
+  },
+  {
+    "id": "gen_education_4_2",
+    "title": "Educational Access - curriculum design issue affecting students",
+    "description": "curriculum design problem in Educational Access for students",
+    "domain": "Education",
+    "subdomain": "Educational Access",
+    "problemType": "General Education Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to curriculum design",
+      "Affects students"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "ba66ee56dc002946e1e889f21bdc6f28",
+    "split": "val"
+  },
+  {
+    "id": "gen_education_4_3",
+    "title": "Educational Access - curriculum design issue affecting students",
+    "description": "This petition is on behalf of students who are severely impacted by curriculum design within Educational Access. The current situation is unsustainable and requires immediate intervention. We believe a combination of local community effort and technical innovation is the only way forward. Currently, we lack any baseline data or plans to address this.",
+    "domain": "Education",
+    "subdomain": "Educational Access",
+    "problemType": "General Education Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to curriculum design",
+      "Affects students"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "ba66ee56dc002946e1e889f21bdc6f28",
+    "split": "val"
+  },
+  {
+    "id": "gen_education_4_4",
+    "title": "Educational Access - curriculum design issue affecting students",
+    "description": "is anyone planning to fix curriculum design in Educational Access for students?",
+    "domain": "Education",
+    "subdomain": "Educational Access",
+    "problemType": "General Education Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to curriculum design",
+      "Affects students"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "ba66ee56dc002946e1e889f21bdc6f28",
+    "split": "val"
+  },
+  {
+    "id": "gen_education_4_5",
+    "title": "Educational Access - curriculum design issue affecting students",
+    "description": "Due to curriculum design in Educational Access, many students are unable to function properly.",
+    "domain": "Education",
+    "subdomain": "Educational Access",
+    "problemType": "General Education Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to curriculum design",
+      "Affects students"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "ba66ee56dc002946e1e889f21bdc6f28",
+    "split": "val"
+  },
+  {
+    "id": "gen_education_4_6",
+    "title": "Educational Access - curriculum design issue affecting students",
+    "description": "The community has some concerns about curriculum design under Educational Access affecting students.",
+    "domain": "Education",
+    "subdomain": "Educational Access",
+    "problemType": "General Education Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to curriculum design",
+      "Affects students"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "ba66ee56dc002946e1e889f21bdc6f28",
+    "split": "val"
+  },
+  {
+    "id": "gen_education_5_0",
+    "title": "Special Education - pedagogy issue affecting primary school kids",
+    "description": "The community is experiencing pedagogy in their Special Education systems, which directly impacts primary school kids.",
+    "domain": "Education",
+    "subdomain": "Special Education",
+    "problemType": "General Education Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to pedagogy",
+      "Affects primary school kids"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "1d2dea623985259ea5ab7555ea2c7baa",
+    "split": "val"
+  },
+  {
+    "id": "gen_education_5_1",
+    "title": "Special Education - pedagogy issue affecting primary school kids",
+    "description": "we do not have proper pedagogy in Special Education which are bad for primary school kids.",
+    "domain": "Education",
+    "subdomain": "Special Education",
+    "problemType": "General Education Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to pedagogy",
+      "Affects primary school kids"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "1d2dea623985259ea5ab7555ea2c7baa",
+    "split": "val"
+  },
+  {
+    "id": "gen_education_5_2",
+    "title": "Special Education - pedagogy issue affecting primary school kids",
+    "description": "no pedagogy in Special Education for primary school kids",
+    "domain": "Education",
+    "subdomain": "Special Education",
+    "problemType": "General Education Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to pedagogy",
+      "Affects primary school kids"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "1d2dea623985259ea5ab7555ea2c7baa",
+    "split": "val"
+  },
+  {
+    "id": "gen_education_5_3",
+    "title": "Special Education - pedagogy issue affecting primary school kids",
+    "description": "This petition is on behalf of primary school kids who are severely impacted by pedagogy within Special Education. The current situation is unsustainable and requires immediate intervention. We believe a combination of local community effort and technical innovation is the only way forward. Currently, we lack any baseline data or plans to address this.",
+    "domain": "Education",
+    "subdomain": "Special Education",
+    "problemType": "General Education Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to pedagogy",
+      "Affects primary school kids"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "1d2dea623985259ea5ab7555ea2c7baa",
+    "split": "val"
+  },
+  {
+    "id": "gen_education_5_4",
+    "title": "Special Education - pedagogy issue affecting primary school kids",
+    "description": "something is wrong with the pedagogy in Special Education and primary school kids are complaining.",
+    "domain": "Education",
+    "subdomain": "Special Education",
+    "problemType": "General Education Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to pedagogy",
+      "Affects primary school kids"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "1d2dea623985259ea5ab7555ea2c7baa",
+    "split": "val"
+  },
+  {
+    "id": "gen_education_5_5",
+    "title": "Special Education - pedagogy issue affecting primary school kids",
+    "description": "We are facing severe pedagogy under Special Education. This is particularly difficult for primary school kids.",
+    "domain": "Education",
+    "subdomain": "Special Education",
+    "problemType": "General Education Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to pedagogy",
+      "Affects primary school kids"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "1d2dea623985259ea5ab7555ea2c7baa",
+    "split": "val"
+  },
+  {
+    "id": "gen_education_5_6",
+    "title": "Special Education - pedagogy issue affecting primary school kids",
+    "description": "The community has some concerns about pedagogy under Special Education affecting primary school kids.",
+    "domain": "Education",
+    "subdomain": "Special Education",
+    "problemType": "General Education Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to pedagogy",
+      "Affects primary school kids"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "1d2dea623985259ea5ab7555ea2c7baa",
+    "split": "val"
+  },
+  {
+    "id": "gen_sanitation_9_0",
+    "title": "Wastewater Treatment - soak pits issue affecting community members",
+    "description": "The community is experiencing soak pits in their Wastewater Treatment systems, which directly impacts community members.",
+    "domain": "Sanitation",
+    "subdomain": "Wastewater Treatment",
+    "problemType": "General Sanitation Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to soak pits",
+      "Affects community members"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "a744953d0511300f301a524df9f14f0f",
+    "split": "val"
+  },
+  {
+    "id": "gen_sanitation_9_1",
+    "title": "Wastewater Treatment - soak pits issue affecting community members",
+    "description": "i am writing because soak pits in Wastewater Treatment which are bad for community members.",
+    "domain": "Sanitation",
+    "subdomain": "Wastewater Treatment",
+    "problemType": "General Sanitation Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to soak pits",
+      "Affects community members"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "a744953d0511300f301a524df9f14f0f",
+    "split": "val"
+  },
+  {
+    "id": "gen_sanitation_9_2",
+    "title": "Wastewater Treatment - soak pits issue affecting community members",
+    "description": "suffering from soak pits in Wastewater Treatment which affects community members",
+    "domain": "Sanitation",
+    "subdomain": "Wastewater Treatment",
+    "problemType": "General Sanitation Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to soak pits",
+      "Affects community members"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "a744953d0511300f301a524df9f14f0f",
+    "split": "val"
+  },
+  {
+    "id": "gen_sanitation_9_3",
+    "title": "Wastewater Treatment - soak pits issue affecting community members",
+    "description": "A detailed investigation into our local Wastewater Treatment conditions shows that soak pits is the primary constraint. This affects community members on a daily basis, causing economic loss and health concerns. We request the implementation team to perform a gap analysis and propose a suitable technology adaptation as soon as possible.",
+    "domain": "Sanitation",
+    "subdomain": "Wastewater Treatment",
+    "problemType": "General Sanitation Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to soak pits",
+      "Affects community members"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "a744953d0511300f301a524df9f14f0f",
+    "split": "val"
+  },
+  {
+    "id": "gen_sanitation_9_4",
+    "title": "Wastewater Treatment - soak pits issue affecting community members",
+    "description": "the local soak pits under Wastewater Treatment is in very bad condition and hurts community members.",
+    "domain": "Sanitation",
+    "subdomain": "Wastewater Treatment",
+    "problemType": "General Sanitation Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to soak pits",
+      "Affects community members"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "a744953d0511300f301a524df9f14f0f",
+    "split": "val"
+  },
+  {
+    "id": "gen_sanitation_9_5",
+    "title": "Wastewater Treatment - soak pits issue affecting community members",
+    "description": "A major challenge in Wastewater Treatment is the soak pits affecting community members.",
+    "domain": "Sanitation",
+    "subdomain": "Wastewater Treatment",
+    "problemType": "General Sanitation Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to soak pits",
+      "Affects community members"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "a744953d0511300f301a524df9f14f0f",
+    "split": "val"
+  },
+  {
+    "id": "gen_sanitation_9_6",
+    "title": "Wastewater Treatment - soak pits issue affecting community members",
+    "description": "The community has some concerns about soak pits under Wastewater Treatment affecting community members.",
+    "domain": "Sanitation",
+    "subdomain": "Wastewater Treatment",
+    "problemType": "General Sanitation Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to soak pits",
+      "Affects community members"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "a744953d0511300f301a524df9f14f0f",
+    "split": "val"
+  },
+  {
+    "id": "gen_sanitation_11_0",
+    "title": "Hygiene Promotion - latrines issue affecting civic staff",
+    "description": "The lack of adequate solutions for latrines within Hygiene Promotion has left civic staff vulnerable.",
+    "domain": "Sanitation",
+    "subdomain": "Hygiene Promotion",
+    "problemType": "General Sanitation Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to latrines",
+      "Affects civic staff"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "272418c3586627a78654d17dc3b4fdc4",
+    "split": "val"
+  },
+  {
+    "id": "gen_sanitation_11_1",
+    "title": "Hygiene Promotion - latrines issue affecting civic staff",
+    "description": "need help very urgent for latrines in Hygiene Promotion which are bad for civic staff.",
+    "domain": "Sanitation",
+    "subdomain": "Hygiene Promotion",
+    "problemType": "General Sanitation Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to latrines",
+      "Affects civic staff"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "272418c3586627a78654d17dc3b4fdc4",
+    "split": "val"
+  },
+  {
+    "id": "gen_sanitation_11_2",
+    "title": "Hygiene Promotion - latrines issue affecting civic staff",
+    "description": "no latrines in Hygiene Promotion for civic staff",
+    "domain": "Sanitation",
+    "subdomain": "Hygiene Promotion",
+    "problemType": "General Sanitation Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to latrines",
+      "Affects civic staff"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "272418c3586627a78654d17dc3b4fdc4",
+    "split": "val"
+  },
+  {
+    "id": "gen_sanitation_11_3",
+    "title": "Hygiene Promotion - latrines issue affecting civic staff",
+    "description": "This petition is on behalf of civic staff who are severely impacted by latrines within Hygiene Promotion. The current situation is unsustainable and requires immediate intervention. We believe a combination of local community effort and technical innovation is the only way forward. Currently, we lack any baseline data or plans to address this.",
+    "domain": "Sanitation",
+    "subdomain": "Hygiene Promotion",
+    "problemType": "General Sanitation Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to latrines",
+      "Affects civic staff"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "272418c3586627a78654d17dc3b4fdc4",
+    "split": "val"
+  },
+  {
+    "id": "gen_sanitation_11_4",
+    "title": "Hygiene Promotion - latrines issue affecting civic staff",
+    "description": "we have a situation here regarding latrines affecting Hygiene Promotion for civic staff.",
+    "domain": "Sanitation",
+    "subdomain": "Hygiene Promotion",
+    "problemType": "General Sanitation Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to latrines",
+      "Affects civic staff"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "272418c3586627a78654d17dc3b4fdc4",
+    "split": "val"
+  },
+  {
+    "id": "gen_sanitation_11_5",
+    "title": "Hygiene Promotion - latrines issue affecting civic staff",
+    "description": "Due to latrines in Hygiene Promotion, many civic staff are unable to function properly.",
+    "domain": "Sanitation",
+    "subdomain": "Hygiene Promotion",
+    "problemType": "General Sanitation Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to latrines",
+      "Affects civic staff"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "272418c3586627a78654d17dc3b4fdc4",
+    "split": "val"
+  },
+  {
+    "id": "gen_sanitation_11_6",
+    "title": "Hygiene Promotion - latrines issue affecting civic staff",
+    "description": "The community has some concerns about latrines under Hygiene Promotion affecting civic staff.",
+    "domain": "Sanitation",
+    "subdomain": "Hygiene Promotion",
+    "problemType": "General Sanitation Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to latrines",
+      "Affects civic staff"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "272418c3586627a78654d17dc3b4fdc4",
+    "split": "val"
+  },
+  {
+    "id": "gen_environment_6_0",
+    "title": "Air Quality - deforestation issue affecting local community",
+    "description": "The lack of adequate solutions for deforestation within Air Quality has left local community vulnerable.",
+    "domain": "Environment",
+    "subdomain": "Air Quality",
+    "problemType": "General Environment Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to deforestation",
+      "Affects local community"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "ab1b60478fef48264ac4d3afc2efb4ed",
+    "split": "val"
+  },
+  {
+    "id": "gen_environment_6_1",
+    "title": "Air Quality - deforestation issue affecting local community",
+    "description": "some problem are coming in deforestation in Air Quality which are bad for local community.",
+    "domain": "Environment",
+    "subdomain": "Air Quality",
+    "problemType": "General Environment Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to deforestation",
+      "Affects local community"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "ab1b60478fef48264ac4d3afc2efb4ed",
+    "split": "val"
+  },
+  {
+    "id": "gen_environment_6_2",
+    "title": "Air Quality - deforestation issue affecting local community",
+    "description": "need deforestation support for Air Quality affecting local community",
+    "domain": "Environment",
+    "subdomain": "Air Quality",
+    "problemType": "General Environment Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to deforestation",
+      "Affects local community"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "ab1b60478fef48264ac4d3afc2efb4ed",
+    "split": "val"
+  },
+  {
+    "id": "gen_environment_6_3",
+    "title": "Air Quality - deforestation issue affecting local community",
+    "description": "This petition is on behalf of local community who are severely impacted by deforestation within Air Quality. The current situation is unsustainable and requires immediate intervention. We believe a combination of local community effort and technical innovation is the only way forward. Currently, we lack any baseline data or plans to address this.",
+    "domain": "Environment",
+    "subdomain": "Air Quality",
+    "problemType": "General Environment Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to deforestation",
+      "Affects local community"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "ab1b60478fef48264ac4d3afc2efb4ed",
+    "split": "val"
+  },
+  {
+    "id": "gen_environment_6_4",
+    "title": "Air Quality - deforestation issue affecting local community",
+    "description": "is anyone planning to fix deforestation in Air Quality for local community?",
+    "domain": "Environment",
+    "subdomain": "Air Quality",
+    "problemType": "General Environment Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to deforestation",
+      "Affects local community"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "ab1b60478fef48264ac4d3afc2efb4ed",
+    "split": "val"
+  },
+  {
+    "id": "gen_environment_6_5",
+    "title": "Air Quality - deforestation issue affecting local community",
+    "description": "A major challenge in Air Quality is the deforestation affecting local community.",
+    "domain": "Environment",
+    "subdomain": "Air Quality",
+    "problemType": "General Environment Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to deforestation",
+      "Affects local community"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "ab1b60478fef48264ac4d3afc2efb4ed",
+    "split": "val"
+  },
+  {
+    "id": "gen_environment_6_6",
+    "title": "Air Quality - deforestation issue affecting local community",
+    "description": "The community has some concerns about deforestation under Air Quality affecting local community.",
+    "domain": "Environment",
+    "subdomain": "Air Quality",
+    "problemType": "General Environment Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to deforestation",
+      "Affects local community"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "ab1b60478fef48264ac4d3afc2efb4ed",
+    "split": "val"
+  },
+  {
+    "id": "gen_environment_10_0",
+    "title": "Waste Recycling - industrial discharge issue affecting residents living near landfill",
+    "description": "The community is experiencing industrial discharge in their Waste Recycling systems, which directly impacts residents living near landfill.",
+    "domain": "Environment",
+    "subdomain": "Waste Recycling",
+    "problemType": "General Environment Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to industrial discharge",
+      "Affects residents living near landfill"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "74e46be20b26ef85239e1d93655149bf",
+    "split": "val"
+  },
+  {
+    "id": "gen_environment_10_1",
+    "title": "Waste Recycling - industrial discharge issue affecting residents living near landfill",
+    "description": "i am writing because industrial discharge in Waste Recycling which are bad for residents living near landfill.",
+    "domain": "Environment",
+    "subdomain": "Waste Recycling",
+    "problemType": "General Environment Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to industrial discharge",
+      "Affects residents living near landfill"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "74e46be20b26ef85239e1d93655149bf",
+    "split": "val"
+  },
+  {
+    "id": "gen_environment_10_2",
+    "title": "Waste Recycling - industrial discharge issue affecting residents living near landfill",
+    "description": "need industrial discharge support for Waste Recycling affecting residents living near landfill",
+    "domain": "Environment",
+    "subdomain": "Waste Recycling",
+    "problemType": "General Environment Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to industrial discharge",
+      "Affects residents living near landfill"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "74e46be20b26ef85239e1d93655149bf",
+    "split": "val"
+  },
+  {
+    "id": "gen_environment_10_3",
+    "title": "Waste Recycling - industrial discharge issue affecting residents living near landfill",
+    "description": "I want to report a critical issue regarding industrial discharge in our Waste Recycling sector. Over the past few months, we have observed that residents living near landfill are struggling because of this. There are no proper systems in place to handle it, leading to widespread dissatisfaction. Local authorities have been informed but no action was taken. We urgently need expertise and assistance to resolve this.",
+    "domain": "Environment",
+    "subdomain": "Waste Recycling",
+    "problemType": "General Environment Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to industrial discharge",
+      "Affects residents living near landfill"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "74e46be20b26ef85239e1d93655149bf",
+    "split": "val"
+  },
+  {
+    "id": "gen_environment_10_4",
+    "title": "Waste Recycling - industrial discharge issue affecting residents living near landfill",
+    "description": "the local industrial discharge under Waste Recycling is in very bad condition and hurts residents living near landfill.",
+    "domain": "Environment",
+    "subdomain": "Waste Recycling",
+    "problemType": "General Environment Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to industrial discharge",
+      "Affects residents living near landfill"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "74e46be20b26ef85239e1d93655149bf",
+    "split": "val"
+  },
+  {
+    "id": "gen_environment_10_5",
+    "title": "Waste Recycling - industrial discharge issue affecting residents living near landfill",
+    "description": "The community is experiencing industrial discharge in their Waste Recycling systems, which directly impacts residents living near landfill.",
+    "domain": "Environment",
+    "subdomain": "Waste Recycling",
+    "problemType": "General Environment Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to industrial discharge",
+      "Affects residents living near landfill"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "74e46be20b26ef85239e1d93655149bf",
+    "split": "val"
+  },
+  {
+    "id": "gen_environment_10_6",
+    "title": "Waste Recycling - industrial discharge issue affecting residents living near landfill",
+    "description": "The community has some concerns about industrial discharge under Waste Recycling affecting residents living near landfill.",
+    "domain": "Environment",
+    "subdomain": "Waste Recycling",
+    "problemType": "General Environment Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to industrial discharge",
+      "Affects residents living near landfill"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "74e46be20b26ef85239e1d93655149bf",
+    "split": "val"
+  },
+  {
+    "id": "gen_energy_4_0",
+    "title": "Off-grid Power Systems - wind turbine issue affecting local households",
+    "description": "A major challenge in Off-grid Power Systems is the wind turbine affecting local households.",
+    "domain": "Energy",
+    "subdomain": "Off-grid Power Systems",
+    "problemType": "General Energy Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to wind turbine",
+      "Affects local households"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "c4a69e14db2e751f716912d68c1945fc",
+    "split": "val"
+  },
+  {
+    "id": "gen_energy_4_1",
+    "title": "Off-grid Power Systems - wind turbine issue affecting local households",
+    "description": "we do not have proper wind turbine in Off-grid Power Systems which are bad for local households.",
+    "domain": "Energy",
+    "subdomain": "Off-grid Power Systems",
+    "problemType": "General Energy Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to wind turbine",
+      "Affects local households"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "c4a69e14db2e751f716912d68c1945fc",
+    "split": "val"
+  },
+  {
+    "id": "gen_energy_4_2",
+    "title": "Off-grid Power Systems - wind turbine issue affecting local households",
+    "description": "need wind turbine support for Off-grid Power Systems affecting local households",
+    "domain": "Energy",
+    "subdomain": "Off-grid Power Systems",
+    "problemType": "General Energy Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to wind turbine",
+      "Affects local households"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "c4a69e14db2e751f716912d68c1945fc",
+    "split": "val"
+  },
+  {
+    "id": "gen_energy_4_3",
+    "title": "Off-grid Power Systems - wind turbine issue affecting local households",
+    "description": "I want to report a critical issue regarding wind turbine in our Off-grid Power Systems sector. Over the past few months, we have observed that local households are struggling because of this. There are no proper systems in place to handle it, leading to widespread dissatisfaction. Local authorities have been informed but no action was taken. We urgently need expertise and assistance to resolve this.",
+    "domain": "Energy",
+    "subdomain": "Off-grid Power Systems",
+    "problemType": "General Energy Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to wind turbine",
+      "Affects local households"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "c4a69e14db2e751f716912d68c1945fc",
+    "split": "val"
+  },
+  {
+    "id": "gen_energy_4_4",
+    "title": "Off-grid Power Systems - wind turbine issue affecting local households",
+    "description": "something is wrong with the wind turbine in Off-grid Power Systems and local households are complaining.",
+    "domain": "Energy",
+    "subdomain": "Off-grid Power Systems",
+    "problemType": "General Energy Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to wind turbine",
+      "Affects local households"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "c4a69e14db2e751f716912d68c1945fc",
+    "split": "val"
+  },
+  {
+    "id": "gen_energy_4_5",
+    "title": "Off-grid Power Systems - wind turbine issue affecting local households",
+    "description": "We are facing severe wind turbine under Off-grid Power Systems. This is particularly difficult for local households.",
+    "domain": "Energy",
+    "subdomain": "Off-grid Power Systems",
+    "problemType": "General Energy Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to wind turbine",
+      "Affects local households"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "c4a69e14db2e751f716912d68c1945fc",
+    "split": "val"
+  },
+  {
+    "id": "gen_energy_4_6",
+    "title": "Off-grid Power Systems - wind turbine issue affecting local households",
+    "description": "The community has some concerns about wind turbine under Off-grid Power Systems affecting local households.",
+    "domain": "Energy",
+    "subdomain": "Off-grid Power Systems",
+    "problemType": "General Energy Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to wind turbine",
+      "Affects local households"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "c4a69e14db2e751f716912d68c1945fc",
+    "split": "val"
+  },
+  {
+    "id": "gen_energy_5_0",
+    "title": "Energy Efficiency - backup generator issue affecting shopkeepers",
+    "description": "A major challenge in Energy Efficiency is the backup generator affecting shopkeepers.",
+    "domain": "Energy",
+    "subdomain": "Energy Efficiency",
+    "problemType": "General Energy Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to backup generator",
+      "Affects shopkeepers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "0b718ae36425bbde34b70f69b972e998",
+    "split": "val"
+  },
+  {
+    "id": "gen_energy_5_1",
+    "title": "Energy Efficiency - backup generator issue affecting shopkeepers",
+    "description": "need help very urgent for backup generator in Energy Efficiency which are bad for shopkeepers.",
+    "domain": "Energy",
+    "subdomain": "Energy Efficiency",
+    "problemType": "General Energy Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to backup generator",
+      "Affects shopkeepers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "0b718ae36425bbde34b70f69b972e998",
+    "split": "val"
+  },
+  {
+    "id": "gen_energy_5_2",
+    "title": "Energy Efficiency - backup generator issue affecting shopkeepers",
+    "description": "no backup generator in Energy Efficiency for shopkeepers",
+    "domain": "Energy",
+    "subdomain": "Energy Efficiency",
+    "problemType": "General Energy Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to backup generator",
+      "Affects shopkeepers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "0b718ae36425bbde34b70f69b972e998",
+    "split": "val"
+  },
+  {
+    "id": "gen_energy_5_3",
+    "title": "Energy Efficiency - backup generator issue affecting shopkeepers",
+    "description": "I want to report a critical issue regarding backup generator in our Energy Efficiency sector. Over the past few months, we have observed that shopkeepers are struggling because of this. There are no proper systems in place to handle it, leading to widespread dissatisfaction. Local authorities have been informed but no action was taken. We urgently need expertise and assistance to resolve this.",
+    "domain": "Energy",
+    "subdomain": "Energy Efficiency",
+    "problemType": "General Energy Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to backup generator",
+      "Affects shopkeepers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "0b718ae36425bbde34b70f69b972e998",
+    "split": "val"
+  },
+  {
+    "id": "gen_energy_5_4",
+    "title": "Energy Efficiency - backup generator issue affecting shopkeepers",
+    "description": "is anyone planning to fix backup generator in Energy Efficiency for shopkeepers?",
+    "domain": "Energy",
+    "subdomain": "Energy Efficiency",
+    "problemType": "General Energy Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to backup generator",
+      "Affects shopkeepers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "0b718ae36425bbde34b70f69b972e998",
+    "split": "val"
+  },
+  {
+    "id": "gen_energy_5_5",
+    "title": "Energy Efficiency - backup generator issue affecting shopkeepers",
+    "description": "A major challenge in Energy Efficiency is the backup generator affecting shopkeepers.",
+    "domain": "Energy",
+    "subdomain": "Energy Efficiency",
+    "problemType": "General Energy Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to backup generator",
+      "Affects shopkeepers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "0b718ae36425bbde34b70f69b972e998",
+    "split": "val"
+  },
+  {
+    "id": "gen_energy_5_6",
+    "title": "Energy Efficiency - backup generator issue affecting shopkeepers",
+    "description": "The community has some concerns about backup generator under Energy Efficiency affecting shopkeepers.",
+    "domain": "Energy",
+    "subdomain": "Energy Efficiency",
+    "problemType": "General Energy Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to backup generator",
+      "Affects shopkeepers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "0b718ae36425bbde34b70f69b972e998",
+    "split": "val"
+  },
+  {
+    "id": "gen_urban_infrastructure_7_0",
+    "title": "Public Spaces - drainage network issue affecting drivers",
+    "description": "Due to drainage network in Public Spaces, many drivers are unable to function properly.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "Public Spaces",
+    "problemType": "General Urban Infrastructure Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to drainage network",
+      "Affects drivers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "609ca386ac508ec7c188bc3d4cbd85ce",
+    "split": "val"
+  },
+  {
+    "id": "gen_urban_infrastructure_7_1",
+    "title": "Public Spaces - drainage network issue affecting drivers",
+    "description": "facing too much problem in drainage network in Public Spaces which are bad for drivers.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "Public Spaces",
+    "problemType": "General Urban Infrastructure Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to drainage network",
+      "Affects drivers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "609ca386ac508ec7c188bc3d4cbd85ce",
+    "split": "val"
+  },
+  {
+    "id": "gen_urban_infrastructure_7_2",
+    "title": "Public Spaces - drainage network issue affecting drivers",
+    "description": "suffering from drainage network in Public Spaces which affects drivers",
+    "domain": "Urban Infrastructure",
+    "subdomain": "Public Spaces",
+    "problemType": "General Urban Infrastructure Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to drainage network",
+      "Affects drivers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "609ca386ac508ec7c188bc3d4cbd85ce",
+    "split": "val"
+  },
+  {
+    "id": "gen_urban_infrastructure_7_3",
+    "title": "Public Spaces - drainage network issue affecting drivers",
+    "description": "I want to report a critical issue regarding drainage network in our Public Spaces sector. Over the past few months, we have observed that drivers are struggling because of this. There are no proper systems in place to handle it, leading to widespread dissatisfaction. Local authorities have been informed but no action was taken. We urgently need expertise and assistance to resolve this.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "Public Spaces",
+    "problemType": "General Urban Infrastructure Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to drainage network",
+      "Affects drivers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "609ca386ac508ec7c188bc3d4cbd85ce",
+    "split": "val"
+  },
+  {
+    "id": "gen_urban_infrastructure_7_4",
+    "title": "Public Spaces - drainage network issue affecting drivers",
+    "description": "we have a situation here regarding drainage network affecting Public Spaces for drivers.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "Public Spaces",
+    "problemType": "General Urban Infrastructure Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to drainage network",
+      "Affects drivers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "609ca386ac508ec7c188bc3d4cbd85ce",
+    "split": "val"
+  },
+  {
+    "id": "gen_urban_infrastructure_7_5",
+    "title": "Public Spaces - drainage network issue affecting drivers",
+    "description": "The lack of adequate solutions for drainage network within Public Spaces has left drivers vulnerable.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "Public Spaces",
+    "problemType": "General Urban Infrastructure Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to drainage network",
+      "Affects drivers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "609ca386ac508ec7c188bc3d4cbd85ce",
+    "split": "val"
+  },
+  {
+    "id": "gen_urban_infrastructure_7_6",
+    "title": "Public Spaces - drainage network issue affecting drivers",
+    "description": "The community has some concerns about drainage network under Public Spaces affecting drivers.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "Public Spaces",
+    "problemType": "General Urban Infrastructure Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to drainage network",
+      "Affects drivers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "609ca386ac508ec7c188bc3d4cbd85ce",
+    "split": "val"
+  },
+  {
+    "id": "gen_urban_infrastructure_8_0",
+    "title": "City Utilities - urban flyovers issue affecting commuters",
+    "description": "The lack of adequate solutions for urban flyovers within City Utilities has left commuters vulnerable.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "City Utilities",
+    "problemType": "General Urban Infrastructure Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to urban flyovers",
+      "Affects commuters"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "5a8decd7f833dc32a1b78845776ef860",
+    "split": "val"
+  },
+  {
+    "id": "gen_urban_infrastructure_8_1",
+    "title": "City Utilities - urban flyovers issue affecting commuters",
+    "description": "facing too much problem in urban flyovers in City Utilities which are bad for commuters.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "City Utilities",
+    "problemType": "General Urban Infrastructure Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to urban flyovers",
+      "Affects commuters"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "5a8decd7f833dc32a1b78845776ef860",
+    "split": "val"
+  },
+  {
+    "id": "gen_urban_infrastructure_8_2",
+    "title": "City Utilities - urban flyovers issue affecting commuters",
+    "description": "bad urban flyovers under City Utilities for commuters",
+    "domain": "Urban Infrastructure",
+    "subdomain": "City Utilities",
+    "problemType": "General Urban Infrastructure Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to urban flyovers",
+      "Affects commuters"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "5a8decd7f833dc32a1b78845776ef860",
+    "split": "val"
+  },
+  {
+    "id": "gen_urban_infrastructure_8_3",
+    "title": "City Utilities - urban flyovers issue affecting commuters",
+    "description": "A detailed investigation into our local City Utilities conditions shows that urban flyovers is the primary constraint. This affects commuters on a daily basis, causing economic loss and health concerns. We request the implementation team to perform a gap analysis and propose a suitable technology adaptation as soon as possible.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "City Utilities",
+    "problemType": "General Urban Infrastructure Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to urban flyovers",
+      "Affects commuters"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "5a8decd7f833dc32a1b78845776ef860",
+    "split": "val"
+  },
+  {
+    "id": "gen_urban_infrastructure_8_4",
+    "title": "City Utilities - urban flyovers issue affecting commuters",
+    "description": "is anyone planning to fix urban flyovers in City Utilities for commuters?",
+    "domain": "Urban Infrastructure",
+    "subdomain": "City Utilities",
+    "problemType": "General Urban Infrastructure Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to urban flyovers",
+      "Affects commuters"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "5a8decd7f833dc32a1b78845776ef860",
+    "split": "val"
+  },
+  {
+    "id": "gen_urban_infrastructure_8_5",
+    "title": "City Utilities - urban flyovers issue affecting commuters",
+    "description": "The community is experiencing urban flyovers in their City Utilities systems, which directly impacts commuters.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "City Utilities",
+    "problemType": "General Urban Infrastructure Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to urban flyovers",
+      "Affects commuters"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "5a8decd7f833dc32a1b78845776ef860",
+    "split": "val"
+  },
+  {
+    "id": "gen_urban_infrastructure_8_6",
+    "title": "City Utilities - urban flyovers issue affecting commuters",
+    "description": "The community has some concerns about urban flyovers under City Utilities affecting commuters.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "City Utilities",
+    "problemType": "General Urban Infrastructure Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to urban flyovers",
+      "Affects commuters"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "5a8decd7f833dc32a1b78845776ef860",
+    "split": "val"
+  },
+  {
+    "id": "gen_rural_livelihoods_3_0",
+    "title": "Self-Help Groups - raw material supply issue affecting pottery makers",
+    "description": "We are facing severe raw material supply under Self-Help Groups. This is particularly difficult for pottery makers.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "Self-Help Groups",
+    "problemType": "General Rural Livelihoods Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to raw material supply",
+      "Affects pottery makers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "1fb944e3124356d8b1b3cd5cf8d064ac",
+    "split": "val"
+  },
+  {
+    "id": "gen_rural_livelihoods_3_1",
+    "title": "Self-Help Groups - raw material supply issue affecting pottery makers",
+    "description": "please resolve the issue of raw material supply in Self-Help Groups which are bad for pottery makers.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "Self-Help Groups",
+    "problemType": "General Rural Livelihoods Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to raw material supply",
+      "Affects pottery makers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "1fb944e3124356d8b1b3cd5cf8d064ac",
+    "split": "val"
+  },
+  {
+    "id": "gen_rural_livelihoods_3_2",
+    "title": "Self-Help Groups - raw material supply issue affecting pottery makers",
+    "description": "need raw material supply support for Self-Help Groups affecting pottery makers",
+    "domain": "Rural Livelihoods",
+    "subdomain": "Self-Help Groups",
+    "problemType": "General Rural Livelihoods Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to raw material supply",
+      "Affects pottery makers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "1fb944e3124356d8b1b3cd5cf8d064ac",
+    "split": "val"
+  },
+  {
+    "id": "gen_rural_livelihoods_3_3",
+    "title": "Self-Help Groups - raw material supply issue affecting pottery makers",
+    "description": "I want to report a critical issue regarding raw material supply in our Self-Help Groups sector. Over the past few months, we have observed that pottery makers are struggling because of this. There are no proper systems in place to handle it, leading to widespread dissatisfaction. Local authorities have been informed but no action was taken. We urgently need expertise and assistance to resolve this.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "Self-Help Groups",
+    "problemType": "General Rural Livelihoods Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to raw material supply",
+      "Affects pottery makers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "1fb944e3124356d8b1b3cd5cf8d064ac",
+    "split": "val"
+  },
+  {
+    "id": "gen_rural_livelihoods_3_4",
+    "title": "Self-Help Groups - raw material supply issue affecting pottery makers",
+    "description": "something is wrong with the raw material supply in Self-Help Groups and pottery makers are complaining.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "Self-Help Groups",
+    "problemType": "General Rural Livelihoods Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to raw material supply",
+      "Affects pottery makers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "1fb944e3124356d8b1b3cd5cf8d064ac",
+    "split": "val"
+  },
+  {
+    "id": "gen_rural_livelihoods_3_5",
+    "title": "Self-Help Groups - raw material supply issue affecting pottery makers",
+    "description": "A major challenge in Self-Help Groups is the raw material supply affecting pottery makers.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "Self-Help Groups",
+    "problemType": "General Rural Livelihoods Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to raw material supply",
+      "Affects pottery makers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "1fb944e3124356d8b1b3cd5cf8d064ac",
+    "split": "val"
+  },
+  {
+    "id": "gen_rural_livelihoods_3_6",
+    "title": "Self-Help Groups - raw material supply issue affecting pottery makers",
+    "description": "The community has some concerns about raw material supply under Self-Help Groups affecting pottery makers.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "Self-Help Groups",
+    "problemType": "General Rural Livelihoods Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to raw material supply",
+      "Affects pottery makers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "1fb944e3124356d8b1b3cd5cf8d064ac",
+    "split": "val"
+  },
+  {
+    "id": "gen_rural_livelihoods_2_0",
+    "title": "Non-Farm Rural Employment - artisans issue affecting women self-help groups",
+    "description": "Due to artisans in Non-Farm Rural Employment, many women self-help groups are unable to function properly.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "Non-Farm Rural Employment",
+    "problemType": "General Rural Livelihoods Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to artisans",
+      "Affects women self-help groups"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "9a0a67c838639349c39f62f2998a2e5f",
+    "split": "val"
+  },
+  {
+    "id": "gen_rural_livelihoods_2_1",
+    "title": "Non-Farm Rural Employment - artisans issue affecting women self-help groups",
+    "description": "facing too much problem in artisans in Non-Farm Rural Employment which are bad for women self-help groups.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "Non-Farm Rural Employment",
+    "problemType": "General Rural Livelihoods Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to artisans",
+      "Affects women self-help groups"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "9a0a67c838639349c39f62f2998a2e5f",
+    "split": "val"
+  },
+  {
+    "id": "gen_rural_livelihoods_2_2",
+    "title": "Non-Farm Rural Employment - artisans issue affecting women self-help groups",
+    "description": "bad artisans under Non-Farm Rural Employment for women self-help groups",
+    "domain": "Rural Livelihoods",
+    "subdomain": "Non-Farm Rural Employment",
+    "problemType": "General Rural Livelihoods Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to artisans",
+      "Affects women self-help groups"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "9a0a67c838639349c39f62f2998a2e5f",
+    "split": "val"
+  },
+  {
+    "id": "gen_rural_livelihoods_2_3",
+    "title": "Non-Farm Rural Employment - artisans issue affecting women self-help groups",
+    "description": "This petition is on behalf of women self-help groups who are severely impacted by artisans within Non-Farm Rural Employment. The current situation is unsustainable and requires immediate intervention. We believe a combination of local community effort and technical innovation is the only way forward. Currently, we lack any baseline data or plans to address this.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "Non-Farm Rural Employment",
+    "problemType": "General Rural Livelihoods Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to artisans",
+      "Affects women self-help groups"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "9a0a67c838639349c39f62f2998a2e5f",
+    "split": "val"
+  },
+  {
+    "id": "gen_rural_livelihoods_2_4",
+    "title": "Non-Farm Rural Employment - artisans issue affecting women self-help groups",
+    "description": "something is wrong with the artisans in Non-Farm Rural Employment and women self-help groups are complaining.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "Non-Farm Rural Employment",
+    "problemType": "General Rural Livelihoods Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to artisans",
+      "Affects women self-help groups"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "9a0a67c838639349c39f62f2998a2e5f",
+    "split": "val"
+  },
+  {
+    "id": "gen_rural_livelihoods_2_5",
+    "title": "Non-Farm Rural Employment - artisans issue affecting women self-help groups",
+    "description": "Due to artisans in Non-Farm Rural Employment, many women self-help groups are unable to function properly.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "Non-Farm Rural Employment",
+    "problemType": "General Rural Livelihoods Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to artisans",
+      "Affects women self-help groups"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "9a0a67c838639349c39f62f2998a2e5f",
+    "split": "val"
+  },
+  {
+    "id": "gen_rural_livelihoods_2_6",
+    "title": "Non-Farm Rural Employment - artisans issue affecting women self-help groups",
+    "description": "The community has some concerns about artisans under Non-Farm Rural Employment affecting women self-help groups.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "Non-Farm Rural Employment",
+    "problemType": "General Rural Livelihoods Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to artisans",
+      "Affects women self-help groups"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "9a0a67c838639349c39f62f2998a2e5f",
+    "split": "val"
+  },
+  {
+    "id": "gen_accessibility_7_0",
+    "title": "Digital Accessibility - captioning issue affecting elderly citizens",
+    "description": "A major challenge in Digital Accessibility is the captioning affecting elderly citizens.",
+    "domain": "Accessibility",
+    "subdomain": "Digital Accessibility",
+    "problemType": "General Accessibility Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to captioning",
+      "Affects elderly citizens"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "926f54da3021cd1a50ef86c6bb05513d",
+    "split": "val"
+  },
+  {
+    "id": "gen_accessibility_7_1",
+    "title": "Digital Accessibility - captioning issue affecting elderly citizens",
+    "description": "need help very urgent for captioning in Digital Accessibility which are bad for elderly citizens.",
+    "domain": "Accessibility",
+    "subdomain": "Digital Accessibility",
+    "problemType": "General Accessibility Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to captioning",
+      "Affects elderly citizens"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "926f54da3021cd1a50ef86c6bb05513d",
+    "split": "val"
+  },
+  {
+    "id": "gen_accessibility_7_2",
+    "title": "Digital Accessibility - captioning issue affecting elderly citizens",
+    "description": "need captioning support for Digital Accessibility affecting elderly citizens",
+    "domain": "Accessibility",
+    "subdomain": "Digital Accessibility",
+    "problemType": "General Accessibility Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to captioning",
+      "Affects elderly citizens"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "926f54da3021cd1a50ef86c6bb05513d",
+    "split": "val"
+  },
+  {
+    "id": "gen_accessibility_7_3",
+    "title": "Digital Accessibility - captioning issue affecting elderly citizens",
+    "description": "I want to report a critical issue regarding captioning in our Digital Accessibility sector. Over the past few months, we have observed that elderly citizens are struggling because of this. There are no proper systems in place to handle it, leading to widespread dissatisfaction. Local authorities have been informed but no action was taken. We urgently need expertise and assistance to resolve this.",
+    "domain": "Accessibility",
+    "subdomain": "Digital Accessibility",
+    "problemType": "General Accessibility Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to captioning",
+      "Affects elderly citizens"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "926f54da3021cd1a50ef86c6bb05513d",
+    "split": "val"
+  },
+  {
+    "id": "gen_accessibility_7_4",
+    "title": "Digital Accessibility - captioning issue affecting elderly citizens",
+    "description": "is anyone planning to fix captioning in Digital Accessibility for elderly citizens?",
+    "domain": "Accessibility",
+    "subdomain": "Digital Accessibility",
+    "problemType": "General Accessibility Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to captioning",
+      "Affects elderly citizens"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "926f54da3021cd1a50ef86c6bb05513d",
+    "split": "val"
+  },
+  {
+    "id": "gen_accessibility_7_5",
+    "title": "Digital Accessibility - captioning issue affecting elderly citizens",
+    "description": "A major challenge in Digital Accessibility is the captioning affecting elderly citizens.",
+    "domain": "Accessibility",
+    "subdomain": "Digital Accessibility",
+    "problemType": "General Accessibility Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to captioning",
+      "Affects elderly citizens"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "926f54da3021cd1a50ef86c6bb05513d",
+    "split": "val"
+  },
+  {
+    "id": "gen_accessibility_7_6",
+    "title": "Digital Accessibility - captioning issue affecting elderly citizens",
+    "description": "The community has some concerns about captioning under Digital Accessibility affecting elderly citizens.",
+    "domain": "Accessibility",
+    "subdomain": "Digital Accessibility",
+    "problemType": "General Accessibility Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to captioning",
+      "Affects elderly citizens"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "926f54da3021cd1a50ef86c6bb05513d",
+    "split": "val"
+  },
+  {
+    "id": "gen_accessibility_9_0",
+    "title": "Hearing Impairment Support - wheelchair ramp issue affecting blind students",
+    "description": "Due to wheelchair ramp in Hearing Impairment Support, many blind students are unable to function properly.",
+    "domain": "Accessibility",
+    "subdomain": "Hearing Impairment Support",
+    "problemType": "General Accessibility Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to wheelchair ramp",
+      "Affects blind students"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "a97b94d6122433a5b14cc46b2a01470d",
+    "split": "val"
+  },
+  {
+    "id": "gen_accessibility_9_1",
+    "title": "Hearing Impairment Support - wheelchair ramp issue affecting blind students",
+    "description": "please resolve the issue of wheelchair ramp in Hearing Impairment Support which are bad for blind students.",
+    "domain": "Accessibility",
+    "subdomain": "Hearing Impairment Support",
+    "problemType": "General Accessibility Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to wheelchair ramp",
+      "Affects blind students"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "a97b94d6122433a5b14cc46b2a01470d",
+    "split": "val"
+  },
+  {
+    "id": "gen_accessibility_9_2",
+    "title": "Hearing Impairment Support - wheelchair ramp issue affecting blind students",
+    "description": "need wheelchair ramp support for Hearing Impairment Support affecting blind students",
+    "domain": "Accessibility",
+    "subdomain": "Hearing Impairment Support",
+    "problemType": "General Accessibility Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to wheelchair ramp",
+      "Affects blind students"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "a97b94d6122433a5b14cc46b2a01470d",
+    "split": "val"
+  },
+  {
+    "id": "gen_accessibility_9_3",
+    "title": "Hearing Impairment Support - wheelchair ramp issue affecting blind students",
+    "description": "This petition is on behalf of blind students who are severely impacted by wheelchair ramp within Hearing Impairment Support. The current situation is unsustainable and requires immediate intervention. We believe a combination of local community effort and technical innovation is the only way forward. Currently, we lack any baseline data or plans to address this.",
+    "domain": "Accessibility",
+    "subdomain": "Hearing Impairment Support",
+    "problemType": "General Accessibility Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to wheelchair ramp",
+      "Affects blind students"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "a97b94d6122433a5b14cc46b2a01470d",
+    "split": "val"
+  },
+  {
+    "id": "gen_accessibility_9_4",
+    "title": "Hearing Impairment Support - wheelchair ramp issue affecting blind students",
+    "description": "something is wrong with the wheelchair ramp in Hearing Impairment Support and blind students are complaining.",
+    "domain": "Accessibility",
+    "subdomain": "Hearing Impairment Support",
+    "problemType": "General Accessibility Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to wheelchair ramp",
+      "Affects blind students"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "a97b94d6122433a5b14cc46b2a01470d",
+    "split": "val"
+  },
+  {
+    "id": "gen_accessibility_9_5",
+    "title": "Hearing Impairment Support - wheelchair ramp issue affecting blind students",
+    "description": "The community is experiencing wheelchair ramp in their Hearing Impairment Support systems, which directly impacts blind students.",
+    "domain": "Accessibility",
+    "subdomain": "Hearing Impairment Support",
+    "problemType": "General Accessibility Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to wheelchair ramp",
+      "Affects blind students"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "a97b94d6122433a5b14cc46b2a01470d",
+    "split": "val"
+  },
+  {
+    "id": "gen_accessibility_9_6",
+    "title": "Hearing Impairment Support - wheelchair ramp issue affecting blind students",
+    "description": "The community has some concerns about wheelchair ramp under Hearing Impairment Support affecting blind students.",
+    "domain": "Accessibility",
+    "subdomain": "Hearing Impairment Support",
+    "problemType": "General Accessibility Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to wheelchair ramp",
+      "Affects blind students"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "a97b94d6122433a5b14cc46b2a01470d",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_administration_10_0",
+    "title": "Grievance Redressal - pension distribution issue affecting welfare beneficiaries",
+    "description": "The community is experiencing pension distribution in their Grievance Redressal systems, which directly impacts welfare beneficiaries.",
+    "domain": "Public Administration",
+    "subdomain": "Grievance Redressal",
+    "problemType": "General Public Administration Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to pension distribution",
+      "Affects welfare beneficiaries"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "f7b6efe4fef222c659c9a1e0307f62a0",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_administration_10_1",
+    "title": "Grievance Redressal - pension distribution issue affecting welfare beneficiaries",
+    "description": "we do not have proper pension distribution in Grievance Redressal which are bad for welfare beneficiaries.",
+    "domain": "Public Administration",
+    "subdomain": "Grievance Redressal",
+    "problemType": "General Public Administration Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to pension distribution",
+      "Affects welfare beneficiaries"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "f7b6efe4fef222c659c9a1e0307f62a0",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_administration_10_2",
+    "title": "Grievance Redressal - pension distribution issue affecting welfare beneficiaries",
+    "description": "bad pension distribution under Grievance Redressal for welfare beneficiaries",
+    "domain": "Public Administration",
+    "subdomain": "Grievance Redressal",
+    "problemType": "General Public Administration Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to pension distribution",
+      "Affects welfare beneficiaries"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "f7b6efe4fef222c659c9a1e0307f62a0",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_administration_10_3",
+    "title": "Grievance Redressal - pension distribution issue affecting welfare beneficiaries",
+    "description": "This petition is on behalf of welfare beneficiaries who are severely impacted by pension distribution within Grievance Redressal. The current situation is unsustainable and requires immediate intervention. We believe a combination of local community effort and technical innovation is the only way forward. Currently, we lack any baseline data or plans to address this.",
+    "domain": "Public Administration",
+    "subdomain": "Grievance Redressal",
+    "problemType": "General Public Administration Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to pension distribution",
+      "Affects welfare beneficiaries"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "f7b6efe4fef222c659c9a1e0307f62a0",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_administration_10_4",
+    "title": "Grievance Redressal - pension distribution issue affecting welfare beneficiaries",
+    "description": "something is wrong with the pension distribution in Grievance Redressal and welfare beneficiaries are complaining.",
+    "domain": "Public Administration",
+    "subdomain": "Grievance Redressal",
+    "problemType": "General Public Administration Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to pension distribution",
+      "Affects welfare beneficiaries"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "f7b6efe4fef222c659c9a1e0307f62a0",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_administration_10_5",
+    "title": "Grievance Redressal - pension distribution issue affecting welfare beneficiaries",
+    "description": "Due to pension distribution in Grievance Redressal, many welfare beneficiaries are unable to function properly.",
+    "domain": "Public Administration",
+    "subdomain": "Grievance Redressal",
+    "problemType": "General Public Administration Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to pension distribution",
+      "Affects welfare beneficiaries"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "f7b6efe4fef222c659c9a1e0307f62a0",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_administration_10_6",
+    "title": "Grievance Redressal - pension distribution issue affecting welfare beneficiaries",
+    "description": "The community has some concerns about pension distribution under Grievance Redressal affecting welfare beneficiaries.",
+    "domain": "Public Administration",
+    "subdomain": "Grievance Redressal",
+    "problemType": "General Public Administration Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to pension distribution",
+      "Affects welfare beneficiaries"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "f7b6efe4fef222c659c9a1e0307f62a0",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_administration_11_0",
+    "title": "Public Records Digitization - red tape issue affecting applicants",
+    "description": "Due to red tape in Public Records Digitization, many applicants are unable to function properly.",
+    "domain": "Public Administration",
+    "subdomain": "Public Records Digitization",
+    "problemType": "General Public Administration Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to red tape",
+      "Affects applicants"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "158ca9071c9bf5f1867350684ebdffed",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_administration_11_1",
+    "title": "Public Records Digitization - red tape issue affecting applicants",
+    "description": "need help very urgent for red tape in Public Records Digitization which are bad for applicants.",
+    "domain": "Public Administration",
+    "subdomain": "Public Records Digitization",
+    "problemType": "General Public Administration Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to red tape",
+      "Affects applicants"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "158ca9071c9bf5f1867350684ebdffed",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_administration_11_2",
+    "title": "Public Records Digitization - red tape issue affecting applicants",
+    "description": "suffering from red tape in Public Records Digitization which affects applicants",
+    "domain": "Public Administration",
+    "subdomain": "Public Records Digitization",
+    "problemType": "General Public Administration Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to red tape",
+      "Affects applicants"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "158ca9071c9bf5f1867350684ebdffed",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_administration_11_3",
+    "title": "Public Records Digitization - red tape issue affecting applicants",
+    "description": "I want to report a critical issue regarding red tape in our Public Records Digitization sector. Over the past few months, we have observed that applicants are struggling because of this. There are no proper systems in place to handle it, leading to widespread dissatisfaction. Local authorities have been informed but no action was taken. We urgently need expertise and assistance to resolve this.",
+    "domain": "Public Administration",
+    "subdomain": "Public Records Digitization",
+    "problemType": "General Public Administration Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to red tape",
+      "Affects applicants"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "158ca9071c9bf5f1867350684ebdffed",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_administration_11_4",
+    "title": "Public Records Digitization - red tape issue affecting applicants",
+    "description": "we have a situation here regarding red tape affecting Public Records Digitization for applicants.",
+    "domain": "Public Administration",
+    "subdomain": "Public Records Digitization",
+    "problemType": "General Public Administration Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to red tape",
+      "Affects applicants"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "158ca9071c9bf5f1867350684ebdffed",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_administration_11_5",
+    "title": "Public Records Digitization - red tape issue affecting applicants",
+    "description": "The community is experiencing red tape in their Public Records Digitization systems, which directly impacts applicants.",
+    "domain": "Public Administration",
+    "subdomain": "Public Records Digitization",
+    "problemType": "General Public Administration Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to red tape",
+      "Affects applicants"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "158ca9071c9bf5f1867350684ebdffed",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_administration_11_6",
+    "title": "Public Records Digitization - red tape issue affecting applicants",
+    "description": "The community has some concerns about red tape under Public Records Digitization affecting applicants.",
+    "domain": "Public Administration",
+    "subdomain": "Public Records Digitization",
+    "problemType": "General Public Administration Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to red tape",
+      "Affects applicants"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "158ca9071c9bf5f1867350684ebdffed",
+    "split": "val"
+  },
+  {
+    "id": "gen_transportation_9_0",
+    "title": "Rural-Urban Connectivity - pedestrian safety issue affecting bus passengers",
+    "description": "Due to pedestrian safety in Rural-Urban Connectivity, many bus passengers are unable to function properly.",
+    "domain": "Transportation",
+    "subdomain": "Rural-Urban Connectivity",
+    "problemType": "General Transportation Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to pedestrian safety",
+      "Affects bus passengers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "93a4e582468c8692b4f5bf0a03cb9cdc",
+    "split": "val"
+  },
+  {
+    "id": "gen_transportation_9_1",
+    "title": "Rural-Urban Connectivity - pedestrian safety issue affecting bus passengers",
+    "description": "in our area there is pedestrian safety in Rural-Urban Connectivity which are bad for bus passengers.",
+    "domain": "Transportation",
+    "subdomain": "Rural-Urban Connectivity",
+    "problemType": "General Transportation Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to pedestrian safety",
+      "Affects bus passengers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "93a4e582468c8692b4f5bf0a03cb9cdc",
+    "split": "val"
+  },
+  {
+    "id": "gen_transportation_9_2",
+    "title": "Rural-Urban Connectivity - pedestrian safety issue affecting bus passengers",
+    "description": "no pedestrian safety in Rural-Urban Connectivity for bus passengers",
+    "domain": "Transportation",
+    "subdomain": "Rural-Urban Connectivity",
+    "problemType": "General Transportation Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to pedestrian safety",
+      "Affects bus passengers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "93a4e582468c8692b4f5bf0a03cb9cdc",
+    "split": "val"
+  },
+  {
+    "id": "gen_transportation_9_3",
+    "title": "Rural-Urban Connectivity - pedestrian safety issue affecting bus passengers",
+    "description": "I want to report a critical issue regarding pedestrian safety in our Rural-Urban Connectivity sector. Over the past few months, we have observed that bus passengers are struggling because of this. There are no proper systems in place to handle it, leading to widespread dissatisfaction. Local authorities have been informed but no action was taken. We urgently need expertise and assistance to resolve this.",
+    "domain": "Transportation",
+    "subdomain": "Rural-Urban Connectivity",
+    "problemType": "General Transportation Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to pedestrian safety",
+      "Affects bus passengers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "93a4e582468c8692b4f5bf0a03cb9cdc",
+    "split": "val"
+  },
+  {
+    "id": "gen_transportation_9_4",
+    "title": "Rural-Urban Connectivity - pedestrian safety issue affecting bus passengers",
+    "description": "is anyone planning to fix pedestrian safety in Rural-Urban Connectivity for bus passengers?",
+    "domain": "Transportation",
+    "subdomain": "Rural-Urban Connectivity",
+    "problemType": "General Transportation Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to pedestrian safety",
+      "Affects bus passengers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "93a4e582468c8692b4f5bf0a03cb9cdc",
+    "split": "val"
+  },
+  {
+    "id": "gen_transportation_9_5",
+    "title": "Rural-Urban Connectivity - pedestrian safty issue affecting bus passengers",
+    "description": "We are facing severe pedestrian safety under Rural-Urban Connectivity. This is particularly difficult for bus passengers.",
+    "domain": "Transportation",
+    "subdomain": "Rural-Urban Connectivity",
+    "problemType": "General Transportation Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to pedestrian safety",
+      "Affects bus passengers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "93a4e582468c8692b4f5bf0a03cb9cdc",
+    "split": "val"
+  },
+  {
+    "id": "gen_transportation_9_6",
+    "title": "Rural-Urban Connectivity - pedestrian safety issue affecting bus passengers",
+    "description": "The community has some concerns about pedestrian safety under Rural-Urban Connectivity affecting bus passengers.",
+    "domain": "Transportation",
+    "subdomain": "Rural-Urban Connectivity",
+    "problemType": "General Transportation Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to pedestrian safety",
+      "Affects bus passengers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "93a4e582468c8692b4f5bf0a03cb9cdc",
+    "split": "val"
+  },
+  {
+    "id": "gen_transportation_3_0",
+    "title": "Rural-Urban Connectivity - transit safety issue affecting pedestrians",
+    "description": "The community is experiencing transit safety in their Rural-Urban Connectivity systems, which directly impacts pedestrians.",
+    "domain": "Transportation",
+    "subdomain": "Rural-Urban Connectivity",
+    "problemType": "General Transportation Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to transit safety",
+      "Affects pedestrians"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "c268714d6a9d525485d21e1b3b715b94",
+    "split": "val"
+  },
+  {
+    "id": "gen_transportation_3_1",
+    "title": "Rural-Urban Connectivity - transit safety issue affecting pedestrians",
+    "description": "need help very urgent for transit safety in Rural-Urban Connectivity which are bad for pedestrians.",
+    "domain": "Transportation",
+    "subdomain": "Rural-Urban Connectivity",
+    "problemType": "General Transportation Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to transit safety",
+      "Affects pedestrians"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "c268714d6a9d525485d21e1b3b715b94",
+    "split": "val"
+  },
+  {
+    "id": "gen_transportation_3_2",
+    "title": "Rural-Urban Connectivity - transit safety issue affecting pedestrians",
+    "description": "need transit safety support for Rural-Urban Connectivity affecting pedestrians",
+    "domain": "Transportation",
+    "subdomain": "Rural-Urban Connectivity",
+    "problemType": "General Transportation Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to transit safety",
+      "Affects pedestrians"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "c268714d6a9d525485d21e1b3b715b94",
+    "split": "val"
+  },
+  {
+    "id": "gen_transportation_3_3",
+    "title": "Rural-Urban Connectivity - transit safety issue affecting pedestrians",
+    "description": "This petition is on behalf of pedestrians who are severely impacted by transit safety within Rural-Urban Connectivity. The current situation is unsustainable and requires immediate intervention. We believe a combination of local community effort and technical innovation is the only way forward. Currently, we lack any baseline data or plans to address this.",
+    "domain": "Transportation",
+    "subdomain": "Rural-Urban Connectivity",
+    "problemType": "General Transportation Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to transit safety",
+      "Affects pedestrians"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "c268714d6a9d525485d21e1b3b715b94",
+    "split": "val"
+  },
+  {
+    "id": "gen_transportation_3_4",
+    "title": "Rural-Urban Connectivity - transit safety issue affecting pedestrians",
+    "description": "something is wrong with the transit safety in Rural-Urban Connectivity and pedestrians are complaining.",
+    "domain": "Transportation",
+    "subdomain": "Rural-Urban Connectivity",
+    "problemType": "General Transportation Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to transit safety",
+      "Affects pedestrians"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "c268714d6a9d525485d21e1b3b715b94",
+    "split": "val"
+  },
+  {
+    "id": "gen_transportation_3_5",
+    "title": "Rural-Urban Connectivity - transit safety issue affecting pedestrians",
+    "description": "A major challenge in Rural-Urban Connectivity is the transit saftey affecting pedestrians.",
+    "domain": "Transportation",
+    "subdomain": "Rural-Urban Connectivity",
+    "problemType": "General Transportation Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to transit safety",
+      "Affects pedestrians"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "c268714d6a9d525485d21e1b3b715b94",
+    "split": "val"
+  },
+  {
+    "id": "gen_transportation_3_6",
+    "title": "Rural-Urban Connectivity - transit safety issue affecting pedestrians",
+    "description": "The community has some concerns about transit safety under Rural-Urban Connectivity affecting pedestrians.",
+    "domain": "Transportation",
+    "subdomain": "Rural-Urban Connectivity",
+    "problemType": "General Transportation Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to transit safety",
+      "Affects pedestrians"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "c268714d6a9d525485d21e1b3b715b94",
+    "split": "val"
+  },
+  {
+    "id": "gen_disaster_management_3_0",
+    "title": "Climate Vulnerability Mapping - relief camp issue affecting coastal villagers",
+    "description": "Due to relief camp in Climate Vulnerability Mapping, many coastal villagers are unable to function properly.",
+    "domain": "Disaster Management",
+    "subdomain": "Climate Vulnerability Mapping",
+    "problemType": "General Disaster Management Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to relief camp",
+      "Affects coastal villagers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "5e34f7ffb0f2ff4e1d8d47219a02eca3",
+    "split": "val"
+  },
+  {
+    "id": "gen_disaster_management_3_1",
+    "title": "Climate Vulnerability Mapping - relief camp issue affecting coastal villagers",
+    "description": "in our area there is relief camp in Climate Vulnerability Mapping which are bad for coastal villagers.",
+    "domain": "Disaster Management",
+    "subdomain": "Climate Vulnerability Mapping",
+    "problemType": "General Disaster Management Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to relief camp",
+      "Affects coastal villagers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "5e34f7ffb0f2ff4e1d8d47219a02eca3",
+    "split": "val"
+  },
+  {
+    "id": "gen_disaster_management_3_2",
+    "title": "Climate Vulnerability Mapping - relief camp issue affecting coastal villagers",
+    "description": "suffering from relief camp in Climate Vulnerability Mapping which affects coastal villagers",
+    "domain": "Disaster Management",
+    "subdomain": "Climate Vulnerability Mapping",
+    "problemType": "General Disaster Management Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to relief camp",
+      "Affects coastal villagers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "5e34f7ffb0f2ff4e1d8d47219a02eca3",
+    "split": "val"
+  },
+  {
+    "id": "gen_disaster_management_3_3",
+    "title": "Climate Vulnerability Mapping - relief camp issue affecting coastal villagers",
+    "description": "A detailed investigation into our local Climate Vulnerability Mapping conditions shows that relief camp is the primary constraint. This affects coastal villagers on a daily basis, causing economic loss and health concerns. We request the implementation team to perform a gap analysis and propose a suitable technology adaptation as soon as possible.",
+    "domain": "Disaster Management",
+    "subdomain": "Climate Vulnerability Mapping",
+    "problemType": "General Disaster Management Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to relief camp",
+      "Affects coastal villagers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "5e34f7ffb0f2ff4e1d8d47219a02eca3",
+    "split": "val"
+  },
+  {
+    "id": "gen_disaster_management_3_4",
+    "title": "Climate Vulnerability Mapping - relief camp issue affecting coastal villagers",
+    "description": "we have a situation here regarding relief camp affecting Climate Vulnerability Mapping for coastal villagers.",
+    "domain": "Disaster Management",
+    "subdomain": "Climate Vulnerability Mapping",
+    "problemType": "General Disaster Management Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to relief camp",
+      "Affects coastal villagers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "5e34f7ffb0f2ff4e1d8d47219a02eca3",
+    "split": "val"
+  },
+  {
+    "id": "gen_disaster_management_3_5",
+    "title": "Climate Vulnerability Mapping - relief camp issue affecting coastal villagers",
+    "description": "The lack of adequate solutions for relief camp within Climate Vulnerability Mapping has left coastal villagers vulnerable.",
+    "domain": "Disaster Management",
+    "subdomain": "Climate Vulnerability Mapping",
+    "problemType": "General Disaster Management Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to relief camp",
+      "Affects coastal villagers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "5e34f7ffb0f2ff4e1d8d47219a02eca3",
+    "split": "val"
+  },
+  {
+    "id": "gen_disaster_management_3_6",
+    "title": "Climate Vulnerability Mapping - relief camp issue affecting coastal villagers",
+    "description": "The community has some concerns about relief camp under Climate Vulnerability Mapping affecting coastal villagers.",
+    "domain": "Disaster Management",
+    "subdomain": "Climate Vulnerability Mapping",
+    "problemType": "General Disaster Management Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to relief camp",
+      "Affects coastal villagers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "5e34f7ffb0f2ff4e1d8d47219a02eca3",
+    "split": "val"
+  },
+  {
+    "id": "gen_disaster_management_9_0",
+    "title": "Climate Vulnerability Mapping - cyclone warning issue affecting coastal villagers",
+    "description": "We are facing severe cyclone warning under Climate Vulnerability Mapping. This is particularly difficult for coastal villagers.",
+    "domain": "Disaster Management",
+    "subdomain": "Climate Vulnerability Mapping",
+    "problemType": "General Disaster Management Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to cyclone warning",
+      "Affects coastal villagers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "daa3b210b3f3b390d51f65955710fa77",
+    "split": "val"
+  },
+  {
+    "id": "gen_disaster_management_9_1",
+    "title": "Climate Vulnerability Mapping - cyclone warning issue affecting coastal villagers",
+    "description": "in our area there is cyclone warning in Climate Vulnerability Mapping which are bad for coastal villagers.",
+    "domain": "Disaster Management",
+    "subdomain": "Climate Vulnerability Mapping",
+    "problemType": "General Disaster Management Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to cyclone warning",
+      "Affects coastal villagers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "daa3b210b3f3b390d51f65955710fa77",
+    "split": "val"
+  },
+  {
+    "id": "gen_disaster_management_9_2",
+    "title": "Climate Vulnerability Mapping - cyclone warning issue affecting coastal villagers",
+    "description": "cyclone warning problem in Climate Vulnerability Mapping for coastal villagers",
+    "domain": "Disaster Management",
+    "subdomain": "Climate Vulnerability Mapping",
+    "problemType": "General Disaster Management Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to cyclone warning",
+      "Affects coastal villagers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "daa3b210b3f3b390d51f65955710fa77",
+    "split": "val"
+  },
+  {
+    "id": "gen_disaster_management_9_3",
+    "title": "Climate Vulnerability Mapping - cyclone warning issue affecting coastal villagers",
+    "description": "A detailed investigation into our local Climate Vulnerability Mapping conditions shows that cyclone warning is the primary constraint. This affects coastal villagers on a daily basis, causing economic loss and health concerns. We request the implementation team to perform a gap analysis and propose a suitable technology adaptation as soon as possible.",
+    "domain": "Disaster Management",
+    "subdomain": "Climate Vulnerability Mapping",
+    "problemType": "General Disaster Management Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to cyclone warning",
+      "Affects coastal villagers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "daa3b210b3f3b390d51f65955710fa77",
+    "split": "val"
+  },
+  {
+    "id": "gen_disaster_management_9_4",
+    "title": "Climate Vulnerability Mapping - cyclone warning issue affecting coastal villagers",
+    "description": "something is wrong with the cyclone warning in Climate Vulnerability Mapping and coastal villagers are complaining.",
+    "domain": "Disaster Management",
+    "subdomain": "Climate Vulnerability Mapping",
+    "problemType": "General Disaster Management Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to cyclone warning",
+      "Affects coastal villagers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "daa3b210b3f3b390d51f65955710fa77",
+    "split": "val"
+  },
+  {
+    "id": "gen_disaster_management_9_5",
+    "title": "Climate Vulnerability Mapping - cyclone warning issue affecting coastal villagers",
+    "description": "The community is experiencing cyclone warning in their Climate Vulnerability Mapping systems, which directly impacts coastal villagers.",
+    "domain": "Disaster Management",
+    "subdomain": "Climate Vulnerability Mapping",
+    "problemType": "General Disaster Management Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to cyclone warning",
+      "Affects coastal villagers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "daa3b210b3f3b390d51f65955710fa77",
+    "split": "val"
+  },
+  {
+    "id": "gen_disaster_management_9_6",
+    "title": "Climate Vulnerability Mapping - cyclone warning issue affecting coastal villagers",
+    "description": "The community has some concerns about cyclone warning under Climate Vulnerability Mapping affecting coastal villagers.",
+    "domain": "Disaster Management",
+    "subdomain": "Climate Vulnerability Mapping",
+    "problemType": "General Disaster Management Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to cyclone warning",
+      "Affects coastal villagers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "daa3b210b3f3b390d51f65955710fa77",
+    "split": "val"
+  },
+  {
+    "id": "gen_community_development_7_0",
+    "title": "Playgrounds and Sports Complex - micro-scale community paths issue affecting local readers",
+    "description": "The community is experiencing micro-scale community paths in their Playgrounds and Sports Complex systems, which directly impacts local readers.",
+    "domain": "Community Development",
+    "subdomain": "Playgrounds and Sports Complex",
+    "problemType": "General Community Development Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to micro-scale community paths",
+      "Affects local readers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "5300f7f2f66f383f73adcf71cf0540da",
+    "split": "val"
+  },
+  {
+    "id": "gen_community_development_7_1",
+    "title": "Playgrounds and Sports Complex - micro-scale community paths issue affecting local readers",
+    "description": "i am writing because micro-scale community paths in Playgrounds and Sports Complex which are bad for local readers.",
+    "domain": "Community Development",
+    "subdomain": "Playgrounds and Sports Complex",
+    "problemType": "General Community Development Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to micro-scale community paths",
+      "Affects local readers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "5300f7f2f66f383f73adcf71cf0540da",
+    "split": "val"
+  },
+  {
+    "id": "gen_community_development_7_2",
+    "title": "Playgrounds and Sports Complex - micro-scale community paths issue affecting local readers",
+    "description": "need micro-scale community paths support for Playgrounds and Sports Complex affecting local readers",
+    "domain": "Community Development",
+    "subdomain": "Playgrounds and Sports Complex",
+    "problemType": "General Community Development Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to micro-scale community paths",
+      "Affects local readers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "5300f7f2f66f383f73adcf71cf0540da",
+    "split": "val"
+  },
+  {
+    "id": "gen_community_development_7_3",
+    "title": "Playgrounds and Sports Complex - micro-scale community paths issue affecting local readers",
+    "description": "A detailed investigation into our local Playgrounds and Sports Complex conditions shows that micro-scale community paths is the primary constraint. This affects local readers on a daily basis, causing economic loss and health concerns. We request the implementation team to perform a gap analysis and propose a suitable technology adaptation as soon as possible.",
+    "domain": "Community Development",
+    "subdomain": "Playgrounds and Sports Complex",
+    "problemType": "General Community Development Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to micro-scale community paths",
+      "Affects local readers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "5300f7f2f66f383f73adcf71cf0540da",
+    "split": "val"
+  },
+  {
+    "id": "gen_community_development_7_4",
+    "title": "Playgrounds and Sports Complex - micro-scale community paths issue affecting local readers",
+    "description": "the local micro-scale community paths under Playgrounds and Sports Complex is in very bad condition and hurts local readers.",
+    "domain": "Community Development",
+    "subdomain": "Playgrounds and Sports Complex",
+    "problemType": "General Community Development Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to micro-scale community paths",
+      "Affects local readers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "5300f7f2f66f383f73adcf71cf0540da",
+    "split": "val"
+  },
+  {
+    "id": "gen_community_development_7_5",
+    "title": "Playgrounds and Sports Complex - micro-scale community paths issue affecting local readers",
+    "description": "The community is experiencing micro-scale community paths in their Playgrounds and Sports Complex systems, which directly impacts local readers.",
+    "domain": "Community Development",
+    "subdomain": "Playgrounds and Sports Complex",
+    "problemType": "General Community Development Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to micro-scale community paths",
+      "Affects local readers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "5300f7f2f66f383f73adcf71cf0540da",
+    "split": "val"
+  },
+  {
+    "id": "gen_community_development_7_6",
+    "title": "Playgrounds and Sports Complex - micro-scale community paths issue affecting local readers",
+    "description": "The community has some concerns about micro-scale community paths under Playgrounds and Sports Complex affecting local readers.",
+    "domain": "Community Development",
+    "subdomain": "Playgrounds and Sports Complex",
+    "problemType": "General Community Development Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to micro-scale community paths",
+      "Affects local readers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "5300f7f2f66f383f73adcf71cf0540da",
+    "split": "val"
+  },
+  {
+    "id": "gen_community_development_8_0",
+    "title": "Local Commerce and Markets - community hall issue affecting weekly market vendors",
+    "description": "A major challenge in Local Commerce and Markets is the community hall affecting weekly market vendors.",
+    "domain": "Community Development",
+    "subdomain": "Local Commerce and Markets",
+    "problemType": "General Community Development Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to community hall",
+      "Affects weekly market vendors"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "434c776bbc584806d59af0a5a3f7cf20",
+    "split": "val"
+  },
+  {
+    "id": "gen_community_development_8_1",
+    "title": "Local Commerce and Markets - community hall issue affecting weekly market vendors",
+    "description": "i am writing because community hall in Local Commerce and Markets which are bad for weekly market vendors.",
+    "domain": "Community Development",
+    "subdomain": "Local Commerce and Markets",
+    "problemType": "General Community Development Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to community hall",
+      "Affects weekly market vendors"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "434c776bbc584806d59af0a5a3f7cf20",
+    "split": "val"
+  },
+  {
+    "id": "gen_community_development_8_2",
+    "title": "Local Commerce and Markets - community hall issue affecting weekly market vendors",
+    "description": "bad community hall under Local Commerce and Markets for weekly market vendors",
+    "domain": "Community Development",
+    "subdomain": "Local Commerce and Markets",
+    "problemType": "General Community Development Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to community hall",
+      "Affects weekly market vendors"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "434c776bbc584806d59af0a5a3f7cf20",
+    "split": "val"
+  },
+  {
+    "id": "gen_community_development_8_3",
+    "title": "Local Commerce and Markets - community hall issue affecting weekly market vendors",
+    "description": "I want to report a critical issue regarding community hall in our Local Commerce and Markets sector. Over the past few months, we have observed that weekly market vendors are struggling because of this. There are no proper systems in place to handle it, leading to widespread dissatisfaction. Local authorities have been informed but no action was taken. We urgently need expertise and assistance to resolve this.",
+    "domain": "Community Development",
+    "subdomain": "Local Commerce and Markets",
+    "problemType": "General Community Development Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to community hall",
+      "Affects weekly market vendors"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "434c776bbc584806d59af0a5a3f7cf20",
+    "split": "val"
+  },
+  {
+    "id": "gen_community_development_8_4",
+    "title": "Local Commerce and Markets - community hall issue affecting weekly market vendors",
+    "description": "we have a situation here regarding community hall affecting Local Commerce and Markets for weekly market vendors.",
+    "domain": "Community Development",
+    "subdomain": "Local Commerce and Markets",
+    "problemType": "General Community Development Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to community hall",
+      "Affects weekly market vendors"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "434c776bbc584806d59af0a5a3f7cf20",
+    "split": "val"
+  },
+  {
+    "id": "gen_community_development_8_5",
+    "title": "Local Commerce and Markets - community hall issue affecting weekly market vendors",
+    "description": "The lack of adequate solutions for community hall within Local Commerce and Markets has left weekly market vendors vulnerable.",
+    "domain": "Community Development",
+    "subdomain": "Local Commerce and Markets",
+    "problemType": "General Community Development Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to community hall",
+      "Affects weekly market vendors"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "434c776bbc584806d59af0a5a3f7cf20",
+    "split": "val"
+  },
+  {
+    "id": "gen_community_development_8_6",
+    "title": "Local Commerce and Markets - community hall issue affecting weekly market vendors",
+    "description": "The community has some concerns about community hall under Local Commerce and Markets affecting weekly market vendors.",
+    "domain": "Community Development",
+    "subdomain": "Local Commerce and Markets",
+    "problemType": "General Community Development Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to community hall",
+      "Affects weekly market vendors"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "434c776bbc584806d59af0a5a3f7cf20",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_safety_1_0",
+    "title": "Crime Mitigation Infrastructure - police patrols issue affecting pedestrians",
+    "description": "Due to police patrols in Crime Mitigation Infrastructure, many pedestrians are unable to function properly.",
+    "domain": "Public Safety",
+    "subdomain": "Crime Mitigation Infrastructure",
+    "problemType": "General Public Safety Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to police patrols",
+      "Affects pedestrians"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "ceda29358bd7719b6a81e9e4c9f8604e",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_safety_1_1",
+    "title": "Crime Mitigation Infrastructure - police patrols issue affecting pedestrians",
+    "description": "facing too much problem in police patrols in Crime Mitigation Infrastructure which are bad for pedestrians.",
+    "domain": "Public Safety",
+    "subdomain": "Crime Mitigation Infrastructure",
+    "problemType": "General Public Safety Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to police patrols",
+      "Affects pedestrians"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "ceda29358bd7719b6a81e9e4c9f8604e",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_safety_1_2",
+    "title": "Crime Mitigation Infrastructure - police patrols issue affecting pedestrians",
+    "description": "bad police patrols under Crime Mitigation Infrastructure for pedestrians",
+    "domain": "Public Safety",
+    "subdomain": "Crime Mitigation Infrastructure",
+    "problemType": "General Public Safety Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to police patrols",
+      "Affects pedestrians"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "ceda29358bd7719b6a81e9e4c9f8604e",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_safety_1_3",
+    "title": "Crime Mitigation Infrastructure - police patrols issue affecting pedestrians",
+    "description": "A detailed investigation into our local Crime Mitigation Infrastructure conditions shows that police patrols is the primary constraint. This affects pedestrians on a daily basis, causing economic loss and health concerns. We request the implementation team to perform a gap analysis and propose a suitable technology adaptation as soon as possible.",
+    "domain": "Public Safety",
+    "subdomain": "Crime Mitigation Infrastructure",
+    "problemType": "General Public Safety Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to police patrols",
+      "Affects pedestrians"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "ceda29358bd7719b6a81e9e4c9f8604e",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_safety_1_4",
+    "title": "Crime Mitigation Infrastructure - police patrols issue affecting pedestrians",
+    "description": "we have a situation here regarding police patrols affecting Crime Mitigation Infrastructure for pedestrians.",
+    "domain": "Public Safety",
+    "subdomain": "Crime Mitigation Infrastructure",
+    "problemType": "General Public Safety Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to police patrols",
+      "Affects pedestrians"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "ceda29358bd7719b6a81e9e4c9f8604e",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_safety_1_5",
+    "title": "Crime Mitigation Infrastruture - police patrols issue affecting pedestrians",
+    "description": "The lack of adequate solutions for police patrols within Crime Mitigation Infrastructure has left pedestrians vulnerable.",
+    "domain": "Public Safety",
+    "subdomain": "Crime Mitigation Infrastructure",
+    "problemType": "General Public Safety Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to police patrols",
+      "Affects pedestrians"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "ceda29358bd7719b6a81e9e4c9f8604e",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_safety_1_6",
+    "title": "Crime Mitigation Infrastructure - police patrols issue affecting pedestrians",
+    "description": "The community has some concerns about police patrols under Crime Mitigation Infrastructure affecting pedestrians.",
+    "domain": "Public Safety",
+    "subdomain": "Crime Mitigation Infrastructure",
+    "problemType": "General Public Safety Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to police patrols",
+      "Affects pedestrians"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "ceda29358bd7719b6a81e9e4c9f8604e",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_safety_9_0",
+    "title": "Street Security and Patrols - police patrols issue affecting women walking at night",
+    "description": "The lack of adequate solutions for police patrols within Street Security and Patrols has left women walking at night vulnerable.",
+    "domain": "Public Safety",
+    "subdomain": "Street Security and Patrols",
+    "problemType": "General Public Safety Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to police patrols",
+      "Affects women walking at night"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "7ce3328f9049c293ccae07421a226d79",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_safety_9_1",
+    "title": "Street Security and Patrols - police patrols issue affecting women walking at night",
+    "description": "people suffering from police patrols in Street Security and Patrols which are bad for women walking at night.",
+    "domain": "Public Safety",
+    "subdomain": "Street Security and Patrols",
+    "problemType": "General Public Safety Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to police patrols",
+      "Affects women walking at night"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "7ce3328f9049c293ccae07421a226d79",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_safety_9_2",
+    "title": "Street Security and Patrols - police patrols issue affecting women walking at night",
+    "description": "no police patrols in Street Security and Patrols for women walking at night",
+    "domain": "Public Safety",
+    "subdomain": "Street Security and Patrols",
+    "problemType": "General Public Safety Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to police patrols",
+      "Affects women walking at night"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "7ce3328f9049c293ccae07421a226d79",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_safety_9_3",
+    "title": "Street Security and Patrols - police patrols issue affecting women walking at night",
+    "description": "This petition is on behalf of women walking at night who are severely impacted by police patrols within Street Security and Patrols. The current situation is unsustainable and requires immediate intervention. We believe a combination of local community effort and technical innovation is the only way forward. Currently, we lack any baseline data or plans to address this.",
+    "domain": "Public Safety",
+    "subdomain": "Street Security and Patrols",
+    "problemType": "General Public Safety Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to police patrols",
+      "Affects women walking at night"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "7ce3328f9049c293ccae07421a226d79",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_safety_9_4",
+    "title": "Street Security and Patrols - police patrols issue affecting women walking at night",
+    "description": "we have a situation here regarding police patrols affecting Street Security and Patrols for women walking at night.",
+    "domain": "Public Safety",
+    "subdomain": "Street Security and Patrols",
+    "problemType": "General Public Safety Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to police patrols",
+      "Affects women walking at night"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "7ce3328f9049c293ccae07421a226d79",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_safety_9_5",
+    "title": "Street Security and Patrols - police patrols issue affecting women walking at night",
+    "description": "The community is experiencing police patrols in their Street Security and Patrols systems, which directly impacts women walking at night.",
+    "domain": "Public Safety",
+    "subdomain": "Street Security and Patrols",
+    "problemType": "General Public Safety Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to police patrols",
+      "Affects women walking at night"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "7ce3328f9049c293ccae07421a226d79",
+    "split": "val"
+  },
+  {
+    "id": "gen_public_safety_9_6",
+    "title": "Street Security and Patrols - police patrols issue affecting women walking at night",
+    "description": "The community has some concerns about police patrols under Street Security and Patrols affecting women walking at night.",
+    "domain": "Public Safety",
+    "subdomain": "Street Security and Patrols",
+    "problemType": "General Public Safety Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to police patrols",
+      "Affects women walking at night"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "7ce3328f9049c293ccae07421a226d79",
+    "split": "val"
+  },
+  {
+    "id": "gen_other_8_0",
+    "title": "Purely Technical Inquiries - private birthday party issue affecting home cooks",
+    "description": "The lack of adequate solutions for private birthday party within Purely Technical Inquiries has left home cooks vulnerable.",
+    "domain": "Other",
+    "subdomain": "Purely Technical Inquiries",
+    "problemType": "General Other Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to private birthday party",
+      "Affects home cooks"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "20b4fe0cb0636eba1fc78a95f9e9fff2",
+    "split": "val"
+  },
+  {
+    "id": "gen_other_8_1",
+    "title": "Purely Technical Inquiries - private birthday party issue affecting home cooks",
+    "description": "in our area there is private birthday party in Purely Technical Inquiries which are bad for home cooks.",
+    "domain": "Other",
+    "subdomain": "Purely Technical Inquiries",
+    "problemType": "General Other Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to private birthday party",
+      "Affects home cooks"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "20b4fe0cb0636eba1fc78a95f9e9fff2",
+    "split": "val"
+  },
+  {
+    "id": "gen_other_8_2",
+    "title": "Purely Technical Inquiries - private birthday party issue affecting home cooks",
+    "description": "bad private birthday party under Purely Technical Inquiries for home cooks",
+    "domain": "Other",
+    "subdomain": "Purely Technical Inquiries",
+    "problemType": "General Other Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to private birthday party",
+      "Affects home cooks"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "20b4fe0cb0636eba1fc78a95f9e9fff2",
+    "split": "val"
+  },
+  {
+    "id": "gen_other_8_3",
+    "title": "Purely Technical Inquiries - private birthday party issue affecting home cooks",
+    "description": "A detailed investigation into our local Purely Technical Inquiries conditions shows that private birthday party is the primary constraint. This affects home cooks on a daily basis, causing economic loss and health concerns. We request the implementation team to perform a gap analysis and propose a suitable technology adaptation as soon as possible.",
+    "domain": "Other",
+    "subdomain": "Purely Technical Inquiries",
+    "problemType": "General Other Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to private birthday party",
+      "Affects home cooks"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "20b4fe0cb0636eba1fc78a95f9e9fff2",
+    "split": "val"
+  },
+  {
+    "id": "gen_other_8_4",
+    "title": "Purely Technical Inquiries - private birthday party issue affecting home cooks",
+    "description": "we have a situation here regarding private birthday party affecting Purely Technical Inquiries for home cooks.",
+    "domain": "Other",
+    "subdomain": "Purely Technical Inquiries",
+    "problemType": "General Other Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to private birthday party",
+      "Affects home cooks"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "20b4fe0cb0636eba1fc78a95f9e9fff2",
+    "split": "val"
+  },
+  {
+    "id": "gen_other_8_5",
+    "title": "Purely Technical Inquiries - private birthday party issue affecting home cooks",
+    "description": "We are facing severe private birthday party under Purely Technical Inquiries. This is particularly difficult for home cooks.",
+    "domain": "Other",
+    "subdomain": "Purely Technical Inquiries",
+    "problemType": "General Other Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to private birthday party",
+      "Affects home cooks"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "20b4fe0cb0636eba1fc78a95f9e9fff2",
+    "split": "val"
+  },
+  {
+    "id": "gen_other_8_6",
+    "title": "Purely Technical Inquiries - private birthday party issue affecting home cooks",
+    "description": "The community has some concerns about private birthday party under Purely Technical Inquiries affecting home cooks.",
+    "domain": "Other",
+    "subdomain": "Purely Technical Inquiries",
+    "problemType": "General Other Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to private birthday party",
+      "Affects home cooks"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "20b4fe0cb0636eba1fc78a95f9e9fff2",
+    "split": "val"
+  },
+  {
+    "id": "gen_other_4_0",
+    "title": "Entertainment and Event Organization - recipe book issue affecting software engineers",
+    "description": "We are facing severe recipe book under Entertainment and Event Organization. This is particularly difficult for software engineers.",
+    "domain": "Other",
+    "subdomain": "Entertainment and Event Organization",
+    "problemType": "General Other Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to recipe book",
+      "Affects software engineers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "clean",
+    "parent_example_id": "a2ccd7cdbfec08ca0857fdc1d2633b72",
+    "split": "val"
+  },
+  {
+    "id": "gen_other_4_1",
+    "title": "Entertainment and Event Organization - recipe book issue affecting software engineers",
+    "description": "please resolve the issue of recipe book in Entertainment and Event Organization which are bad for software engineers.",
+    "domain": "Other",
+    "subdomain": "Entertainment and Event Organization",
+    "problemType": "General Other Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to recipe book",
+      "Affects software engineers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "poor_grammar",
+    "parent_example_id": "a2ccd7cdbfec08ca0857fdc1d2633b72",
+    "split": "val"
+  },
+  {
+    "id": "gen_other_4_2",
+    "title": "Entertainment and Event Organization - recipe book issue affecting software engineers",
+    "description": "need recipe book support for Entertainment and Event Organization affecting software engineers",
+    "domain": "Other",
+    "subdomain": "Entertainment and Event Organization",
+    "problemType": "General Other Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to recipe book",
+      "Affects software engineers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "short",
+    "parent_example_id": "a2ccd7cdbfec08ca0857fdc1d2633b72",
+    "split": "val"
+  },
+  {
+    "id": "gen_other_4_3",
+    "title": "Entertainment and Event Organization - recipe book issue affecting software engineers",
+    "description": "I want to report a critical issue regarding recipe book in our Entertainment and Event Organization sector. Over the past few months, we have observed that software engineers are struggling because of this. There are no proper systems in place to handle it, leading to widespread dissatisfaction. Local authorities have been informed but no action was taken. We urgently need expertise and assistance to resolve this.",
+    "domain": "Other",
+    "subdomain": "Entertainment and Event Organization",
+    "problemType": "General Other Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to recipe book",
+      "Affects software engineers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "long",
+    "parent_example_id": "a2ccd7cdbfec08ca0857fdc1d2633b72",
+    "split": "val"
+  },
+  {
+    "id": "gen_other_4_4",
+    "title": "Entertainment and Event Organization - recipe book issue affecting software engineers",
+    "description": "we have a situation here regarding recipe book affecting Entertainment and Event Organization for software engineers.",
+    "domain": "Other",
+    "subdomain": "Entertainment and Event Organization",
+    "problemType": "General Other Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to recipe book",
+      "Affects software engineers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "ambiguous",
+    "parent_example_id": "a2ccd7cdbfec08ca0857fdc1d2633b72",
+    "split": "val"
+  },
+  {
+    "id": "gen_other_4_5",
+    "title": "Entertainment and Event Organization - recipe book issue affecting software engineers",
+    "description": "A major challenge in Entertainment and Event Organization is the recipe book affecting software engineers.",
+    "domain": "Other",
+    "subdomain": "Entertainment and Event Organization",
+    "problemType": "General Other Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to recipe book",
+      "Affects software engineers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "typo",
+    "parent_example_id": "a2ccd7cdbfec08ca0857fdc1d2633b72",
+    "split": "val"
+  },
+  {
+    "id": "gen_other_4_6",
+    "title": "Entertainment and Event Organization - recipe book issue affecting software engineers",
+    "description": "The community has some concerns about recipe book under Entertainment and Event Organization affecting software engineers.",
+    "domain": "Other",
+    "subdomain": "Entertainment and Event Organization",
+    "problemType": "General Other Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to recipe book",
+      "Affects software engineers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "missing_info",
+    "parent_example_id": "a2ccd7cdbfec08ca0857fdc1d2633b72",
+    "split": "val"
+  },
+  {
+    "id": "gen_multidomain_1",
+    "title": "Drought leads to crop failure and school dropout",
+    "description": "Lack of rain has caused complete crop failure for farmers. Families are struggling financially, leading to kids dropping out of school to work.",
+    "domain": "Agriculture",
+    "secondaryDomains": [
+      "Education",
+      "Rural Livelihoods"
+    ],
+    "subdomain": "Crop Production",
+    "problemType": "Socio-agricultural crisis",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Drought crop failure",
+      "Financial distress",
+      "School dropout"
+    ],
+    "expectedMissingInformation": [
+      "Alternative income sources",
+      "School fees details"
+    ],
+    "quality": "high",
+    "provenance": "synthetic_generator_v2",
+    "generation_type": "multi_domain",
+    "parent_example_id": "multidomain_1",
+    "split": "val"
+  }
+]

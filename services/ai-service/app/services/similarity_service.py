@@ -2,7 +2,7 @@ import numpy as np
 
 from app.core.config import settings
 from app.core.logging import logger
-from app.repositories.local_repository import LocalRepository
+from app.repositories import get_repository
 from app.schemas.models import SimilarityMatch
 from app.services.embedding_service import embedding_service
 
@@ -12,9 +12,9 @@ class SimilarityService:
         self._repo = None
 
     @property
-    def repo(self) -> LocalRepository:
+    def repo(self):
         if self._repo is None:
-            self._repo = LocalRepository()
+            self._repo = get_repository()
         return self._repo
 
     def get_cosine_similarity(self, v1: list[float], v2: list[float]) -> float:
