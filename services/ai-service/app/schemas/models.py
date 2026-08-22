@@ -44,12 +44,21 @@ class SimilarityMatch(BaseModel):
     challengeId: str
     score: float
     relationship: str | None = None
+    explainability: dict | None = None
 
 
 class GapAnalysisInput(BaseModel):
     challengeId: str
     description: str
     aiAnalysis: ChallengeAIAnalysis | None = None
+
+
+class GapAnalysisContext(BaseModel):
+    challengeId: str
+    description: str
+    aiAnalysis: ChallengeAIAnalysis | None = None
+    similarChallenges: list[SimilarityMatch] | None = None
+    knownConstraints: dict | None = None
 
 
 class MatchesInput(BaseModel):
@@ -63,3 +72,18 @@ class UniversityMatch(BaseModel):
     name: str
     matchScore: float
     reasons: list[str] | None = None
+    explainability: dict | None = None
+
+
+class ProcessInput(BaseModel):
+    challengeId: str | None = None
+    title: str
+    description: str
+    context: dict | None = None
+
+
+class ProcessOutput(BaseModel):
+    analysis: ChallengeAIAnalysis
+    similarChallenges: list[SimilarityMatch]
+    gapAnalysis: InnovationGap
+    institutionMatches: list[UniversityMatch]

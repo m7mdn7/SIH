@@ -87,31 +87,31 @@ class SimilarityService:
             ch_title = ch.get("title", "")
             ch_desc = ch.get("description", "")
             ch_dom = ch.get("domain", "")
+            ch_loc = ch.get("locationContext", "")
 
             if not ch_emb:
                 rep = embedding_service.get_challenge_text_representation(
                     ch_title, ch_desc, ch_dom
                 )
                 ch_emb = embedding_service.encode(rep)
-                # Cache it in database
-                ch["embedding"] = ch_emb
-                self.repo.save_challenge(
-                    ch_id,
-                    ch_title,
-                    ch_desc,
-                    ch_emb,
-                    {
-                        "domain": ch_dom,
-                        "subdomain": ch.get("subdomain", ""),
-                        "locationContext": ch.get("locationContext", ""),
-                        "expectedSeverity": ch.get("expectedSeverity", ""),
-                    },
-                )
+                # Lazy save embedding to separate cache (does NOT mutate seed challenges.json)
+                self.repo.save_embedding(ch_id, ch_emb)
 
             sim = self.get_cosine_similarity(target_vector, ch_emb)
 
             # Calculate hybrid scoring
-            ch_loc = ch.get("locationContext")
+            domain_boost_val = (
+                1.0
+                if (
+                    ch_dom
+                    and domain
+                    and ch_dom.strip().lower() == domain.strip().lower()
+                )
+                else 0.0
+            )
+            # Simple context matching on location
+            context_boost_val = 0.0
+
             hybrid_score = self.calculate_hybrid_score(
                 sim, ch_dom, domain, ch_loc, None
             )
@@ -121,16 +121,23 @@ class SimilarityService:
                 rel = "duplicate"
             elif hybrid_score >= settings.SIMILARITY_RELATED_THRESHOLD:
                 rel = "related"
-            elif hybrid_score >= 0.60:
-                rel = "weakly_related"
             else:
-                continue  # Skip unrelated
+                rel = "weakly_related"
+
+            # Retain explainability metadata
+            explain_meta = {
+                "semanticScore": round(sim, 4),
+                "domainBoost": round(domain_boost_val * 0.10, 4),
+                "contextBoost": round(context_boost_val * 0.05, 4),
+                "finalScore": round(hybrid_score, 4),
+            }
 
             matches.append(
                 {
                     "challengeId": ch_id,
                     "score": round(hybrid_score, 4),
                     "relationship": rel,
+                    "explainability": explain_meta,
                 }
             )
 
@@ -142,6 +149,7 @@ class SimilarityService:
                 challengeId=m["challengeId"],
                 score=m["score"],
                 relationship=m["relationship"],
+                explainability=m["explainability"],
             )
             for m in matches[:limit]
         ]

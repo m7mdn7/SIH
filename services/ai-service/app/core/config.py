@@ -7,8 +7,8 @@ class Settings(BaseSettings):
 
     EMBEDDING_MODEL: str = "sentence-transformers/all-MiniLM-L6-v2"
 
-    SIMILARITY_DUPLICATE_THRESHOLD: float = 0.90
-    SIMILARITY_RELATED_THRESHOLD: float = 0.75
+    SIMILARITY_DUPLICATE_THRESHOLD: float = 0.85
+    SIMILARITY_RELATED_THRESHOLD: float = 0.65
 
     LLM_PROVIDER: str = "mock"  # "mock" or "openai"
 

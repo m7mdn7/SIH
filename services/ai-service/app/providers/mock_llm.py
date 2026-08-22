@@ -1,3 +1,4 @@
+import re
 import uuid
 
 from app.core.logging import logger
@@ -6,19 +7,29 @@ from app.schemas.models import ChallengeAIAnalysis, InnovationGap
 
 
 class MockLLMProvider(BaseLLMProvider):
+    def _contains_number(self, text: str) -> bool:
+        """Helper to check if a string contains any numeric digits."""
+        return bool(re.search(r"\d+", text))
+
+    def _extract_numbers_and_phrases(self, text: str) -> list[str]:
+        """Extract explicit numeric claims or count expressions from the text."""
+        # Find matches like "150 local mandi vendors", "2,000 daily consumers"
+        matches = re.findall(r"\b\d+[\s\w-]{1,30}\b", text)
+        return matches
+
     def analyze_challenge(
         self, challenge_id: str, title: str, description: str
     ) -> ChallengeAIAnalysis:
         logger.info(f"[MockLLM] Analyzing challenge: {title}")
-        text = (title + " " + description).lower()
+        combined_text = (title + " " + description).lower()
 
-        # Determine Domain
+        # 1. Determine Domain deterministically
         domain = "Urban Infrastructure"
         subdomain = "General Utilities"
         problem_type = "Infrastructure Maintenance"
 
         if any(
-            w in text
+            w in combined_text
             for w in [
                 "tomato",
                 "spoilage",
@@ -37,7 +48,7 @@ class MockLLMProvider(BaseLLMProvider):
             subdomain = "Post-Harvest Management"
             problem_type = "Food Spoilage and Storage"
         elif any(
-            w in text
+            w in combined_text
             for w in [
                 "water",
                 "well",
@@ -48,13 +59,14 @@ class MockLLMProvider(BaseLLMProvider):
                 "pipeline",
                 "drought",
                 "rainwater",
+                "fluoride",
             ]
         ):
             domain = "Water Management"
             subdomain = "Drinking Water Security"
             problem_type = "Groundwater Contamination"
         elif any(
-            w in text
+            w in combined_text
             for w in [
                 "health",
                 "hospital",
@@ -70,7 +82,7 @@ class MockLLMProvider(BaseLLMProvider):
             subdomain = "Primary Care Access"
             problem_type = "Rural Healthcare Services"
         elif any(
-            w in text
+            w in combined_text
             for w in [
                 "school",
                 "student",
@@ -85,7 +97,7 @@ class MockLLMProvider(BaseLLMProvider):
             subdomain = "Digital Education Services"
             problem_type = "Educational Inequality"
         elif any(
-            w in text
+            w in combined_text
             for w in [
                 "pollution",
                 "waste",
@@ -94,13 +106,14 @@ class MockLLMProvider(BaseLLMProvider):
                 "air quality",
                 "plastic",
                 "recycling",
+                "e-waste",
             ]
         ):
             domain = "Environment"
             subdomain = "Waste Management"
             problem_type = "Organic Waste Processing"
         elif any(
-            w in text
+            w in combined_text
             for w in [
                 "energy",
                 "power",
@@ -115,7 +128,7 @@ class MockLLMProvider(BaseLLMProvider):
             subdomain = "Renewable Grid Power"
             problem_type = "Off-Grid Power Systems"
         elif any(
-            w in text
+            w in combined_text
             for w in [
                 "traffic",
                 "road",
@@ -124,13 +137,14 @@ class MockLLMProvider(BaseLLMProvider):
                 "transit",
                 "metro",
                 "bus",
+                "signal",
             ]
         ):
             domain = "Urban Infrastructure"
             subdomain = "Transportation Systems"
             problem_type = "Traffic Congestion"
         elif any(
-            w in text
+            w in combined_text
             for w in [
                 "accessible",
                 "wheelchair",
@@ -145,7 +159,7 @@ class MockLLMProvider(BaseLLMProvider):
             subdomain = "Public Facility Access"
             problem_type = "Physical Barrier Mitigation"
         elif any(
-            w in text
+            w in combined_text
             for w in [
                 "government",
                 "municipal",
@@ -159,7 +173,7 @@ class MockLLMProvider(BaseLLMProvider):
             subdomain = "Welfare Scheme Delivery"
             problem_type = "Digital Public Services"
         elif any(
-            w in text
+            w in combined_text
             for w in [
                 "handicraft",
                 "artisan",
@@ -176,7 +190,7 @@ class MockLLMProvider(BaseLLMProvider):
         # Determine Severity and Scale
         severity = "medium"
         if any(
-            w in text
+            w in combined_text
             for w in [
                 "severe",
                 "extreme",
@@ -189,76 +203,151 @@ class MockLLMProvider(BaseLLMProvider):
             ]
         ):
             severity = "high"
-        elif any(w in text for w in ["minor", "slow", "annoyance", "occasional"]):
+        elif any(
+            w in combined_text for w in ["minor", "slow", "annoyance", "occasional"]
+        ):
             severity = "low"
 
         scale = "community"
-        if any(w in text for w in ["mandi", "market", "village", "neighborhood"]):
+        if any(
+            w in combined_text for w in ["mandi", "market", "village", "neighborhood"]
+        ):
             scale = "village"
-        elif any(w in text for w in ["district", "city", "region"]):
+        elif any(w in combined_text for w in ["district", "city", "region"]):
             scale = "district"
-        elif any(w in text for w in ["state", "country", "national"]):
+        elif any(w in combined_text for w in ["state", "country", "national"]):
             scale = "state"
-        elif any(w in text for w in ["household", "family", "personal"]):
+        elif any(w in combined_text for w in ["household", "family", "personal"]):
             scale = "individual"
 
-        # Extract Key Factors
+        # 2. Formulate affected population without inventing numbers unless explicitly supplied
+        explicit_numbers = self._extract_numbers_and_phrases(
+            description
+        ) + self._extract_numbers_and_phrases(title)
+        if explicit_numbers:
+            affected_pop = (
+                f"Affected population includes: {', '.join(explicit_numbers)}"
+            )
+        else:
+            # Conservative abstraction based on domain
+            if domain == "Agriculture":
+                affected_pop = "Farmers and agricultural stakeholders"
+            elif domain == "Water Management":
+                affected_pop = "Local residents dependent on groundwater resources"
+            elif domain == "Healthcare":
+                affected_pop = "Patients and healthcare consumers in the area"
+            elif domain == "Education":
+                affected_pop = "Students, teachers, and educational stakeholders"
+            elif domain == "Environment":
+                affected_pop = "Community residents exposed to environmental factors"
+            elif domain == "Energy":
+                affected_pop = "Residents requiring power access"
+            elif domain == "Urban Infrastructure":
+                affected_pop = "Commuters and urban residents using transport routes"
+            elif domain == "Accessibility":
+                affected_pop = (
+                    "Individuals with accessibility needs and public building users"
+                )
+            elif domain == "Public Administration":
+                affected_pop = "Citizens and public service welfare beneficiaries"
+            else:
+                affected_pop = "Rural artisans and cooperative members"
+
+        # 3. Dynamic Key Factors based strictly on matching keywords (evidence-grounded)
         key_factors = []
-        if domain == "Agriculture":
-            key_factors = [
-                "Lack of passive cooling storage",
-                "Extreme afternoon temperatures",
-                "Unreliable grid power",
-            ]
-        elif domain == "Water Management":
-            key_factors = [
-                "Agricultural runoff in groundwater",
-                "Absence of community water filtration",
-                "Unregulated chemical usage",
-            ]
-        elif domain == "Urban Infrastructure":
-            key_factors = [
-                "Suboptimal signal timing configurations",
-                "Boarding space bottlenecks",
-                "Peak traffic flow concentration",
-            ]
-        else:
-            key_factors = [
-                "Lack of structural resource allocation",
-                "Outdated service delivery processes",
-                "Unoptimized local configurations",
-            ]
-
-        # Extract Missing Info
         missing_info = []
-        if domain == "Agriculture":
-            missing_info = [
-                "Daily volume of surplus crop supply",
-                "Current waste disposal expenses",
-            ]
-        elif domain == "Water Management":
-            missing_info = [
-                "Comprehensive hydrogeological survey maps",
-                "Seasonal water table changes",
-            ]
-        else:
-            missing_info = [
-                "Exact beneficiary demographic numbers",
-                "System feedback loops",
-            ]
 
-        # Formulate affected population
-        affected_pop = (
-            f"Approximately {scale} members suffering from {problem_type.lower()}"
-        )
+        # Default fallback missing information items
+        missing_info.append("Exact count of affected stakeholders")
+        missing_info.append("Historical baseline data metrics")
+
         if domain == "Agriculture":
-            affected_pop = (
-                "Approximately 150 local mandi vendors and 2,000 daily consumers"
-            )
+            # Check cold storage/cooling
+            if any(
+                w in combined_text
+                for w in ["storage", "cooling", "refrigeration", "cool"]
+            ):
+                key_factors.append("Lack of affordable cold storage")
+            else:
+                missing_info.append("Current storage alternatives")
+
+            # Check spoilage/rot
+            if any(w in combined_text for w in ["spoil", "rot", "waste", "lose"]):
+                key_factors.append("Post-harvest crop spoilage")
+            else:
+                missing_info.append("Quantity of crop produce lost")
+
+            # Check temperature/heat
+            if any(
+                w in combined_text
+                for w in ["temperature", "heat", "afternoon", "weather", "sun"]
+            ):
+                key_factors.append("High local ambient temperatures")
+            else:
+                missing_info.append("Local environmental and climate conditions")
+
+            # Check electricity/grid
+            if any(
+                w in combined_text for w in ["grid", "power", "electricity", "utility"]
+            ):
+                key_factors.append("Unreliable grid power")
+            else:
+                missing_info.append("Electricity availability and reliability")
+
         elif domain == "Water Management":
-            affected_pop = (
-                "Around 400 rural households dependent on local groundwater tubewells"
-            )
+            if any(
+                w in combined_text
+                for w in ["runoff", "fertilizer", "chemical", "nitrate"]
+            ):
+                key_factors.append("Agricultural chemical runoff in groundwater")
+            else:
+                missing_info.append("Source and concentration of chemical contaminants")
+
+            if any(
+                w in combined_text for w in ["filtration", "filter", "clean", "purif"]
+            ):
+                key_factors.append("Absence of community water filtration")
+            else:
+                missing_info.append("Current community water purification status")
+
+            if any(
+                w in combined_text
+                for w in ["well", "borewell", "tubewell", "extraction"]
+            ):
+                key_factors.append("Groundwater extraction and source dependency")
+            else:
+                missing_info.append("Borewell and groundwater extraction statistics")
+
+        elif domain == "Urban Infrastructure":
+            if any(w in combined_text for w in ["signal", "timer", "light"]):
+                key_factors.append("Suboptimal traffic signal timing configurations")
+            else:
+                missing_info.append("Traffic signal timing configurations and data")
+
+            if any(
+                w in combined_text
+                for w in ["junction", "exit", "subway", "station", "boarding"]
+            ):
+                key_factors.append("Boarding space and junction bottlenecks")
+            else:
+                missing_info.append("Junction capacity and boarding flow data")
+
+            if any(w in combined_text for w in ["traffic", "gridlock", "congest"]):
+                key_factors.append("Peak traffic flow concentration")
+            else:
+                missing_info.append("Peak traffic hours and vehicle volume metrics")
+
+        else:
+            # Generic domain fallback key factors
+            key_factors.append("Lack of structural resource allocation")
+            key_factors.append("Unoptimized local configurations")
+
+        # If no key factors were triggered, provide a conservative fallback
+        if not key_factors:
+            key_factors.append(f"Lack of {domain.lower()} support systems")
+
+        # Ensure missingInformation has no duplicates
+        missing_info = list(dict.fromkeys(missing_info))
 
         return ChallengeAIAnalysis(
             id=f"an_{uuid.uuid4().hex[:8]}",
@@ -281,18 +370,11 @@ class MockLLMProvider(BaseLLMProvider):
         ai_analysis: ChallengeAIAnalysis | None = None,
     ) -> InnovationGap:
         logger.info(f"[MockLLM] Gap analysis for challenge ID: {challenge_id}")
-        text = description.lower()
+        combined_text = description.lower()
 
-        # Default gap outputs
-        gap_type = "technology"
-        desc = "Missing real-time monitoring and automation technology."
-        rationale = "No existing systems are installed to collect live metrics or coordinate operations."
-        action = "Deploy custom sensor instrumentation and integrate smart dashboards."
-        expertise = ["Computer Science", "Data Science", "Electrical Engineering"]
-
-        # Check domain or indicators to map gap types
+        # Step 1: Sequential check of gap triggers
         if any(
-            w in text
+            w in combined_text
             for w in [
                 "research",
                 "study",
@@ -300,75 +382,36 @@ class MockLLMProvider(BaseLLMProvider):
                 "investigate",
                 "undocumented",
                 "unknown effect",
+                "salinity",
             ]
         ):
             gap_type = "research"
             desc = "Lack of foundational scientific research or material properties understanding."
-            rationale = "The physical or biological variables are undocumented for this local geography."
+            rationale = "Based on the available information, the primary gap appears to be scientific uncertainty as the physical or biological variables are undocumented for this local context."
             action = "Conduct primary laboratory assays and baseline academic studies."
             expertise = ["Environmental Science", "Social Sciences", "Agronomy"]
         elif any(
-            w in text
+            w in combined_text
             for w in [
-                "tomato",
-                "spoilage",
-                "vegetable",
-                "rot",
-                "cooling",
-                "storage",
-                "adaptation",
-                "low-cost",
-                "context",
-                "power grid",
+                "data",
+                "record",
+                "test",
+                "measure",
+                "database",
+                "stats",
+                "map",
+                "fluoride",
             ]
-        ):
-            gap_type = "adaptation"
-            desc = "Need for off-grid, low-cost evaporative cooling storage system."
-            rationale = "Standard active refrigeration exists but is not viable due to grid unreliability; passive cooling designs must be adapted for local mandate."
-            action = "Design and construct passive zero-energy evaporative cooling chambers utilizing clay and sand."
-            expertise = [
-                "Thermal Engineering",
-                "Mechanical Engineering",
-                "Agricultural Engineering",
-            ]
-        elif any(
-            w in text
-            for w in [
-                "sensor",
-                "device",
-                "iot",
-                "timer",
-                "signal",
-                "software",
-                "automation",
-            ]
-        ):
-            gap_type = "technology"
-            desc = "Lack of smart automated control loop logic."
-            rationale = (
-                "Timers are static and need automated density-adaptive signal systems."
-            )
-            action = (
-                "Implement computer vision cameras with density-aware control loops."
-            )
-            expertise = [
-                "Computer Science",
-                "Artificial Intelligence",
-                "Electrical Engineering",
-            ]
-        elif any(
-            w in text
-            for w in ["data", "record", "test", "measure", "database", "stats", "map"]
         ):
             gap_type = "data"
             desc = "Missing baseline demographic, volume, or contamination data sets."
-            rationale = "No historical logs or spatial database exists to model the distribution patterns."
+            rationale = "Based on the available information, the primary gap appears to be insufficient data preventing decision-making or modeling distribution patterns."
             action = (
                 "Setup a crowd-sourced monitoring network and publish open datasets."
             )
             expertise = ["Data Science", "Computer Science", "Social Sciences"]
         elif any(
-            w in text
+            w in combined_text
             for w in [
                 "expert",
                 "skill",
@@ -379,12 +422,68 @@ class MockLLMProvider(BaseLLMProvider):
             ]
         ):
             gap_type = "expertise"
-            desc = (
-                "Absent localized technical training or multidisciplinary curriculum."
-            )
-            rationale = "Specialized skills in post-harvest engineering are unavailable in local institutions."
-            action = "Organize university workshop accelerators and compile interactive training manuals."
+            desc = "Absent localized technical training or specialized knowledge."
+            rationale = "Based on the available information, the primary gap appears to be the unavailability of specialized skills in local institutions."
+            action = "Organize university workshop accelerators and compile training manuals."
             expertise = ["Education Technology", "Social Sciences"]
+        elif any(
+            w in combined_text
+            for w in [
+                "adaptation",
+                "low-cost",
+                "rural context",
+                "affordable",
+                "passive",
+                "clay",
+                "sand",
+                "refrigeration",
+                "cooling",
+                "storage",
+                "spoilage",
+            ]
+        ):
+            gap_type = "adaptation"
+            desc = "Need for off-grid, low-cost adaptation of existing systems."
+            rationale = "Based on the available information, the primary gap appears to be suitability (affordability/infrastructure) as active refrigeration exists but is not viable under local constraints."
+            action = "Design and construct passive zero-energy evaporative cooling chambers utilizing clay and sand."
+            expertise = [
+                "Thermal Engineering",
+                "Mechanical Engineering",
+                "Agricultural Engineering",
+            ]
+        elif any(
+            w in combined_text
+            for w in [
+                "sensor",
+                "device",
+                "iot",
+                "timer",
+                "signal",
+                "software",
+                "automation",
+                "computer vision",
+            ]
+        ):
+            gap_type = "technology"
+            desc = "Lack of smart automated control loop logic."
+            rationale = "Based on the available information, the primary gap appears to be technology access since static control mechanisms require automated density-adaptive signal systems."
+            action = (
+                "Implement computer vision cameras with density-aware control loops."
+            )
+            expertise = [
+                "Computer Science",
+                "Artificial Intelligence",
+                "Electrical Engineering",
+            ]
+        else:
+            # Default fallback gap is technology
+            gap_type = "technology"
+            desc = "Missing real-time monitoring and automation technology."
+            rationale = "Based on the available information, the primary gap appears to be technology availability since no systems are installed to collect live metrics or coordinate operations."
+            action = (
+                "Deploy custom sensor instrumentation and integrate smart dashboards."
+            )
+            expertise = ["Computer Science", "Data Science", "Electrical Engineering"]
 
         return InnovationGap(
             id=f"gap_{uuid.uuid4().hex[:8]}",

@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from app.api.routes import analyze, gap_analysis, health, matches, similarity
+from app.api.routes import analyze, gap_analysis, health, matches, process, similarity
 
 api_router = APIRouter()
 
@@ -16,4 +16,7 @@ api_router.include_router(
 )
 api_router.include_router(
     matches.router, prefix="/matches", tags=["University Matching"]
+)
+api_router.include_router(
+    process.router, prefix="/process", tags=["Intelligence Pipeline"]
 )
