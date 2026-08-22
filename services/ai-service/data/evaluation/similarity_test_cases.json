@@ -1,0 +1,41 @@
+[
+  {
+    "challengeA": {
+      "title": "Vegetable rot at farmer coop yard due to heat",
+      "description": "Our agricultural cooperative yard has no refrigeration. Vegetables, particularly spinach and tomatoes, spoil rapidly under afternoon sun. We need a low-cost, off-grid cooling solution.",
+      "domain": "Agriculture"
+    },
+    "challengeB": {
+      "title": "Tomato spoilage at North Mandi Market",
+      "description": "Farmers lose massive quantities of fresh tomatoes daily due to lack of cold storage facilities and extreme heat during transport.",
+      "domain": "Agriculture"
+    },
+    "label": "related"
+  },
+  {
+    "challengeA": {
+      "title": "High nitrate contamination in community wells",
+      "description": "Recent drinking water tests show high levels of nitrates and chemical runoff in several community tubewells, likely from nearby farms.",
+      "domain": "Water Management"
+    },
+    "challengeB": {
+      "title": "Agricultural fertilizer runoff polluting village drinking wells",
+      "description": "Our well water is unsafe for infants. Tests show dangerous levels of nitrate pollutants originating from surrounding crop fields' fertilizer runoff.",
+      "domain": "Water Management"
+    },
+    "label": "duplicate"
+  },
+  {
+    "challengeA": {
+      "title": "Tomato spoilage at North Mandi Market",
+      "description": "Farmers lose massive quantities of fresh tomatoes daily due to lack of cold storage facilities and extreme heat during transport.",
+      "domain": "Agriculture"
+    },
+    "challengeB": {
+      "title": "High nitrate contamination in community wells",
+      "description": "Recent drinking water tests show high levels of nitrates and chemical runoff in several community tubewells, likely from nearby farms.",
+      "domain": "Water Management"
+    },
+    "label": "unrelated"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "name": "siip-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace=apps/web",
+    "dev:gov": "npm run dev --workspace=apps/web -- --mode gov",
+    "dev:uni": "npm run dev --workspace=apps/web -- --mode uni",
+    "dev:ind": "npm run dev --workspace=apps/web -- --mode ind",
+    "dev:cit": "npm run dev --workspace=apps/web -- --mode cit",
+    "dev:api": "npm run dev --workspace=apps/api",
+    "build:types": "npm run build --workspace=packages/types",
+    "install:all": "npm install"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0"
+  }
+}
