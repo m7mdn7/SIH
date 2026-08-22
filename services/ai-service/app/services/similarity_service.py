@@ -118,8 +118,17 @@ class SimilarityService:
 
             # Determine relationship category based on thresholds
             from app.config import scoring
-            dup_thresh = getattr(scoring, "SIMILARITY_DUPLICATE_THRESHOLD", settings.SIMILARITY_DUPLICATE_THRESHOLD)
-            rel_thresh = getattr(scoring, "SIMILARITY_RELATED_THRESHOLD", settings.SIMILARITY_RELATED_THRESHOLD)
+
+            dup_thresh = getattr(
+                scoring,
+                "SIMILARITY_DUPLICATE_THRESHOLD",
+                settings.SIMILARITY_DUPLICATE_THRESHOLD,
+            )
+            rel_thresh = getattr(
+                scoring,
+                "SIMILARITY_RELATED_THRESHOLD",
+                settings.SIMILARITY_RELATED_THRESHOLD,
+            )
             weak_thresh = getattr(scoring, "SIMILARITY_WEAKLY_RELATED_THRESHOLD", 0.30)
 
             if hybrid_score >= dup_thresh:

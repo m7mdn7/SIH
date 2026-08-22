@@ -1,12 +1,14 @@
-import os
 import json
+import os
+
 import numpy as np
 
+from app.config import scoring
 from app.core.config import settings
 from app.core.logging import logger
 from app.schemas.models import InnovationGap, UniversityMatch
 from app.services.embedding_service import embedding_service
-from app.config import scoring
+
 
 class CapabilityMatchingService:
     def __init__(self):
@@ -49,16 +51,18 @@ class CapabilityMatchingService:
         gap_analysis: InnovationGap | None = None,
         location_context: str | None = None,
     ) -> list[UniversityMatch]:
-        logger.info(f"[CapabilityMatchingService] Matching universities for domain: {domain}")
+        logger.info(
+            f"[CapabilityMatchingService] Matching universities for domain: {domain}"
+        )
 
         required_expertise = gap_analysis.requiredExpertise if gap_analysis else []
         recommended_action = gap_analysis.recommendedAction if gap_analysis else ""
-        
+
         # 1. Compute embeddings for challenge requirements
         req_emb = embedding_service.encode(recommended_action or description)
         desc_emb = embedding_service.encode(description)
         domain_emb = embedding_service.encode(domain)
-        
+
         matches = []
 
         for uni in self.universities:
@@ -81,7 +85,7 @@ class CapabilityMatchingService:
             if required_expertise:
                 uni_expertise = uni.get("expertise", [])
                 uni_exp_embs = [embedding_service.encode(e) for e in uni_expertise]
-                
+
                 match_count = 0
                 for req in required_expertise:
                     req_exp_emb = embedding_service.encode(req)
@@ -92,11 +96,11 @@ class CapabilityMatchingService:
                         if sim > best_sim:
                             best_sim = sim
                             best_exp_name = exp_name
-                    
+
                     if best_sim >= 0.70:
                         match_count += 1
                         matched_exp.append(best_exp_name)
-                
+
                 expertise_score = (match_count / len(required_expertise)) * 100.0
 
             # C. Department Availability (15% weight)
@@ -162,15 +166,25 @@ class CapabilityMatchingService:
             if domain_score > 0:
                 reasons.append(f"Strong match for the {domain} domain")
             if matched_exp:
-                reasons.append(f"Expertise in: {', '.join(list(dict.fromkeys(matched_exp)))}")
+                reasons.append(
+                    f"Expertise in: {', '.join(list(dict.fromkeys(matched_exp)))}"
+                )
             if matched_depts:
-                reasons.append(f"Departments present: {', '.join(list(dict.fromkeys(matched_depts)))}")
+                reasons.append(
+                    f"Departments present: {', '.join(list(dict.fromkeys(matched_depts)))}"
+                )
             if matched_projects:
-                reasons.append(f"Relevant past work: {', '.join(list(dict.fromkeys(matched_projects))[:2])}")
+                reasons.append(
+                    f"Relevant past work: {', '.join(list(dict.fromkeys(matched_projects))[:2])}"
+                )
             if matched_infra:
-                reasons.append(f"Specialized facilities: {', '.join(list(dict.fromkeys(matched_infra))[:2])}")
+                reasons.append(
+                    f"Specialized facilities: {', '.join(list(dict.fromkeys(matched_infra))[:2])}"
+                )
             if location_score > 0:
-                reasons.append(f"Located in the target {uni.get('locationContext')} region")
+                reasons.append(
+                    f"Located in the target {uni.get('locationContext')} region"
+                )
 
             # Determine Match Tier
             if final_score >= 70.0:
@@ -183,12 +197,24 @@ class CapabilityMatchingService:
                 tier = "weak"
 
             explain_meta = {
-                "domainScore": int(domain_score * (scoring.MATCH_WEIGHT_DOMAIN / 100.0)),
-                "expertiseScore": int(expertise_score * (scoring.MATCH_WEIGHT_EXPERTISE / 100.0)),
-                "departmentScore": int(dept_score * (scoring.MATCH_WEIGHT_DEPARTMENT / 100.0)),
-                "projectScore": int(project_score * (scoring.MATCH_WEIGHT_PROJECT / 100.0)),
-                "infrastructureScore": int(infra_score * (scoring.MATCH_WEIGHT_INFRASTRUCTURE / 100.0)),
-                "locationScore": int(location_score * (scoring.MATCH_WEIGHT_LOCATION / 100.0)),
+                "domainScore": int(
+                    domain_score * (scoring.MATCH_WEIGHT_DOMAIN / 100.0)
+                ),
+                "expertiseScore": int(
+                    expertise_score * (scoring.MATCH_WEIGHT_EXPERTISE / 100.0)
+                ),
+                "departmentScore": int(
+                    dept_score * (scoring.MATCH_WEIGHT_DEPARTMENT / 100.0)
+                ),
+                "projectScore": int(
+                    project_score * (scoring.MATCH_WEIGHT_PROJECT / 100.0)
+                ),
+                "infrastructureScore": int(
+                    infra_score * (scoring.MATCH_WEIGHT_INFRASTRUCTURE / 100.0)
+                ),
+                "locationScore": int(
+                    location_score * (scoring.MATCH_WEIGHT_LOCATION / 100.0)
+                ),
                 "finalScore": int(final_score),
             }
 
@@ -199,7 +225,7 @@ class CapabilityMatchingService:
                     matchScore=round(final_score, 1),
                     reasons=reasons,
                     explainability=explain_meta,
-                    matchTier=tier
+                    matchTier=tier,
                 )
             )
 
@@ -207,7 +233,9 @@ class CapabilityMatchingService:
         matches.sort(key=lambda x: x.matchScore, reverse=True)
 
         # Apply minimum match score filter
-        has_relying_matches = any(m.matchScore >= scoring.MIN_MATCH_SCORE for m in matches)
+        has_relying_matches = any(
+            m.matchScore >= scoring.MIN_MATCH_SCORE for m in matches
+        )
         if has_relying_matches:
             matches = [m for m in matches if m.matchScore >= scoring.MIN_MATCH_SCORE]
         else:
@@ -217,5 +245,6 @@ class CapabilityMatchingService:
                 m.reasons.append("Low confidence / limited institutional match")
 
         return matches
+
 
 capability_matching_service = CapabilityMatchingService()

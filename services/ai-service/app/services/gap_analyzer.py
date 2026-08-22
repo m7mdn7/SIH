@@ -135,12 +135,10 @@ class GapAnalyzer:
 
         # 5. Validate and enrich gap analysis
         from app.services.gap_validation_service import gap_validation_service
+
         dom_name = ai_analysis.domain if ai_analysis else "Agriculture"
         gap = gap_validation_service.validate_and_enrich_gap(
-            title="",
-            description=description,
-            gap=gap,
-            domain=dom_name
+            title="", description=description, gap=gap, domain=dom_name
         )
 
         return gap

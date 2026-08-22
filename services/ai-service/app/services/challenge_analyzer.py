@@ -5,7 +5,7 @@ from app.core.logging import logger
 from app.providers.mock_llm import MockLLMProvider
 from app.providers.openai_provider import OpenAICompatibleProvider
 from app.schemas.models import ChallengeAIAnalysis
-from app.taxonomy.domains import DOMAIN_KEYWORDS, DOMAINS
+from app.taxonomy.domains import DOMAIN_KEYWORDS
 
 
 class ChallengeAnalyzer:
@@ -43,6 +43,7 @@ class ChallengeAnalyzer:
         logger.info(f"Analyzing challenge {challenge_id} title: '{title}'")
 
         from app.services.classification_service import classification_service
+
         res_class = classification_service.classify(title, description)
 
         # Determine provider

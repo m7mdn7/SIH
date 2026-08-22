@@ -1,2 +1,3 @@
 from app.services.capability_matching_service import capability_matching_service
+
 matching_service = capability_matching_service
