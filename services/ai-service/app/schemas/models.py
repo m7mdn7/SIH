@@ -55,3 +55,4 @@ class UniversityMatch(BaseModel):
     universityId: str
     name: str
     matchScore: float
+    reasons: Optional[List[str]] = None
