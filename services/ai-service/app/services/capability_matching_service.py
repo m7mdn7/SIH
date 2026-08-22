@@ -197,25 +197,25 @@ class CapabilityMatchingService:
                 tier = "weak"
 
             explain_meta = {
-                "domainScore": int(
-                    domain_score * (scoring.MATCH_WEIGHT_DOMAIN / 100.0)
+                "domainScore": round(
+                    domain_score * (scoring.MATCH_WEIGHT_DOMAIN / 100.0), 1
                 ),
-                "expertiseScore": int(
-                    expertise_score * (scoring.MATCH_WEIGHT_EXPERTISE / 100.0)
+                "expertiseScore": round(
+                    expertise_score * (scoring.MATCH_WEIGHT_EXPERTISE / 100.0), 1
                 ),
-                "departmentScore": int(
-                    dept_score * (scoring.MATCH_WEIGHT_DEPARTMENT / 100.0)
+                "departmentScore": round(
+                    dept_score * (scoring.MATCH_WEIGHT_DEPARTMENT / 100.0), 1
                 ),
-                "projectScore": int(
-                    project_score * (scoring.MATCH_WEIGHT_PROJECT / 100.0)
+                "projectScore": round(
+                    project_score * (scoring.MATCH_WEIGHT_PROJECT / 100.0), 1
                 ),
-                "infrastructureScore": int(
-                    infra_score * (scoring.MATCH_WEIGHT_INFRASTRUCTURE / 100.0)
+                "infrastructureScore": round(
+                    infra_score * (scoring.MATCH_WEIGHT_INFRASTRUCTURE / 100.0), 1
                 ),
-                "locationScore": int(
-                    location_score * (scoring.MATCH_WEIGHT_LOCATION / 100.0)
+                "locationScore": round(
+                    location_score * (scoring.MATCH_WEIGHT_LOCATION / 100.0), 1
                 ),
-                "finalScore": int(final_score),
+                "finalScore": round(final_score, 1),
             }
 
             matches.append(
