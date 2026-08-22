@@ -1,0 +1,63 @@
+{
+  "pairs_evaluated": 10,
+  "scores": [
+    0.9500000786857355,
+    0.8625621544023787,
+    0.8551525123009357,
+    0.42310556389715615,
+    0.32546724640727787,
+    0.479104846212298,
+    0.08657066905422076,
+    0.14026440876705779,
+    0.8453423238789471,
+    0.3575624698584824
+  ],
+  "labels": [
+    "duplicate",
+    "duplicate",
+    "duplicate",
+    "related",
+    "related",
+    "related",
+    "unrelated",
+    "unrelated",
+    "duplicate",
+    "related"
+  ],
+  "recommended_thresholds": {
+    "duplicate": 0.85,
+    "related": 0.65,
+    "weakly_related": 0.4
+  },
+  "performance_metrics": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": [
+      [
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2
+      ]
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "data/training/train_dataset.json": {
+    "total_records": 835,
+    "missing_fields_count": 0,
+    "invalid_domains_count": 0,
+    "short_descriptions_count": 0,
+    "domain_coverage": {
+      "Agriculture": 53,
+      "Water Management": 53,
+      "Healthcare": 52,
+      "Education": 52,
+      "Sanitation": 52,
+      "Environment": 52,
+      "Energy": 52,
+      "Urban Infrastructure": 52,
+      "Rural Livelihoods": 52,
+      "Accessibility": 52,
+      "Public Administration": 52,
+      "Transportation": 53,
+      "Disaster Management": 52,
+      "Community Development": 52,
+      "Public Safety": 52,
+      "Other": 52
+    }
+  },
+  "data/evaluation/challenge_cases.json": {
+    "total_records": 163,
+    "missing_fields_count": 0,
+    "invalid_domains_count": 0,
+    "short_descriptions_count": 0,
+    "domain_coverage": {
+      "Agriculture": 11,
+      "Water Management": 11,
+      "Healthcare": 10,
+      "Education": 10,
+      "Sanitation": 10,
+      "Environment": 10,
+      "Energy": 10,
+      "Urban Infrastructure": 10,
+      "Rural Livelihoods": 10,
+      "Accessibility": 10,
+      "Public Administration": 10,
+      "Transportation": 11,
+      "Disaster Management": 10,
+      "Community Development": 10,
+      "Public Safety": 10,
+      "Other": 10
+    }
+  }
+}

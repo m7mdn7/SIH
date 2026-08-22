@@ -1,0 +1,2951 @@
+[
+  {
+    "id": "gen_agriculture_0",
+    "title": "Irrigation issue affecting mandi vendors",
+    "description": "The community is experiencing harvesting, which directly impacts mandi vendors.",
+    "domain": "Agriculture",
+    "subdomain": "Irrigation",
+    "problemType": "General Agriculture Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to harvesting",
+      "Affects mandi vendors"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_agriculture_1",
+    "title": "Irrigation issue affecting mandi vendors",
+    "description": "facing too much problem in cold storage which are bad for mandi vendors.",
+    "domain": "Agriculture",
+    "subdomain": "Irrigation",
+    "problemType": "General Agriculture Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to cold storage",
+      "Affects mandi vendors"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_agriculture_2",
+    "title": "Livestock issue affecting farmers",
+    "description": "no perishable crops here",
+    "domain": "Agriculture",
+    "subdomain": "Livestock",
+    "problemType": "General Agriculture Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to perishable crops",
+      "Affects farmers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_agriculture_3",
+    "title": "Soil Management issue affecting farmers",
+    "description": "I want to report a critical issue regarding spoilage. Over the past few months, we have observed that farmers are struggling because of this. There are no proper systems in place to handle it, leading to widespread dissatisfaction. Local authorities have been informed but no action was taken. We urgently need expertise and assistance to resolve this.",
+    "domain": "Agriculture",
+    "subdomain": "Soil Management",
+    "problemType": "General Agriculture Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to spoilage",
+      "Affects farmers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_agriculture_4",
+    "title": "Livestock issue affecting mandi vendors",
+    "description": "we have a situation here regarding pesticides.",
+    "domain": "Agriculture",
+    "subdomain": "Livestock",
+    "problemType": "General Agriculture Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to pesticides",
+      "Affects mandi vendors"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_agriculture_5",
+    "title": "Crop Production issue affecting mandi vendors",
+    "description": "A major challenge in our area is the cultivation affecting mandi vendors.",
+    "domain": "Agriculture",
+    "subdomain": "Crop Production",
+    "problemType": "General Agriculture Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to cultivation",
+      "Affects mandi vendors"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_agriculture_6",
+    "title": "Post-Harvest Management issue affecting mandi vendors",
+    "description": "The community has some concerns about perishable crops.",
+    "domain": "Agriculture",
+    "subdomain": "Post-Harvest Management",
+    "problemType": "General Agriculture Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to perishable crops",
+      "Affects mandi vendors"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_agriculture_7",
+    "title": "Livestock issue affecting mandi vendors",
+    "description": "The community is experiencing post-harvest loss, which directly impacts mandi vendors.",
+    "domain": "Agriculture",
+    "subdomain": "Livestock",
+    "problemType": "General Agriculture Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to post-harvest loss",
+      "Affects mandi vendors"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_agriculture_8",
+    "title": "Post-Harvest Management issue affecting farmers",
+    "description": "i am writing because harvesting which are bad for farmers.",
+    "domain": "Agriculture",
+    "subdomain": "Post-Harvest Management",
+    "problemType": "General Agriculture Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to harvesting",
+      "Affects farmers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_agriculture_9",
+    "title": "Post-Harvest Management issue affecting farmers",
+    "description": "suffering from spoilage",
+    "domain": "Agriculture",
+    "subdomain": "Post-Harvest Management",
+    "problemType": "General Agriculture Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to spoilage",
+      "Affects farmers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_water_management_0",
+    "title": "Groundwater issue affecting village residents",
+    "description": "A major challenge in our area is the aquifer affecting village residents.",
+    "domain": "Water Management",
+    "subdomain": "Groundwater",
+    "problemType": "General Water Management Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to aquifer",
+      "Affects village residents"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_water_management_1",
+    "title": "Groundwater issue affecting school children",
+    "description": "i am writing because aquifer which are bad for school children.",
+    "domain": "Water Management",
+    "subdomain": "Groundwater",
+    "problemType": "General Water Management Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to aquifer",
+      "Affects school children"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_water_management_2",
+    "title": "Groundwater issue affecting school children",
+    "description": "borewell problem",
+    "domain": "Water Management",
+    "subdomain": "Groundwater",
+    "problemType": "General Water Management Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to borewell",
+      "Affects school children"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_water_management_3",
+    "title": "Flooding issue affecting community members",
+    "description": "This petition is on behalf of community members who are severely impacted by chlorination. The current situation is unsustainable and requires immediate intervention. We believe a combination of local community effort and technical innovation is the only way forward. Currently, we lack any baseline data or plans to address this.",
+    "domain": "Water Management",
+    "subdomain": "Flooding",
+    "problemType": "General Water Management Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to chlorination",
+      "Affects community members"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_water_management_4",
+    "title": "Water Conservation issue affecting school children",
+    "description": "the local rainwater harvesting is in very bad condition.",
+    "domain": "Water Management",
+    "subdomain": "Water Conservation",
+    "problemType": "General Water Management Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to rainwater harvesting",
+      "Affects school children"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_water_management_5",
+    "title": "Flooding issue affecting school children",
+    "description": "We are facing severe filtration beds. This is particularly difficult for school children.",
+    "domain": "Water Management",
+    "subdomain": "Flooding",
+    "problemType": "General Water Management Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to filtration beds",
+      "Affects school children"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_water_management_6",
+    "title": "Water Conservation issue affecting school children",
+    "description": "The community has some concerns about chlorination.",
+    "domain": "Water Management",
+    "subdomain": "Water Conservation",
+    "problemType": "General Water Management Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to chlorination",
+      "Affects school children"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_water_management_7",
+    "title": "Groundwater issue affecting school children",
+    "description": "A major challenge in our area is the fluoride contamination affecting school children.",
+    "domain": "Water Management",
+    "subdomain": "Groundwater",
+    "problemType": "General Water Management Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to fluoride contamination",
+      "Affects school children"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_water_management_8",
+    "title": "Irrigation Water issue affecting community members",
+    "description": "in our area there is groundwater contamination which are bad for community members.",
+    "domain": "Water Management",
+    "subdomain": "Irrigation Water",
+    "problemType": "General Water Management Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to groundwater contamination",
+      "Affects community members"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_water_management_9",
+    "title": "Water Quality issue affecting local households",
+    "description": "borewell problem",
+    "domain": "Water Management",
+    "subdomain": "Water Quality",
+    "problemType": "General Water Management Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to borewell",
+      "Affects local households"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_healthcare_0",
+    "title": "Hospital Infrastructure issue affecting mothers and children",
+    "description": "Due to clinic, many mothers and children are unable to function properly.",
+    "domain": "Healthcare",
+    "subdomain": "Hospital Infrastructure",
+    "problemType": "General Healthcare Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to clinic",
+      "Affects mothers and children"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_healthcare_1",
+    "title": "Emergency Medical Services issue affecting elderly patients",
+    "description": "some problem are coming in physician which are bad for elderly patients.",
+    "domain": "Healthcare",
+    "subdomain": "Emergency Medical Services",
+    "problemType": "General Healthcare Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to physician",
+      "Affects elderly patients"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_healthcare_2",
+    "title": "Vaccines issue affecting patients",
+    "description": "chronic illness problem",
+    "domain": "Healthcare",
+    "subdomain": "Vaccines",
+    "problemType": "General Healthcare Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to chronic illness",
+      "Affects patients"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_healthcare_3",
+    "title": "Emergency Medical Services issue affecting mothers and children",
+    "description": "I want to report a critical issue regarding neonatal care. Over the past few months, we have observed that mothers and children are struggling because of this. There are no proper systems in place to handle it, leading to widespread dissatisfaction. Local authorities have been informed but no action was taken. We urgently need expertise and assistance to resolve this.",
+    "domain": "Healthcare",
+    "subdomain": "Emergency Medical Services",
+    "problemType": "General Healthcare Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to neonatal care",
+      "Affects mothers and children"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_healthcare_4",
+    "title": "Primary Care issue affecting elderly patients",
+    "description": "we have a situation here regarding outbreak.",
+    "domain": "Healthcare",
+    "subdomain": "Primary Care",
+    "problemType": "General Healthcare Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to outbreak",
+      "Affects elderly patients"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_healthcare_5",
+    "title": "Disease Prevention issue affecting elderly patients",
+    "description": "We are facing severe medical supplies. This is particularly difficult for elderly patients.",
+    "domain": "Healthcare",
+    "subdomain": "Disease Prevention",
+    "problemType": "General Healthcare Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to medical supplies",
+      "Affects elderly patients"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_healthcare_6",
+    "title": "Disease Prevention issue affecting patients",
+    "description": "The community has some concerns about epidemic.",
+    "domain": "Healthcare",
+    "subdomain": "Disease Prevention",
+    "problemType": "General Healthcare Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to epidemic",
+      "Affects patients"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_healthcare_7",
+    "title": "Mental Health issue affecting rural citizens",
+    "description": "The community is experiencing physician, which directly impacts rural citizens.",
+    "domain": "Healthcare",
+    "subdomain": "Mental Health",
+    "problemType": "General Healthcare Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to physician",
+      "Affects rural citizens"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_healthcare_8",
+    "title": "Mental Health issue affecting rural citizens",
+    "description": "facing too much problem in physician which are bad for rural citizens.",
+    "domain": "Healthcare",
+    "subdomain": "Mental Health",
+    "problemType": "General Healthcare Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to physician",
+      "Affects rural citizens"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_healthcare_9",
+    "title": "Vaccines issue affecting rural citizens",
+    "description": "no physician here",
+    "domain": "Healthcare",
+    "subdomain": "Vaccines",
+    "problemType": "General Healthcare Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to physician",
+      "Affects rural citizens"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_education_0",
+    "title": "Higher Education issue affecting blind students",
+    "description": "We are facing severe learning outcomes. This is particularly difficult for blind students.",
+    "domain": "Education",
+    "subdomain": "Higher Education",
+    "problemType": "General Education Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to learning outcomes",
+      "Affects blind students"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_education_1",
+    "title": "Digital Learning issue affecting students",
+    "description": "some problem are coming in drop out which are bad for students.",
+    "domain": "Education",
+    "subdomain": "Digital Learning",
+    "problemType": "General Education Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to drop out",
+      "Affects students"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_education_2",
+    "title": "Special Education issue affecting primary school kids",
+    "description": "no smart boards here",
+    "domain": "Education",
+    "subdomain": "Special Education",
+    "problemType": "General Education Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to smart boards",
+      "Affects primary school kids"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_education_3",
+    "title": "Digital Learning issue affecting local teachers",
+    "description": "A detailed investigation into our local conditions shows that vocational training is the primary constraint. This affects local teachers on a daily basis, causing economic loss and health concerns. We request the implementation team to perform a gap analysis and propose a suitable technology adaptation as soon as possible.",
+    "domain": "Education",
+    "subdomain": "Digital Learning",
+    "problemType": "General Education Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to vocational training",
+      "Affects local teachers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_education_4",
+    "title": "Special Education issue affecting blind students",
+    "description": "is anyone planning to fix curriculum design for blind students?",
+    "domain": "Education",
+    "subdomain": "Special Education",
+    "problemType": "General Education Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to curriculum design",
+      "Affects blind students"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_education_5",
+    "title": "Teacher Support issue affecting students",
+    "description": "The community is experiencing braille materials, which directly impacts students.",
+    "domain": "Education",
+    "subdomain": "Teacher Support",
+    "problemType": "General Education Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to braille materials",
+      "Affects students"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_education_6",
+    "title": "Educational Access issue affecting local teachers",
+    "description": "The community has some concerns about pedagogy.",
+    "domain": "Education",
+    "subdomain": "Educational Access",
+    "problemType": "General Education Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to pedagogy",
+      "Affects local teachers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_education_7",
+    "title": "Digital Learning issue affecting blind students",
+    "description": "We are facing severe classroom. This is particularly difficult for blind students.",
+    "domain": "Education",
+    "subdomain": "Digital Learning",
+    "problemType": "General Education Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to classroom",
+      "Affects blind students"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_education_8",
+    "title": "Educational Access issue affecting students",
+    "description": "some problem are coming in drop out which are bad for students.",
+    "domain": "Education",
+    "subdomain": "Educational Access",
+    "problemType": "General Education Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to drop out",
+      "Affects students"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_education_9",
+    "title": "Skill Development issue affecting local teachers",
+    "description": "learning outcomes problem",
+    "domain": "Education",
+    "subdomain": "Skill Development",
+    "problemType": "General Education Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to learning outcomes",
+      "Affects local teachers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_sanitation_0",
+    "title": "Hygiene Promotion issue affecting slum dwellers",
+    "description": "The community is experiencing pit toilets, which directly impacts slum dwellers.",
+    "domain": "Sanitation",
+    "subdomain": "Hygiene Promotion",
+    "problemType": "General Sanitation Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to pit toilets",
+      "Affects slum dwellers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_sanitation_1",
+    "title": "Hygiene Promotion issue affecting residents of the ward",
+    "description": "in our area there is pit toilets which are bad for residents of the ward.",
+    "domain": "Sanitation",
+    "subdomain": "Hygiene Promotion",
+    "problemType": "General Sanitation Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to pit toilets",
+      "Affects residents of the ward"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_sanitation_2",
+    "title": "Public Toilets issue affecting civic staff",
+    "description": "no bio-filtration here",
+    "domain": "Sanitation",
+    "subdomain": "Public Toilets",
+    "problemType": "General Sanitation Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to bio-filtration",
+      "Affects civic staff"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_sanitation_3",
+    "title": "Hygiene Promotion issue affecting slum dwellers",
+    "description": "A detailed investigation into our local conditions shows that sewer lines is the primary constraint. This affects slum dwellers on a daily basis, causing economic loss and health concerns. We request the implementation team to perform a gap analysis and propose a suitable technology adaptation as soon as possible.",
+    "domain": "Sanitation",
+    "subdomain": "Hygiene Promotion",
+    "problemType": "General Sanitation Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to sewer lines",
+      "Affects slum dwellers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_sanitation_4",
+    "title": "Public Toilets issue affecting civic staff",
+    "description": "the local sludge management is in very bad condition.",
+    "domain": "Sanitation",
+    "subdomain": "Public Toilets",
+    "problemType": "General Sanitation Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to sludge management",
+      "Affects civic staff"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_sanitation_5",
+    "title": "Public Toilets issue affecting residents of the ward",
+    "description": "We are facing severe open defecation. This is particularly difficult for residents of the ward.",
+    "domain": "Sanitation",
+    "subdomain": "Public Toilets",
+    "problemType": "General Sanitation Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to open defecation",
+      "Affects residents of the ward"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_sanitation_6",
+    "title": "Drainage Systems issue affecting slum dwellers",
+    "description": "The community has some concerns about latrines.",
+    "domain": "Sanitation",
+    "subdomain": "Drainage Systems",
+    "problemType": "General Sanitation Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to latrines",
+      "Affects slum dwellers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_sanitation_7",
+    "title": "Public Toilets issue affecting slum dwellers",
+    "description": "A major challenge in our area is the soak pits affecting slum dwellers.",
+    "domain": "Sanitation",
+    "subdomain": "Public Toilets",
+    "problemType": "General Sanitation Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to soak pits",
+      "Affects slum dwellers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_sanitation_8",
+    "title": "Wastewater Treatment issue affecting civic staff",
+    "description": "some problem are coming in sludge management which are bad for civic staff.",
+    "domain": "Sanitation",
+    "subdomain": "Wastewater Treatment",
+    "problemType": "General Sanitation Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to sludge management",
+      "Affects civic staff"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_sanitation_9",
+    "title": "Solid Waste issue affecting slum dwellers",
+    "description": "bad clogged drains for slum dwellers",
+    "domain": "Sanitation",
+    "subdomain": "Solid Waste",
+    "problemType": "General Sanitation Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to clogged drains",
+      "Affects slum dwellers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_environment_0",
+    "title": "Climate Change Mitigation issue affecting citizens",
+    "description": "The community is experiencing biodiversity loss, which directly impacts citizens.",
+    "domain": "Environment",
+    "subdomain": "Climate Change Mitigation",
+    "problemType": "General Environment Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to biodiversity loss",
+      "Affects citizens"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_environment_1",
+    "title": "Waste Recycling issue affecting citizens",
+    "description": "some problem are coming in plastic pollution which are bad for citizens.",
+    "domain": "Environment",
+    "subdomain": "Waste Recycling",
+    "problemType": "General Environment Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to plastic pollution",
+      "Affects citizens"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_environment_2",
+    "title": "Waste Recycling issue affecting residents living near landfill",
+    "description": "need landfill leaching support",
+    "domain": "Environment",
+    "subdomain": "Waste Recycling",
+    "problemType": "General Environment Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to landfill leaching",
+      "Affects residents living near landfill"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_environment_3",
+    "title": "Ecosystem Conservation issue affecting citizens",
+    "description": "This petition is on behalf of citizens who are severely impacted by industrial discharge. The current situation is unsustainable and requires immediate intervention. We believe a combination of local community effort and technical innovation is the only way forward. Currently, we lack any baseline data or plans to address this.",
+    "domain": "Environment",
+    "subdomain": "Ecosystem Conservation",
+    "problemType": "General Environment Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to industrial discharge",
+      "Affects citizens"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_environment_4",
+    "title": "Ecosystem Conservation issue affecting citizens",
+    "description": "the local deforestation is in very bad condition.",
+    "domain": "Environment",
+    "subdomain": "Ecosystem Conservation",
+    "problemType": "General Environment Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to deforestation",
+      "Affects citizens"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_environment_5",
+    "title": "Soil and Land Pollusion issue affecting local community",
+    "description": "We are facing severe carbon footprint. This is particularly difficult for local community.",
+    "domain": "Environment",
+    "subdomain": "Soil and Land Pollution",
+    "problemType": "General Environment Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to carbon footprint",
+      "Affects local community"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_environment_6",
+    "title": "Waste Recycling issue affecting citizens",
+    "description": "The community has some concerns about smog.",
+    "domain": "Environment",
+    "subdomain": "Waste Recycling",
+    "problemType": "General Environment Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to smog",
+      "Affects citizens"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_environment_7",
+    "title": "Air Quality issue affecting local community",
+    "description": "The community is experiencing plastic pollution, which directly impacts local community.",
+    "domain": "Environment",
+    "subdomain": "Air Quality",
+    "problemType": "General Environment Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to plastic pollution",
+      "Affects local community"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_environment_8",
+    "title": "Climate Change Mitigation issue affecting local community",
+    "description": "we do not have proper e-waste hazards which are bad for local community.",
+    "domain": "Environment",
+    "subdomain": "Climate Change Mitigation",
+    "problemType": "General Environment Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to e-waste hazards",
+      "Affects local community"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_environment_9",
+    "title": "Soil and Land Pollution issue affecting residents living near landfill",
+    "description": "no noise levels here",
+    "domain": "Environment",
+    "subdomain": "Soil and Land Pollution",
+    "problemType": "General Environment Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to noise levels",
+      "Affects residents living near landfill"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_energy_0",
+    "title": "Energy Storage issue affecting irrigation farmers",
+    "description": "The community is experiencing power outages, which directly impacts irrigation farmers.",
+    "domain": "Energy",
+    "subdomain": "Energy Storage",
+    "problemType": "General Energy Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to power outages",
+      "Affects irrigation farmers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_energy_1",
+    "title": "Energy Efficiency issue affecting shopkeepers",
+    "description": "please resolve the issue of microgrid which are bad for shopkeepers.",
+    "domain": "Energy",
+    "subdomain": "Energy Efficiency",
+    "problemType": "General Energy Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to microgrid",
+      "Affects shopkeepers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_energy_2",
+    "title": "Off-grid Power Systems issue affecting local households",
+    "description": "suffering from electricity grid",
+    "domain": "Energy",
+    "subdomain": "Off-grid Power Systems",
+    "problemType": "General Energy Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to electricity grid",
+      "Affects local households"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_energy_3",
+    "title": "Wind and Bio-energy issue affecting shopkeepers",
+    "description": "This petition is on behalf of shopkeepers who are severely impacted by voltage fluctuations. The current situation is unsustainable and requires immediate intervention. We believe a combination of local community effort and technical innovation is the only way forward. Currently, we lack any baseline data or plans to address this.",
+    "domain": "Energy",
+    "subdomain": "Wind and Bio-energy",
+    "problemType": "General Energy Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to voltage fluctuations",
+      "Affects shopkeepers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_energy_4",
+    "title": "Solar Energy issue affecting irrigation farmers",
+    "description": "something is wrong with the backup generator and irrigation farmers are complaining.",
+    "domain": "Energy",
+    "subdomain": "Solar Energy",
+    "problemType": "General Energy Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to backup generator",
+      "Affects irrigation farmers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_energy_5",
+    "title": "Solar Energy issue affecting irrigation farmers",
+    "description": "The community is experiencing power outages, which directly impacts irrigation farmers.",
+    "domain": "Energy",
+    "subdomain": "Solar Energy",
+    "problemType": "General Energy Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to power outages",
+      "Affects irrigation farmers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_energy_6",
+    "title": "Wind and Bio-energy issue affecting local households",
+    "description": "The community has some concerns about microgrid.",
+    "domain": "Energy",
+    "subdomain": "Wind and Bio-energy",
+    "problemType": "General Energy Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to microgrid",
+      "Affects local households"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_energy_7",
+    "title": "Energy Efficiency issue affecting shopkeepers",
+    "description": "The community is experiencing voltage fluctuations, which directly impacts shopkeepers.",
+    "domain": "Energy",
+    "subdomain": "Energy Efficiency",
+    "problemType": "General Energy Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to voltage fluctuations",
+      "Affects shopkeepers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_energy_8",
+    "title": "Off-grid Power Systems issue affecting irrigation farmers",
+    "description": "i am writing because microgrid which are bad for irrigation farmers.",
+    "domain": "Energy",
+    "subdomain": "Off-grid Power Systems",
+    "problemType": "General Energy Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to microgrid",
+      "Affects irrigation farmers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_energy_9",
+    "title": "Grid Power Reliability issue affecting irrigation farmers",
+    "description": "electricity grid problem",
+    "domain": "Energy",
+    "subdomain": "Grid Power Reliability",
+    "problemType": "General Energy Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to electricity grid",
+      "Affects irrigation farmers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_urban_infrastructure_0",
+    "title": "Zoning and Urban Planning issue affecting drivers",
+    "description": "The community is experiencing drainage network, which directly impacts drivers.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "Zoning and Urban Planning",
+    "problemType": "General Urban Infrastructure Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to drainage network",
+      "Affects drivers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_urban_infrastructure_1",
+    "title": "City Utilities issue affecting commuters",
+    "description": "need help very urgent for streetlight malfunction which are bad for commuters.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "City Utilities",
+    "problemType": "General Urban Infrastructure Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to streetlight malfunction",
+      "Affects commuters"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_urban_infrastructure_2",
+    "title": "Structural Safety issue affecting commuters",
+    "description": "encroachment problem",
+    "domain": "Urban Infrastructure",
+    "subdomain": "Structural Safety",
+    "problemType": "General Urban Infrastructure Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to encroachment",
+      "Affects commuters"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_urban_infrastructure_3",
+    "title": "Public Spaces issue affecting drivers",
+    "description": "This petition is on behalf of drivers who are severely impacted by pothole. The current situation is unsustainable and requires immediate intervention. We believe a combination of local community effort and technical innovation is the only way forward. Currently, we lack any baseline data or plans to address this.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "Public Spaces",
+    "problemType": "General Urban Infrastructure Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to pothole",
+      "Affects drivers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_urban_infrastructure_4",
+    "title": "Streetlighting issue affecting commuters",
+    "description": "something is wrong with the streetlight malfunction and commuters are complaining.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "Streetlighting",
+    "problemType": "General Urban Infrastructure Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to streetlight malfunction",
+      "Affects commuters"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_urban_infrastructure_5",
+    "title": "Structural Safety issue affecting residents of old buildings",
+    "description": "We are facing severe tarmac. This is particularly difficult for residents of old buildings.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "Structural Safety",
+    "problemType": "General Urban Infrastructure Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to tarmac",
+      "Affects residents of old buildings"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_urban_infrastructure_6",
+    "title": "Structural Safety issue affecting drivers",
+    "description": "The community has some concerns about urban flyovers.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "Structural Safety",
+    "problemType": "General Urban Infrastructure Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to urban flyovers",
+      "Affects drivers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_urban_infrastructure_7",
+    "title": "Structural Safety issue affecting residents of old buildings",
+    "description": "The community is experiencing drainage network, which directly impacts residents of old buildings.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "Structural Safety",
+    "problemType": "General Urban Infrastructure Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to drainage network",
+      "Affects residents of old buildings"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_urban_infrastructure_8",
+    "title": "City Utilities issue affecting drivers",
+    "description": "people suffering from municipal park which are bad for drivers.",
+    "domain": "Urban Infrastructure",
+    "subdomain": "City Utilities",
+    "problemType": "General Urban Infrastructure Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to municipal park",
+      "Affects drivers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_urban_infrastructure_9",
+    "title": "Public Spaces issue affecting residents of old buildings",
+    "description": "bad pothole for residents of old buildings",
+    "domain": "Urban Infrastructure",
+    "subdomain": "Public Spaces",
+    "problemType": "General Urban Infrastructure Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to pothole",
+      "Affects residents of old buildings"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_rural_livelihoods_0",
+    "title": "Non-Farm Rural Employment issue affecting pottery makers",
+    "description": "Due to market linkages, many pottery makers are unable to function properly.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "Non-Farm Rural Employment",
+    "problemType": "General Rural Livelihoods Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to market linkages",
+      "Affects pottery makers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_rural_livelihoods_1",
+    "title": "Micro-finance Access issue affecting women self-help groups",
+    "description": "people suffering from micro-credits which are bad for women self-help groups.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "Micro-finance Access",
+    "problemType": "General Rural Livelihoods Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to micro-credits",
+      "Affects women self-help groups"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_rural_livelihoods_2",
+    "title": "Artisan Income Realization issue affecting pottery makers",
+    "description": "no weavers cooperative here",
+    "domain": "Rural Livelihoods",
+    "subdomain": "Artisan Income Realization",
+    "problemType": "General Rural Livelihoods Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to weavers cooperative",
+      "Affects pottery makers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_rural_livelihoods_3",
+    "title": "Self-Help Groups issue affecting handloom weavers",
+    "description": "This petition is on behalf of handloom weavers who are severely impacted by micro-credits. The current situation is unsustainable and requires immediate intervention. We believe a combination of local community effort and technical innovation is the only way forward. Currently, we lack any baseline data or plans to address this.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "Self-Help Groups",
+    "problemType": "General Rural Livelihoods Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to micro-credits",
+      "Affects handloom weavers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_rural_livelihoods_4",
+    "title": "Self-Help Groups issue affecting handloom weavers",
+    "description": "we have a situation here regarding handicrafts.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "Self-Help Groups",
+    "problemType": "General Rural Livelihoods Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to handicrafts",
+      "Affects handloom weavers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_rural_livelihoods_5",
+    "title": "Non-Farm Rural Employment issue affecting pottery makers",
+    "description": "We are facing severe pottery. This is particularly difficult for pottery makers.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "Non-Farm Rural Employment",
+    "problemType": "General Rural Livelihoods Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to pottery",
+      "Affects pottery makers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_rural_livelihoods_6",
+    "title": "Weaver Cooperatives issue affecting handloom weavers",
+    "description": "The community has some concerns about micro-credits.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "Weaver Cooperatives",
+    "problemType": "General Rural Livelihoods Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to micro-credits",
+      "Affects handloom weavers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_rural_livelihoods_7",
+    "title": "Artisan Income Realization issue affecting pottery makers",
+    "description": "The lack of adequate solutions for raw material supply has left pottery makers vulnerable.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "Artisan Income Realization",
+    "problemType": "General Rural Livelihoods Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to raw material supply",
+      "Affects pottery makers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_rural_livelihoods_8",
+    "title": "Micro-finance Access issue affecting women self-help groups",
+    "description": "some problem are coming in micro-credits which are bad for women self-help groups.",
+    "domain": "Rural Livelihoods",
+    "subdomain": "Micro-finance Access",
+    "problemType": "General Rural Livelihoods Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to micro-credits",
+      "Affects women self-help groups"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_rural_livelihoods_9",
+    "title": "Micro-finance Access issue affecting pottery makers",
+    "description": "weavers cooperative problem",
+    "domain": "Rural Livelihoods",
+    "subdomain": "Micro-finance Access",
+    "problemType": "General Rural Livelihoods Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to weavers cooperative",
+      "Affects pottery makers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_accessibility_0",
+    "title": "Visual Impairment Support issue affecting elderly citizens",
+    "description": "Due to braille signage, many elderly citizens are unable to function properly.",
+    "domain": "Accessibility",
+    "subdomain": "Visual Impairment Support",
+    "problemType": "General Accessibility Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to braille signage",
+      "Affects elderly citizens"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_accessibility_1",
+    "title": "Hearing Impairment Support issue affecting elderly citizens",
+    "description": "we do not have proper captioning which are bad for elderly citizens.",
+    "domain": "Accessibility",
+    "subdomain": "Hearing Impairment Support",
+    "problemType": "General Accessibility Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to captioning",
+      "Affects elderly citizens"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_accessibility_2",
+    "title": "Physical Access issue affecting wheelchair users",
+    "description": "no handrails here",
+    "domain": "Accessibility",
+    "subdomain": "Physical Access",
+    "problemType": "General Accessibility Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to handrails",
+      "Affects wheelchair users"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_accessibility_3",
+    "title": "Assistive Technology issue affecting blind students",
+    "description": "A detailed investigation into our local conditions shows that handrails is the primary constraint. This affects blind students on a daily basis, causing economic loss and health concerns. We request the implementation team to perform a gap analysis and propose a suitable technology adaptation as soon as possible.",
+    "domain": "Accessibility",
+    "subdomain": "Assistive Technology",
+    "problemType": "General Accessibility Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to handrails",
+      "Affects blind students"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_accessibility_4",
+    "title": "Physical Access issue affecting disabled individuals",
+    "description": "the local low-floor buses is in very bad condition.",
+    "domain": "Accessibility",
+    "subdomain": "Physical Access",
+    "problemType": "General Accessibility Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to low-floor buses",
+      "Affects disabled individuals"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_accessibility_5",
+    "title": "Physical Access issue affecting disabled individuals",
+    "description": "The community is experiencing tactile paving, which directly impacts disabled individuals.",
+    "domain": "Accessibility",
+    "subdomain": "Physical Access",
+    "problemType": "General Accessibility Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to tactile paving",
+      "Affects disabled individuals"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_accessibility_6",
+    "title": "Assistive Technology issue affecting blind students",
+    "description": "The community has some concerns about assistive devices.",
+    "domain": "Accessibility",
+    "subdomain": "Assistive Technology",
+    "problemType": "General Accessibility Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to assistive devices",
+      "Affects blind students"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_accessibility_7",
+    "title": "Visual Impairment Support issue affecting elderly citizens",
+    "description": "The lack of adequate solutions for low-floor buses has left elderly citizens vulnerable.",
+    "domain": "Accessibility",
+    "subdomain": "Visual Impairment Support",
+    "problemType": "General Accessibility Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to low-floor buses",
+      "Affects elderly citizens"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_accessibility_8",
+    "title": "Public Transport Access issue affecting disabled individuals",
+    "description": "i am writing because braille signage which are bad for disabled individuals.",
+    "domain": "Accessibility",
+    "subdomain": "Public Transport Access",
+    "problemType": "General Accessibility Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to braille signage",
+      "Affects disabled individuals"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_accessibility_9",
+    "title": "Physical Access issue affecting elderly citizens",
+    "description": "no screen readers here",
+    "domain": "Accessibility",
+    "subdomain": "Physical Access",
+    "problemType": "General Accessibility Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to screen readers",
+      "Affects elderly citizens"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_public_administration_0",
+    "title": "Service Delivery Transparency issue affecting applicants",
+    "description": "A major challenge in our area is the grievance portal affecting applicants.",
+    "domain": "Public Administration",
+    "subdomain": "Service Delivery Transparency",
+    "problemType": "General Public Administration Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to grievance portal",
+      "Affects applicants"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_public_administration_1",
+    "title": "Welfare Scheme Delivery issue affecting local citizens",
+    "description": "some problem are coming in welfare subsidy which are bad for local citizens.",
+    "domain": "Public Administration",
+    "subdomain": "Welfare Scheme Delivery",
+    "problemType": "General Public Administration Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to welfare subsidy",
+      "Affects local citizens"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_public_administration_2",
+    "title": "Government Portals issue affecting applicants",
+    "description": "no grievance portal here",
+    "domain": "Public Administration",
+    "subdomain": "Government Portals",
+    "problemType": "General Public Administration Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to grievance portal",
+      "Affects applicants"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_public_administration_3",
+    "title": "Public Records Digitization issue affecting pensioners",
+    "description": "This petition is on behalf of pensioners who are severely impacted by land registration delays. The current situation is unsustainable and requires immediate intervention. We believe a combination of local community effort and technical innovation is the only way forward. Currently, we lack any baseline data or plans to address this.",
+    "domain": "Public Administration",
+    "subdomain": "Public Records Digitization",
+    "problemType": "General Public Administration Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to land registration delays",
+      "Affects pensioners"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_public_administration_4",
+    "title": "Government Portals issue affecting pensioners",
+    "description": "we have a situation here regarding RTI requests.",
+    "domain": "Public Administration",
+    "subdomain": "Government Portals",
+    "problemType": "General Public Administration Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to RTI requests",
+      "Affects pensioners"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_public_administration_5",
+    "title": "Welfare Scheme Delivery issue affecting pensioners",
+    "description": "We are facing severe pension distribution. This is particularly difficult for pensioners.",
+    "domain": "Public Administration",
+    "subdomain": "Welfare Scheme Delivery",
+    "problemType": "General Public Administration Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to pension distribution",
+      "Affects pensioners"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_public_administration_6",
+    "title": "Service Delivery Transparency issue affecting applicants",
+    "description": "The community has some concerns about red tape.",
+    "domain": "Public Administration",
+    "subdomain": "Service Delivery Transparency",
+    "problemType": "General Public Administration Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to red tape",
+      "Affects applicants"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_public_administration_7",
+    "title": "Public Records Digitization issue affecting pensioners",
+    "description": "The lack of adequate solutions for red tape has left pensioners vulnerable.",
+    "domain": "Public Administration",
+    "subdomain": "Public Records Digitization",
+    "problemType": "General Public Administration Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to red tape",
+      "Affects pensioners"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_public_administration_8",
+    "title": "Welfare Scheme Delivery issue affecting applicants",
+    "description": "in our area there is red tape which are bad for applicants.",
+    "domain": "Public Administration",
+    "subdomain": "Welfare Scheme Delivery",
+    "problemType": "General Public Administration Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to red tape",
+      "Affects applicants"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_public_administration_9",
+    "title": "Government Portals issue affecting applicants",
+    "description": "suffering from red tape",
+    "domain": "Public Administration",
+    "subdomain": "Government Portals",
+    "problemType": "General Public Administration Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to red tape",
+      "Affects applicants"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_transportation_0",
+    "title": "Commuter Safety issue affecting commuters",
+    "description": "The community is experiencing bus scheduling, which directly impacts commuters.",
+    "domain": "Transportation",
+    "subdomain": "Commuter Safety",
+    "problemType": "General Transportation Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to bus scheduling",
+      "Affects commuters"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_transportation_1",
+    "title": "Commuter Safety issue affecting commuters",
+    "description": "facing too much problem in pedestrian safety which are bad for commuters.",
+    "domain": "Transportation",
+    "subdomain": "Commuter Safety",
+    "problemType": "General Transportation Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to pedestrian safety",
+      "Affects commuters"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_transportation_2",
+    "title": "Traffic Congestion Management issue affecting bus passengers",
+    "description": "bad bus scheduling for bus passengers",
+    "domain": "Transportation",
+    "subdomain": "Traffic Congestion Management",
+    "problemType": "General Transportation Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to bus scheduling",
+      "Affects bus passengers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_transportation_3",
+    "title": "Multi-modal Transit Stations issue affecting daily travelers",
+    "description": "This petition is on behalf of daily travelers who are severely impacted by traffic congestion. The current situation is unsustainable and requires immediate intervention. We believe a combination of local community effort and technical innovation is the only way forward. Currently, we lack any baseline data or plans to address this.",
+    "domain": "Transportation",
+    "subdomain": "Multi-modal Transit Stations",
+    "problemType": "General Transportation Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to traffic congestion",
+      "Affects daily travelers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_transportation_4",
+    "title": "Public Transit Scheduling issue affecting pedestrians",
+    "description": "we have a situation here regarding metro delay.",
+    "domain": "Transportation",
+    "subdomain": "Public Transit Scheduling",
+    "problemType": "General Transportation Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to metro delay",
+      "Affects pedestrians"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_transportation_5",
+    "title": "Rural-Urban Connectivity issue affecting bus passengers",
+    "description": "A major challenge in our area is the bus scheduling affecting bus passengers.",
+    "domain": "Transportation",
+    "subdomain": "Rural-Urban Connectivity",
+    "problemType": "General Transportation Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to bus scheduling",
+      "Affects bus passengers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_transportation_6",
+    "title": "Public Transit Scheduling issue affecting bus passengers",
+    "description": "The community has some concerns about transit safety.",
+    "domain": "Transportation",
+    "subdomain": "Public Transit Scheduling",
+    "problemType": "General Transportation Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to transit safety",
+      "Affects bus passengers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_transportation_7",
+    "title": "Rural-Urban Connectivity issue affecting commuters",
+    "description": "The lack of adequate solutions for last-mile connectivity has left commuters vulnerable.",
+    "domain": "Transportation",
+    "subdomain": "Rural-Urban Connectivity",
+    "problemType": "General Transportation Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to last-mile connectivity",
+      "Affects commuters"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_transportation_8",
+    "title": "Commuter Safety issue affecting commuters",
+    "description": "need help very urgent for bus scheduling which are bad for commuters.",
+    "domain": "Transportation",
+    "subdomain": "Commuter Safety",
+    "problemType": "General Transportation Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to bus scheduling",
+      "Affects commuters"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_transportation_9",
+    "title": "Freight and Logistics issue affecting bus passengers",
+    "description": "no railway connection here",
+    "domain": "Transportation",
+    "subdomain": "Freight and Logistics",
+    "problemType": "General Transportation Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to railway connection",
+      "Affects bus passengers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_disaster_management_0",
+    "title": "Early Warning Systems issue affecting coastal villagers",
+    "description": "We are facing severe evacuation drill. This is particularly difficult for coastal villagers.",
+    "domain": "Disaster Management",
+    "subdomain": "Early Warning Systems",
+    "problemType": "General Disaster Management Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to evacuation drill",
+      "Affects coastal villagers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_disaster_management_1",
+    "title": "Community Evacuation Plans issue affecting coastal villagers",
+    "description": "need help very urgent for hazard zone which are bad for coastal villagers.",
+    "domain": "Disaster Management",
+    "subdomain": "Community Evacuation Plans",
+    "problemType": "General Disaster Management Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to hazard zone",
+      "Affects coastal villagers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_disaster_management_2",
+    "title": "Post-Disaster Rehabilitation issue affecting relief camp members",
+    "description": "bad earthquake preparedness for relief camp members",
+    "domain": "Disaster Management",
+    "subdomain": "Post-Disaster Rehabilitation",
+    "problemType": "General Disaster Management Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to earthquake preparedness",
+      "Affects relief camp members"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_disaster_management_3",
+    "title": "Climate Vulnerability Mapping issue affecting residents in hazard zone",
+    "description": "This petition is on behalf of residents in hazard zone who are severely impacted by flood shelter. The current situation is unsustainable and requires immediate intervention. We believe a combination of local community effort and technical innovation is the only way forward. Currently, we lack any baseline data or plans to address this.",
+    "domain": "Disaster Management",
+    "subdomain": "Climate Vulnerability Mapping",
+    "problemType": "General Disaster Management Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to flood shelter",
+      "Affects residents in hazard zone"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_disaster_management_4",
+    "title": "Climate Vulnerability Mapping issue affecting coastal villagers",
+    "description": "the local early warning siren is in very bad condition.",
+    "domain": "Disaster Management",
+    "subdomain": "Climate Vulnerability Mapping",
+    "problemType": "General Disaster Management Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to early warning siren",
+      "Affects coastal villagers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_disaster_management_5",
+    "title": "Emergency Relief Distribution issue affecting residents in hazard zone",
+    "description": "The community is experiencing evacuation drill, which directly impacts residents in hazard zone.",
+    "domain": "Disaster Management",
+    "subdomain": "Emergency Relief Distribution",
+    "problemType": "General Disaster Management Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to evacuation drill",
+      "Affects residents in hazard zone"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_disaster_management_6",
+    "title": "Early Warning Systems issue affecting residents in hazard zone",
+    "description": "The community has some concerns about early warning siren.",
+    "domain": "Disaster Management",
+    "subdomain": "Early Warning Systems",
+    "problemType": "General Disaster Management Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to early warning siren",
+      "Affects residents in hazard zone"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_disaster_management_7",
+    "title": "Emergency Relief Distribution issue affecting residents in hazard zone",
+    "description": "The lack of adequate solutions for relief camp has left residents in hazard zone vulnerable.",
+    "domain": "Disaster Management",
+    "subdomain": "Emergency Relief Distribution",
+    "problemType": "General Disaster Management Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to relief camp",
+      "Affects residents in hazard zone"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_disaster_management_8",
+    "title": "Post-Disaster Rehabilitation issue affecting coastal villagers",
+    "description": "in our area there is flood shelter which are bad for coastal villagers.",
+    "domain": "Disaster Management",
+    "subdomain": "Post-Disaster Rehabilitation",
+    "problemType": "General Disaster Management Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to flood shelter",
+      "Affects coastal villagers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_disaster_management_9",
+    "title": "Climate Vulnerability Mapping issue affecting relief camp members",
+    "description": "no relief camp here",
+    "domain": "Disaster Management",
+    "subdomain": "Climate Vulnerability Mapping",
+    "problemType": "General Disaster Management Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to relief camp",
+      "Affects relief camp members"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_community_development_0",
+    "title": "Playgrounds and Sports Complex issue affecting children playing",
+    "description": "We are facing severe playground maintenance. This is particularly difficult for children playing.",
+    "domain": "Community Development",
+    "subdomain": "Playgrounds and Sports Complex",
+    "problemType": "General Community Development Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to playground maintenance",
+      "Affects children playing"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_community_development_1",
+    "title": "Micro-Infrastructure Projects issue affecting children playing",
+    "description": "in our area there is micro-scale community paths which are bad for children playing.",
+    "domain": "Community Development",
+    "subdomain": "Micro-Infrastructure Projects",
+    "problemType": "General Community Development Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to micro-scale community paths",
+      "Affects children playing"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_community_development_2",
+    "title": "Playgrounds and Sports Complex issue affecting local readers",
+    "description": "bad public library for local readers",
+    "domain": "Community Development",
+    "subdomain": "Playgrounds and Sports Complex",
+    "problemType": "General Community Development Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to public library",
+      "Affects local readers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_community_development_3",
+    "title": "Playgrounds and Sports Complex issue affecting weekly market vendors",
+    "description": "I want to report a critical issue regarding street vendor zoning. Over the past few months, we have observed that weekly market vendors are struggling because of this. There are no proper systems in place to handle it, leading to widespread dissatisfaction. Local authorities have been informed but no action was taken. We urgently need expertise and assistance to resolve this.",
+    "domain": "Community Development",
+    "subdomain": "Playgrounds and Sports Complex",
+    "problemType": "General Community Development Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to street vendor zoning",
+      "Affects weekly market vendors"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_community_development_4",
+    "title": "Local Commerce and Markets issue affecting children playing",
+    "description": "we have a situation here regarding local weekly markets.",
+    "domain": "Community Development",
+    "subdomain": "Local Commerce and Markets",
+    "problemType": "General Community Development Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to local weekly markets",
+      "Affects children playing"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_community_development_5",
+    "title": "Public Facility Maintenance issue affecting local readers",
+    "description": "Due to playground maintenance, many local readers are unable to function properly.",
+    "domain": "Community Development",
+    "subdomain": "Public Facility Maintenance",
+    "problemType": "General Community Development Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to playground maintenance",
+      "Affects local readers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_community_development_6",
+    "title": "Cultural Heritage Preservation issue affecting local readers",
+    "description": "The community has some concerns about micro-scale community paths.",
+    "domain": "Community Development",
+    "subdomain": "Cultural Heritage Preservation",
+    "problemType": "General Community Development Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to micro-scale community paths",
+      "Affects local readers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_community_development_7",
+    "title": "Public Facility Maintenance issue affecting youth groups",
+    "description": "A major challenge in our area is the local weekly markets affecting youth groups.",
+    "domain": "Community Development",
+    "subdomain": "Public Facility Maintenance",
+    "problemType": "General Community Development Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to local weekly markets",
+      "Affects youth groups"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_community_development_8",
+    "title": "Micro-Infrastructure Projects issue affecting weekly market vendors",
+    "description": "i am writing because local weekly markets which are bad for weekly market vendors.",
+    "domain": "Community Development",
+    "subdomain": "Micro-Infrastructure Projects",
+    "problemType": "General Community Development Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to local weekly markets",
+      "Affects weekly market vendors"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_community_development_9",
+    "title": "Civic Engagement Space issue affecting children playing",
+    "description": "bad local weekly markets for children playing",
+    "domain": "Community Development",
+    "subdomain": "Civic Engagement Space",
+    "problemType": "General Community Development Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to local weekly markets",
+      "Affects children playing"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_public_safety_0",
+    "title": "Emergency Services Coordination issue affecting women walking at night",
+    "description": "Due to cctv cameras, many women walking at night are unable to function properly.",
+    "domain": "Public Safety",
+    "subdomain": "Emergency Services Coordination",
+    "problemType": "General Public Safety Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to cctv cameras",
+      "Affects women walking at night"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_public_safety_1",
+    "title": "Accident Prevention Measures issue affecting neighborhood residents",
+    "description": "in our area there is neighborhood watch which are bad for neighborhood residents.",
+    "domain": "Public Safety",
+    "subdomain": "Accident Prevention Measures",
+    "problemType": "General Public Safety Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to neighborhood watch",
+      "Affects neighborhood residents"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_public_safety_2",
+    "title": "Street Security and Patrols issue affecting women walking at night",
+    "description": "police patrols problem",
+    "domain": "Public Safety",
+    "subdomain": "Street Security and Patrols",
+    "problemType": "General Public Safety Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to police patrols",
+      "Affects women walking at night"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_public_safety_3",
+    "title": "Emergency Services Coordination issue affecting neighborhood residents",
+    "description": "This petition is on behalf of neighborhood residents who are severely impacted by panic buttons. The current situation is unsustainable and requires immediate intervention. We believe a combination of local community effort and technical innovation is the only way forward. Currently, we lack any baseline data or plans to address this.",
+    "domain": "Public Safety",
+    "subdomain": "Emergency Services Coordination",
+    "problemType": "General Public Safety Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to panic buttons",
+      "Affects neighborhood residents"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_public_safety_4",
+    "title": "Accident Prevention Measures issue affecting neighborhood residents",
+    "description": "something is wrong with the panic buttons and neighborhood residents are complaining.",
+    "domain": "Public Safety",
+    "subdomain": "Accident Prevention Measures",
+    "problemType": "General Public Safety Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to panic buttons",
+      "Affects neighborhood residents"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_public_safety_5",
+    "title": "Crime Mitigation Infrastruture issue affecting women walking at night",
+    "description": "Due to neighborhood watch, many women walking at night are unable to function properly.",
+    "domain": "Public Safety",
+    "subdomain": "Crime Mitigation Infrastructure",
+    "problemType": "General Public Safety Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to neighborhood watch",
+      "Affects women walking at night"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_public_safety_6",
+    "title": "Public Space Safety issue affecting women walking at night",
+    "description": "The community has some concerns about street harassment.",
+    "domain": "Public Safety",
+    "subdomain": "Public Space Safety",
+    "problemType": "General Public Safety Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to street harassment",
+      "Affects women walking at night"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_public_safety_7",
+    "title": "Crime Mitigation Infrastructure issue affecting women walking at night",
+    "description": "Due to panic buttons, many women walking at night are unable to function properly.",
+    "domain": "Public Safety",
+    "subdomain": "Crime Mitigation Infrastructure",
+    "problemType": "General Public Safety Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to panic buttons",
+      "Affects women walking at night"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_public_safety_8",
+    "title": "Women Safety Measures issue affecting pedestrians",
+    "description": "some problem are coming in police patrols which are bad for pedestrians.",
+    "domain": "Public Safety",
+    "subdomain": "Women Safety Measures",
+    "problemType": "General Public Safety Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to police patrols",
+      "Affects pedestrians"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_public_safety_9",
+    "title": "Accident Prevention Measures issue affecting pedestrians",
+    "description": "no emergency response time here",
+    "domain": "Public Safety",
+    "subdomain": "Accident Prevention Measures",
+    "problemType": "General Public Safety Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to emergency response time",
+      "Affects pedestrians"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_other_0",
+    "title": "Unknown Topics issue affecting software engineers",
+    "description": "A major challenge in our area is the recipe book affecting software engineers.",
+    "domain": "Other",
+    "subdomain": "Unknown Topics",
+    "problemType": "General Other Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to recipe book",
+      "Affects software engineers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_other_1",
+    "title": "Irrelevant Content issue affecting home cooks",
+    "description": "i am writing because cryptocurrency investment which are bad for home cooks.",
+    "domain": "Other",
+    "subdomain": "Irrelevant Content",
+    "problemType": "General Other Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to cryptocurrency investment",
+      "Affects home cooks"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_other_2",
+    "title": "Personal Support issue affecting party organizers",
+    "description": "need e-commerce advertising support",
+    "domain": "Other",
+    "subdomain": "Personal Support",
+    "problemType": "General Other Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to e-commerce advertising",
+      "Affects party organizers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_other_3",
+    "title": "Purely Technical Inquiries issue affecting cryptocurrency buyers",
+    "description": "A detailed investigation into our local conditions shows that software development job is the primary constraint. This affects cryptocurrency buyers on a daily basis, causing economic loss and health concerns. We request the implementation team to perform a gap analysis and propose a suitable technology adaptation as soon as possible.",
+    "domain": "Other",
+    "subdomain": "Purely Technical Inquiries",
+    "problemType": "General Other Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to software development job",
+      "Affects cryptocurrency buyers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_other_4",
+    "title": "Unknown Topics issue affecting gaming pc owners",
+    "description": "we have a situation here regarding video games.",
+    "domain": "Other",
+    "subdomain": "Unknown Topics",
+    "problemType": "General Other Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to video games",
+      "Affects gaming pc owners"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_other_5",
+    "title": "Commercial Services issue affecting software engineers",
+    "description": "The lack of adequate solutions for private birthday party has left software engineers vulnerable.",
+    "domain": "Other",
+    "subdomain": "Commercial Services",
+    "problemType": "General Other Issue",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Issue related to private birthday party",
+      "Affects software engineers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_other_6",
+    "title": "Entertainment and Event Organization issue affecting cryptocurrency buyers",
+    "description": "The community has some concerns about gaming pc repair.",
+    "domain": "Other",
+    "subdomain": "Entertainment and Event Organization",
+    "problemType": "General Other Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to gaming pc repair",
+      "Affects cryptocurrency buyers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_other_7",
+    "title": "Unknown Topics issue affecting party organizers",
+    "description": "Due to video games, many party organizers are unable to function properly.",
+    "domain": "Other",
+    "subdomain": "Unknown Topics",
+    "problemType": "General Other Issue",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Issue related to video games",
+      "Affects party organizers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_other_8",
+    "title": "Entertainment and Event Organization issue affecting party organizers",
+    "description": "please resolve the issue of software development job which are bad for party organizers.",
+    "domain": "Other",
+    "subdomain": "Entertainment and Event Organization",
+    "problemType": "General Other Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to software development job",
+      "Affects party organizers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "medium"
+  },
+  {
+    "id": "gen_other_9",
+    "title": "Entertainment and Event Organization issue affecting party organizers",
+    "description": "no recipe book here",
+    "domain": "Other",
+    "subdomain": "Entertainment and Event Organization",
+    "problemType": "General Other Issue",
+    "severity": "low",
+    "expectedKeyFactors": [
+      "Issue related to recipe book",
+      "Affects party organizers"
+    ],
+    "expectedMissingInformation": [
+      "Exact quantitative impact",
+      "Current storage/operational constraints"
+    ],
+    "quality": "low"
+  },
+  {
+    "id": "gen_multidomain_0",
+    "title": "Flooding contaminates drinking water and roads",
+    "description": "Severe flooding from storms has contaminated local borewells and drinking water resources while washing away roads in our block.",
+    "domain": "Water Management",
+    "secondaryDomains": [
+      "Disaster Management",
+      "Urban Infrastructure"
+    ],
+    "subdomain": "Water Quality",
+    "problemType": "Multi-domain environmental threat",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Flooding impact",
+      "Drinking water contamination",
+      "Road damage"
+    ],
+    "expectedMissingInformation": [
+      "Emergency response status",
+      "Water filtration options"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_multidomain_1",
+    "title": "Drought leads to crop failure and school dropout",
+    "description": "Lack of rain has caused complete crop failure for farmers. Families are struggling financially, leading to kids dropping out of school to work.",
+    "domain": "Agriculture",
+    "secondaryDomains": [
+      "Education",
+      "Rural Livelihoods"
+    ],
+    "subdomain": "Crop Production",
+    "problemType": "Socio-agricultural crisis",
+    "severity": "high",
+    "expectedKeyFactors": [
+      "Drought crop failure",
+      "Financial distress",
+      "School dropout"
+    ],
+    "expectedMissingInformation": [
+      "Alternative income sources",
+      "School fees details"
+    ],
+    "quality": "high"
+  },
+  {
+    "id": "gen_multidomain_2",
+    "title": "Unlit streets cause safety risks and transit delays",
+    "description": "Streetlights are completely broken on transit corridors, making commutes unsafe for women and causing traffic slowdowns at night.",
+    "domain": "Transportation",
+    "secondaryDomains": [
+      "Urban Infrastructure",
+      "Public Safety"
+    ],
+    "subdomain": "Commuter Safety",
+    "problemType": "Infrastructure safety risk",
+    "severity": "medium",
+    "expectedKeyFactors": [
+      "Streetlight malfunction",
+      "Public safety risk",
+      "Transit delay"
+    ],
+    "expectedMissingInformation": [
+      "Streetlight owner details",
+      "Police patrol frequency"
+    ],
+    "quality": "high"
+  }
+]

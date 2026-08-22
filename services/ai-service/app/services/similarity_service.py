@@ -117,12 +117,19 @@ class SimilarityService:
             )
 
             # Determine relationship category based on thresholds
-            if hybrid_score >= settings.SIMILARITY_DUPLICATE_THRESHOLD:
+            from app.config import scoring
+            dup_thresh = getattr(scoring, "SIMILARITY_DUPLICATE_THRESHOLD", settings.SIMILARITY_DUPLICATE_THRESHOLD)
+            rel_thresh = getattr(scoring, "SIMILARITY_RELATED_THRESHOLD", settings.SIMILARITY_RELATED_THRESHOLD)
+            weak_thresh = getattr(scoring, "SIMILARITY_WEAKLY_RELATED_THRESHOLD", 0.30)
+
+            if hybrid_score >= dup_thresh:
                 rel = "duplicate"
-            elif hybrid_score >= settings.SIMILARITY_RELATED_THRESHOLD:
+            elif hybrid_score >= rel_thresh:
                 rel = "related"
-            else:
+            elif hybrid_score >= weak_thresh:
                 rel = "weakly_related"
+            else:
+                rel = "unrelated"
 
             # Retain explainability metadata
             explain_meta = {

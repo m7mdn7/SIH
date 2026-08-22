@@ -19,6 +19,10 @@ class ChallengeAIAnalysis(BaseModel):
     keyFactors: list[str]
     missingInformation: list[str]
     confidence: float
+    classificationStatus: str | None = None
+    primaryDomain: str | None = None
+    secondaryDomains: list[str] | None = None
+    explainability: dict | None = None
 
 
 class InnovationGap(BaseModel):
@@ -30,6 +34,9 @@ class InnovationGap(BaseModel):
     recommendedAction: str
     requiredExpertise: list[str]
     confidence: float
+    evidence: list[str] | None = None
+    hypotheses: list[str] | None = None
+    unknowns: list[str] | None = None
 
 
 class SimilarityInput(BaseModel):
@@ -73,6 +80,7 @@ class UniversityMatch(BaseModel):
     matchScore: float
     reasons: list[str] | None = None
     explainability: dict | None = None
+    matchTier: str | None = None
 
 
 class ProcessInput(BaseModel):

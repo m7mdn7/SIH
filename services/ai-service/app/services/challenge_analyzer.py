@@ -42,6 +42,9 @@ class ChallengeAnalyzer:
     ) -> ChallengeAIAnalysis:
         logger.info(f"Analyzing challenge {challenge_id} title: '{title}'")
 
+        from app.services.classification_service import classification_service
+        res_class = classification_service.classify(title, description)
+
         # Determine provider
         provider_name = settings.LLM_PROVIDER.lower()
         analysis = None
@@ -63,24 +66,24 @@ class ChallengeAnalyzer:
                 challenge_id, title, description
             )
 
-        # Taxonomy Validation
-        if analysis.domain not in DOMAINS:
-            logger.warning(
-                f"Classified domain '{analysis.domain}' is not in controlled taxonomy. Running fallback."
-            )
-            deterministic_domain = self.get_deterministic_domain(title, description)
-            analysis.domain = deterministic_domain or "Urban Infrastructure"
-            analysis.subdomain = "General Utilities"
-            analysis.problemType = "General Infrastructure Issue"
+        # Overwrite with hybrid classification outputs
+        analysis.domain = res_class["domain"]
+        analysis.primaryDomain = res_class["primaryDomain"]
+        analysis.secondaryDomains = res_class["secondaryDomains"]
+        analysis.classificationStatus = res_class["classificationStatus"]
+        analysis.confidence = res_class["confidence"]
+        analysis.explainability = res_class["signals"]
 
-        # Refine missing information to not include fake facts
-        # Verify confidence score is within 0.0 - 1.0 bounds
-        analysis.confidence = max(0.0, min(1.0, analysis.confidence))
+        # If domain-specific subdomains or problemTypes exist, calibrate them
+        if res_class["domain"] == "Other":
+            analysis.subdomain = "Unknown"
+            analysis.problemType = "Unclassified / Out of Scope"
+            analysis.severity = "low"
 
-        # Calculate a final boost to confidence if we also matched deterministic keyword signals
-        deterministic_domain = self.get_deterministic_domain(title, description)
-        if deterministic_domain == analysis.domain:
-            analysis.confidence = min(1.0, analysis.confidence + 0.05)
+        # Extend missing information
+        for info in res_class["missingInformation"]:
+            if info not in analysis.missingInformation:
+                analysis.missingInformation.append(info)
 
         return analysis
 

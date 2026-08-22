@@ -1,0 +1,625 @@
+{
+  "domains": [
+    {
+      "name": "Agriculture",
+      "description": "Issues related to farming, crop production, harvesting, storage, livestock, supply chains, and rural soil management.",
+      "subdomains": [
+        "Crop Production",
+        "Irrigation",
+        "Post-Harvest Management",
+        "Livestock",
+        "Soil Management",
+        "Agricultural Supply Chain",
+        "Farm Mechanization"
+      ],
+      "representative_concepts": [
+        "spoilage",
+        "farming",
+        "cultivation",
+        "harvesting",
+        "cold storage",
+        "silos",
+        "fertilizers",
+        "pesticides",
+        "soil erosion",
+        "livestock feed",
+        "tractor",
+        "post-harvest loss",
+        "perishable crops"
+      ],
+      "example_phrases": [
+        "crop spoilage due to lack of cold storage",
+        "farmers losing yield",
+        "soil health degradation",
+        "post harvest crop damage during transport",
+        "irrigation system failure in dry season"
+      ],
+      "synonyms": [
+        "farming",
+        "agronomy",
+        "cultivation",
+        "agri",
+        "crop management",
+        "harvest",
+        "livestock farming"
+      ]
+    },
+    {
+      "name": "Water Management",
+      "description": "Drinking water safety, groundwater resources, distribution infrastructure, water pollution, flooding, and conservation.",
+      "subdomains": [
+        "Drinking Water",
+        "Groundwater",
+        "Irrigation Water",
+        "Water Distribution",
+        "Water Quality",
+        "Flooding",
+        "Water Conservation"
+      ],
+      "representative_concepts": [
+        "well",
+        "borewell",
+        "aquifer",
+        "groundwater contamination",
+        "fluoride contamination",
+        "nitrate runoff",
+        "leakage",
+        "filtration beds",
+        "chlorination",
+        "water table",
+        "drought",
+        "rainwater harvesting"
+      ],
+      "example_phrases": [
+        "drinking water contamination in wells",
+        "borewells drying up",
+        "high fluoride levels in school water supply",
+        "water leakage in main pipeline",
+        "irrigation canal clogging"
+      ],
+      "synonyms": [
+        "water supply",
+        "hydrology",
+        "groundwater",
+        "water quality",
+        "aquifers",
+        "clean drinking water"
+      ]
+    },
+    {
+      "name": "Healthcare",
+      "description": "Access to medical services, hospital and clinic infrastructure, disease prevention, vaccines, primary care, and public health.",
+      "subdomains": [
+        "Primary Care",
+        "Hospital Infrastructure",
+        "Maternal and Child Health",
+        "Disease Prevention",
+        "Vaccines",
+        "Mental Health",
+        "Emergency Medical Services"
+      ],
+      "representative_concepts": [
+        "clinic",
+        "physician",
+        "nurse",
+        "vaccination",
+        "epidemic",
+        "diagnostic equipment",
+        "pharmacy",
+        "medical supplies",
+        "outbreak",
+        "neonatal care",
+        "chronic illness",
+        "first aid"
+      ],
+      "example_phrases": [
+        "lack of doctors at the primary health center",
+        "no vaccine cold chain storage",
+        "maternal health facility access in remote villages",
+        "outbreak of dengue in waterlogged neighborhoods",
+        "hospital has no functional ECG machine"
+      ],
+      "synonyms": [
+        "medical services",
+        "medicine",
+        "public health",
+        "hospitals",
+        "clinics",
+        "health access",
+        "patient care"
+      ]
+    },
+    {
+      "name": "Education",
+      "description": "School and university education, digital learning, teacher training and support, curriculum, special needs, and literacy.",
+      "subdomains": [
+        "School Education",
+        "Higher Education",
+        "Digital Learning",
+        "Teacher Support",
+        "Educational Access",
+        "Special Education",
+        "Skill Development"
+      ],
+      "representative_concepts": [
+        "classroom",
+        "school building",
+        "literacy rate",
+        "learning outcomes",
+        "curriculum design",
+        "pedagogy",
+        "teacher absenteeism",
+        "braille materials",
+        "smart boards",
+        "vocational training",
+        "drop out"
+      ],
+      "example_phrases": [
+        "children drop out due to lack of teachers",
+        "schools lacking toilets and basic rooms",
+        "digital divide in online learning classrooms",
+        "braille textbooks not available for blind students",
+        "skill development workshops for local youth"
+      ],
+      "synonyms": [
+        "schooling",
+        "learning",
+        "pedagogy",
+        "academic training",
+        "instruction",
+        "literacy"
+      ]
+    },
+    {
+      "name": "Sanitation",
+      "description": "Sewage systems, public toilets, solid waste management, wastewater treatment, and hygiene promotion.",
+      "subdomains": [
+        "Sewage Disposal",
+        "Public Toilets",
+        "Solid Waste",
+        "Wastewater Treatment",
+        "Drainage Systems",
+        "Hygiene Promotion"
+      ],
+      "representative_concepts": [
+        "sewer lines",
+        "latrines",
+        "bio-filtration",
+        "clogged drains",
+        "pit toilets",
+        "open defecation",
+        "sludge management",
+        "garbage dumping",
+        "community composting",
+        "soak pits"
+      ],
+      "example_phrases": [
+        "open defecation due to lack of community toilets",
+        "clogged storm drains overflowing during rains",
+        "no sewage treatment facility in the ward",
+        "garbage piling up at public dump yards",
+        "septic tank overflow polluting nearby lands"
+      ],
+      "synonyms": [
+        "sewage",
+        "hygiene",
+        "waste disposal",
+        "drainage",
+        "toilets",
+        "wastewater management"
+      ]
+    },
+    {
+      "name": "Environment",
+      "description": "Pollution control, waste recycling, air quality, conservation, climate change mitigation, and ecosystem preservation.",
+      "subdomains": [
+        "Air Quality",
+        "Soil and Land Pollution",
+        "Ecosystem Conservation",
+        "Climate Change Mitigation",
+        "Waste Recycling",
+        "Noise Pollution"
+      ],
+      "representative_concepts": [
+        "emissions",
+        "smog",
+        "recycling bin",
+        "landfill leaching",
+        "plastic pollution",
+        "biodiversity loss",
+        "deforestation",
+        "noise levels",
+        "e-waste hazards",
+        "carbon footprint",
+        "industrial discharge"
+      ],
+      "example_phrases": [
+        "air quality index reaching hazardous levels due to crop burning",
+        "plastic waste accumulating in river channels",
+        "e-waste recycling causing lead poisoning in soil",
+        "noise pollution from highway construction passing residential areas",
+        "loss of native green cover"
+      ],
+      "synonyms": [
+        "ecology",
+        "conservation",
+        "pollution",
+        "nature",
+        "environmental safety",
+        "recycling"
+      ]
+    },
+    {
+      "name": "Energy",
+      "description": "Renewable and non-renewable power, electricity distribution grid, solar installations, battery storage, and rural power access.",
+      "subdomains": [
+        "Grid Power Reliability",
+        "Solar Energy",
+        "Wind and Bio-energy",
+        "Energy Storage",
+        "Off-grid Power Systems",
+        "Energy Efficiency"
+      ],
+      "representative_concepts": [
+        "electricity grid",
+        "transformers",
+        "voltage fluctuations",
+        "solar panels",
+        "wind turbine",
+        "backup generator",
+        "lithium battery",
+        "biomass generator",
+        "power outages",
+        "microgrid"
+      ],
+      "example_phrases": [
+        "frequent power outages disrupting local businesses",
+        "high cost of installing household solar systems",
+        "voltage fluctuations damaging irrigation motors",
+        "off-grid village lacks source of electricity",
+        "unreliable power backup in rural clinics"
+      ],
+      "synonyms": [
+        "power",
+        "electricity",
+        "renewable energy",
+        "grid access",
+        "utilities"
+      ]
+    },
+    {
+      "name": "Urban Infrastructure",
+      "description": "General city services, roads, zoning, public parks, structural safety of buildings, and streetlights.",
+      "subdomains": [
+        "Road Maintenance",
+        "Public Spaces",
+        "City Utilities",
+        "Zoning and Urban Planning",
+        "Structural Safety",
+        "Streetlighting"
+      ],
+      "representative_concepts": [
+        "pothole",
+        "tarmac",
+        "municipal park",
+        "encroachment",
+        "streetlight malfunction",
+        "structural cracks",
+        "building collapse",
+        "drainage network",
+        "urban flyovers"
+      ],
+      "example_phrases": [
+        "dangerous potholes causing frequent road accidents",
+        "dark streets due to non-functional streetlights",
+        "encroachments on public parks and footpaths",
+        "old municipal building showing structural structural cracks",
+        "lack of storm-water drainage on commercial streets"
+      ],
+      "synonyms": [
+        "municipal facilities",
+        "city services",
+        "roads",
+        "civic amenities",
+        "public infrastructure"
+      ]
+    },
+    {
+      "name": "Rural Livelihoods",
+      "description": "Traditional occupations, cottage industries, weaver cooperatives, agricultural non-farm employment, self-help groups, and smallholder economics.",
+      "subdomains": [
+        "Cottage Industries",
+        "Weaver Cooperatives",
+        "Non-Farm Rural Employment",
+        "Self-Help Groups",
+        "Artisan Income Realization",
+        "Micro-finance Access"
+      ],
+      "representative_concepts": [
+        "handicrafts",
+        "looms",
+        "artisans",
+        "raw material supply",
+        "market linkages",
+        "micro-credits",
+        "rural employment guarantee",
+        "weavers cooperative",
+        "pottery",
+        "carpentry"
+      ],
+      "example_phrases": [
+        "artisans losing livelihoods due to cheap machine imports",
+        "handloom weavers lacking access to high-grade yarn",
+        "low price realization in markets for handmade pottery",
+        "inadequate micro-credit support for rural women self-help groups",
+        "lack of non-farm employment opportunities"
+      ],
+      "synonyms": [
+        "cottage industry",
+        "rural crafts",
+        "artisanal work",
+        "cooperatives",
+        "micro-economics"
+      ]
+    },
+    {
+      "name": "Accessibility",
+      "description": "Physical, auditory, visual, and cognitive access barriers in public buildings, websites, transport, and communication.",
+      "subdomains": [
+        "Physical Access",
+        "Digital Accessibility",
+        "Visual Impairment Support",
+        "Hearing Impairment Support",
+        "Public Transport Access",
+        "Assistive Technology"
+      ],
+      "representative_concepts": [
+        "wheelchair ramp",
+        "tactile paving",
+        "braille signage",
+        "sign language",
+        "screen readers",
+        "handrails",
+        "low-floor buses",
+        "captioning",
+        "assistive devices"
+      ],
+      "example_phrases": [
+        "government office lacks wheelchair ramps",
+        "blind students cannot use library computers due to lack of screen readers",
+        "no sign language interpreters at municipal hearings",
+        "bus stops not accessible to disabled individuals",
+        "absence of tactile paving on city platforms"
+      ],
+      "synonyms": [
+        "disability access",
+        "assistive inclusion",
+        "inclusion",
+        "barrier mitigation",
+        "universal design"
+      ]
+    },
+    {
+      "name": "Public Administration",
+      "description": "Welfare scheme delivery, government portals, bureaucracy, transparency, public service delivery, and corruption mitigation.",
+      "subdomains": [
+        "Welfare Scheme Delivery",
+        "Government Portals",
+        "Service Delivery Transparency",
+        "Red Tape and Delays",
+        "Grievance Redressal",
+        "Public Records Digitization"
+      ],
+      "representative_concepts": [
+        "welfare subsidy",
+        "pension distribution",
+        "red tape",
+        "grievance portal",
+        "public records",
+        "land registration delays",
+        "bureaucratic friction",
+        "RTI requests",
+        "biometric authentication failure"
+      ],
+      "example_phrases": [
+        "elderly citizens facing delays in getting pensions",
+        "biometric system failing to verify welfare beneficiaries",
+        "RTI request ignored by local administration",
+        "delay in land registration services due to bureaucracy",
+        "non-functional grievance portal"
+      ],
+      "synonyms": [
+        "governance",
+        "bureaucracy",
+        "public service",
+        "welfare schemes",
+        "municipal administration"
+      ]
+    },
+    {
+      "name": "Transportation",
+      "description": "Public transit systems, traffic congestion, commuter safety, connectivity, scheduling, and transport logistics.",
+      "subdomains": [
+        "Public Transit Scheduling",
+        "Traffic Congestion Management",
+        "Commuter Safety",
+        "Rural-Urban Connectivity",
+        "Multi-modal Transit Stations",
+        "Freight and Logistics"
+      ],
+      "representative_concepts": [
+        "traffic congestion",
+        "bus scheduling",
+        "commute times",
+        "transit safety",
+        "feeder buses",
+        "last-mile connectivity",
+        "metro delay",
+        "railway connection",
+        "signal timing",
+        "pedestrian safety"
+      ],
+      "example_phrases": [
+        "extreme traffic congestion near metro exit gates",
+        "rural villages lacking bus connectivity to city center",
+        "unreliable bus timings causing long commuter delays",
+        "lack of pedestrian safety crossings at major highway junctions",
+        "last-mile feeder transit services not available"
+      ],
+      "synonyms": [
+        "transit",
+        "transport",
+        "traffic control",
+        "commute",
+        "public buses",
+        "logistics"
+      ]
+    },
+    {
+      "name": "Disaster Management",
+      "description": "Disaster preparation, early warning systems, post-disaster rehabilitation, flood relief, drought relief, and emergency coordination.",
+      "subdomains": [
+        "Early Warning Systems",
+        "Post-Disaster Rehabilitation",
+        "Emergency Relief Distribution",
+        "Climate Vulnerability Mapping",
+        "Infrastructure Resilience",
+        "Community Evacuation Plans"
+      ],
+      "representative_concepts": [
+        "cyclone warning",
+        "flood shelter",
+        "earthquake preparedness",
+        "relief camp",
+        "early warning siren",
+        "damage assessment",
+        "evacuation drill",
+        "hazard zone",
+        "landslide monitoring"
+      ],
+      "example_phrases": [
+        "cyclone warning system not functional in coastal villages",
+        "delays in food and medicine supply to flood relief camps",
+        "landslide monitoring sensors offline during monsoon season",
+        "community shelters lack structural reinforcement",
+        "lack of early evacuation maps"
+      ],
+      "synonyms": [
+        "emergency response",
+        "disaster relief",
+        "crisis response",
+        "flood management",
+        "seismic safety"
+      ]
+    },
+    {
+      "name": "Community Development",
+      "description": "Public facilities like community halls, playgrounds, local commerce markets, cultural heritage, and micro-infrastructure.",
+      "subdomains": [
+        "Public Facility Maintenance",
+        "Playgrounds and Sports Complex",
+        "Local Commerce and Markets",
+        "Cultural Heritage Preservation",
+        "Micro-Infrastructure Projects",
+        "Civic Engagement Space"
+      ],
+      "representative_concepts": [
+        "community hall",
+        "public library",
+        "playground maintenance",
+        "local weekly markets",
+        "heritage site restoration",
+        "street vendor zoning",
+        "village community center",
+        "micro-scale community paths"
+      ],
+      "example_phrases": [
+        "village community center building in dilapidated state",
+        "lack of safe playground spaces for children",
+        "weekly market vendors lacking sanitation and shading facilities",
+        "historical stepwell being used as trash dump yard",
+        "non-functioning public library books rotting"
+      ],
+      "synonyms": [
+        "neighborhood development",
+        "civic amenities",
+        "local community center",
+        "social spaces",
+        "recreational areas"
+      ]
+    },
+    {
+      "name": "Public Safety",
+      "description": "Safety in public spaces, crime mitigation, emergency response times, street security, policing coordination, and accident prevention.",
+      "subdomains": [
+        "Public Space Safety",
+        "Crime Mitigation Infrastructure",
+        "Emergency Services Coordination",
+        "Street Security and Patrols",
+        "Accident Prevention Measures",
+        "Women Safety Measures"
+      ],
+      "representative_concepts": [
+        "cctv cameras",
+        "police patrols",
+        "emergency response time",
+        "street crime",
+        "accident hazard zone",
+        "panic buttons",
+        "street harassment",
+        "neighborhood watch"
+      ],
+      "example_phrases": [
+        "poor lighting in subways causing safety hazards for women",
+        "high rates of street theft due to absence of police patrol",
+        "emergency response units taking too long to reach accidents",
+        "lack of security cameras in public parks",
+        "frequent pedestrian accidents on dangerous blind turns"
+      ],
+      "synonyms": [
+        "citizen safety",
+        "security",
+        "crime prevention",
+        "accident safety",
+        "law enforcement"
+      ]
+    },
+    {
+      "name": "Other",
+      "description": "Private, commercial, purely technical, or irrelevant requests that do not map to societal innovation and development challenges.",
+      "subdomains": [
+        "Commercial Services",
+        "Personal Support",
+        "Purely Technical Inquiries",
+        "Irrelevant Content",
+        "Entertainment and Event Organization",
+        "Unknown Topics"
+      ],
+      "representative_concepts": [
+        "private birthday party",
+        "gaming pc repair",
+        "software development job",
+        "e-commerce advertising",
+        "recipe book",
+        "video games",
+        "cryptocurrency investment",
+        "spam text"
+      ],
+      "example_phrases": [
+        "need help organizing a private birthday party for 20 people",
+        "how to repair a gaming computer that crashes",
+        "where can I buy cheap cryptocurrency",
+        "tips for cooking chicken curry at home",
+        "write a python script to scraping web pages"
+      ],
+      "synonyms": [
+        "irrelevant",
+        "private business",
+        "commercial",
+        "unrelated",
+        "out of scope",
+        "personal interest"
+      ]
+    }
+  ]
+}
