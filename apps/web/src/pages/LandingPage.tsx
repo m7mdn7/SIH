@@ -122,8 +122,8 @@ export const LandingPage: React.FC = () => {
       {/* Portal Selection */}
       <section className="flex-1 px-4 bg-gov-slate-50 pb-16 relative z-10 md:-mt-12 pt-8 md:pt-0">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-6 text-center">
-            <h2 className="text-2xl font-black text-gov-slate-900 md:text-white drop-shadow-none md:drop-shadow-md uppercase tracking-tight">Select Access Portal</h2>
+          <div className="mb-8 text-center flex justify-center">
+            <h2 className="text-xl font-black text-white bg-gov-slate-900 px-6 py-2 uppercase tracking-widest shadow-md inline-block rounded-none border-2 border-transparent">Select Access Portal</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
