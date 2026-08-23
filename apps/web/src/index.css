@@ -1,22 +1,10 @@
-@import "tailwindcss";
-
-@theme {
-  --color-gov-blue-50: #eff6ff;
-  --color-gov-blue-100: #dbeafe;
-  --color-gov-blue-500: #3b82f6;
-  --color-gov-blue-700: #1d4ed8;
-  --color-gov-blue-800: #1e40af;
-  --color-gov-blue-900: #1e3a8a;
-  --color-gov-blue-950: #172554;
-  --color-gov-slate-50: #f8fafc;
-  --color-gov-slate-200: #e2e8f0;
-  --color-gov-slate-700: #334155;
-  --color-gov-slate-900: #0f172a;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
   body {
-    background-color: var(--color-gov-slate-50);
-    color: var(--color-gov-slate-900);
+    background-color: #f8fafc;
+    color: #0f172a;
   }
 }

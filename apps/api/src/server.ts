@@ -26,7 +26,28 @@ interface AuthenticatedRequest extends Request {
   };
 }
 
-app.use(cors());
+const allowedOrigins = [
+  'http://localhost:3000',
+  'http://localhost:3001',
+  'http://localhost:3002',
+  'http://localhost:3003',
+  'http://localhost:5173',
+  'http://127.0.0.1:3000',
+  'http://127.0.0.1:3001',
+  'http://127.0.0.1:3002',
+  'http://127.0.0.1:3003'
+];
+
+app.use(cors({
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin) || process.env.NODE_ENV !== 'production') {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true
+}));
 app.use(express.json());
 
 // Log incoming requests
@@ -69,6 +90,40 @@ app.use((req, res, next) => {
     req.url = req.url.replace(/^\/api\/v1/, '') || '/';
   }
   next();
+});
+
+// ═══════════════════════════════════════════════════════════════
+// HEALTH CHECK ROUTES
+// ═══════════════════════════════════════════════════════════════
+
+app.get('/health', (req: Request, res: Response) => {
+  return res.json({ status: 'ok', service: 'siip-api' });
+});
+
+app.get('/system/health', async (req: Request, res: Response) => {
+  let dbStatus = 'healthy';
+  let aiStatus = 'healthy';
+
+  try {
+    await query('SELECT 1');
+  } catch {
+    dbStatus = 'unavailable';
+  }
+
+  try {
+    const aiUrl = process.env.AI_SERVICE_URL || 'http://localhost:8000';
+    const aiRes = await fetch(`${aiUrl}/health`);
+    if (!aiRes.ok) aiStatus = 'degraded';
+  } catch {
+    aiStatus = 'unavailable';
+  }
+
+  return res.json({
+    api: 'healthy',
+    database: dbStatus,
+    aiService: aiStatus,
+    timestamp: new Date().toISOString()
+  });
 });
 
 // ═══════════════════════════════════════════════════════════════
@@ -173,9 +228,47 @@ app.post('/challenges', authenticateToken, async (req: AuthenticatedRequest, res
       [challengeId, title, description, latitude, longitude, locationName, 'open', createdBy]
     );
 
+    // Auto-run AI Pipeline (Analysis, Innovation Gap, University Matches)
+    try {
+      const analysis = await AIServiceClient.analyze(challengeId, title, description);
+      await query(
+        'INSERT INTO challenge_ai_analysis (id, "challengeId", domain, subdomain, "problemType", severity, "affectedPopulation", scale, "keyFactors", "missingInformation", confidence) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)',
+        [
+          analysis.id,
+          challengeId,
+          analysis.domain,
+          analysis.subdomain,
+          analysis.problemType,
+          analysis.severity,
+          analysis.affectedPopulation,
+          analysis.scale,
+          JSON.stringify(analysis.keyFactors),
+          JSON.stringify(analysis.missingInformation),
+          analysis.confidence
+        ]
+      );
+
+      const gap = await AIServiceClient.gapAnalysis(challengeId, description, analysis);
+      await query(
+        'INSERT INTO innovation_gaps (id, "challengeId", "domainGap", "technologicalGap", "infrastructureGap", "policyGap", "academicOpportunity") VALUES ($1, $2, $3, $4, $5, $6, $7)',
+        [gap.id, challengeId, gap.domainGap, gap.technologicalGap, gap.infrastructureGap, gap.policyGap, gap.academicOpportunity]
+      );
+
+      const matches = await AIServiceClient.getMatches(challengeId, description, gap);
+      for (const m of matches) {
+        const assignId = `asg_${crypto.randomUUID().substring(0, 8)}`;
+        await query(
+          'INSERT INTO challenge_assignments (id, "challengeId", "universityId", "matchScore", status) VALUES ($1, $2, $3, $4, $5)',
+          [assignId, challengeId, m.universityId, m.matchScore, 'pending']
+        );
+      }
+    } catch (aiErr) {
+      console.warn('[API] AI auto-pipeline warning:', aiErr);
+    }
+
     const result = await query('SELECT * FROM challenges WHERE id = $1', [challengeId]);
     const created = result[0];
-    return res.status(201).json({ ...created, data: created, message: 'Challenge created successfully' });
+    return res.status(201).json({ ...created, data: created, message: 'Challenge created & AI analyzed successfully' });
   } catch (err) {
     console.error('Failed to create challenge:', err);
     return res.status(500).json({ error: 'Failed to submit challenge' });
