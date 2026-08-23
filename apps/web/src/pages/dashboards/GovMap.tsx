@@ -1,99 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
-import L from 'leaflet';
-import { MapPin, Search, Filter, Layers, RefreshCw, Compass } from 'lucide-react';
+import React, { useState } from 'react';
+import { MapPin, Search, Filter, AlertTriangle, Layers } from 'lucide-react';
 import { cn } from '../../lib/utils';
-import { fetchProblems } from '../../services/api';
-import { Problem } from '../../types';
 
-// Custom Leaflet pin markers colored by PostGIS severity attribute
-const createMarkerIcon = (severity: string) => {
-  const color = severity === 'Critical' ? '#dc2626' : severity === 'High' ? '#ea580c' : '#d97706';
-  const pulse = severity === 'Critical' ? 'animation: pulse 1.5s infinite;' : '';
-
-  return L.divIcon({
-    className: 'custom-gov-marker',
-    html: `
-      <div style="
-        background-color: ${color};
-        width: 26px;
-        height: 26px;
-        border-radius: 50%;
-        border: 3px solid white;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.35);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        ${pulse}
-      ">
-        <div style="width: 8px; height: 8px; background-color: white; border-radius: 50%;"></div>
-      </div>
-    `,
-    iconSize: [26, 26],
-    iconAnchor: [13, 13],
-  });
-};
-
-function MapRecenter({ center }: { center: [number, number] }) {
-  const map = useMap();
-  useEffect(() => {
-    map.flyTo(center, 11, { duration: 1.2 });
-  }, [center, map]);
-  return null;
-}
+// Mock map points
+const mapPoints = [
+  { id: 1, lat: 23.3441, lng: 85.3096, severity: 'Critical', category: 'Infrastructure', title: 'Bridge Structural Damage' },
+  { id: 2, lat: 23.7957, lng: 86.4304, severity: 'High', category: 'Agriculture', title: 'Crop Failure due to Unknown Pest' },
+  { id: 3, lat: 22.8046, lng: 86.2029, severity: 'Medium', category: 'Healthcare', title: 'Local Clinic Shortage' },
+  { id: 4, lat: 24.2585, lng: 86.6346, severity: 'Low', category: 'Education', title: 'Primary School Roof Leak' },
+  { id: 5, lat: 23.9925, lng: 85.3644, severity: 'Critical', category: 'Water Management', title: 'Contaminated Water Supply' },
+];
 
 export const GovMap: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState('All');
-  const [searchQuery, setSearchQuery] = useState('');
-  const [problems, setProblems] = useState<Problem[]>([]);
-  const [selectedProblem, setSelectedProblem] = useState<Problem | null>(null);
-  const [geojsonCount, setGeojsonCount] = useState<number>(0);
-  const [loading, setLoading] = useState(true);
-  const [mapCenter, setMapCenter] = useState<[number, number]>([23.3441, 85.3096]);
-
-  const loadGeoJSONAndProblems = async () => {
-    setLoading(true);
-    try {
-      // 1. Dynamic fetch from PostGIS GeoJSON API
-      const geojsonRes = await fetch('http://localhost:4000/api/v1/challenges/geojson');
-      if (geojsonRes.ok) {
-        const geojson = await geojsonRes.json();
-        setGeojsonCount(geojson.features?.length || 0);
-      }
-
-      // 2. Dynamic fetch from Core Backend Challenges API
-      const liveProblems = await fetchProblems();
-      if (liveProblems && liveProblems.length > 0) {
-        setProblems(liveProblems);
-        setSelectedProblem(liveProblems[0]);
-        setMapCenter([liveProblems[0].location.lat, liveProblems[0].location.lng]);
-      }
-    } catch (err) {
-      console.warn('PostGIS connection error:', err);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    loadGeoJSONAndProblems();
-  }, []);
-
-  const selectPin = (p: Problem) => {
-    setSelectedProblem(p);
-    setMapCenter([p.location.lat, p.location.lng]);
-  };
-
-  const filteredProblems = problems.filter((p) => {
-    const matchesFilter = activeFilter === 'All' || p.severity === activeFilter;
-    const matchesSearch =
-      searchQuery === '' ||
-      p.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      p.location.address.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      p.id.toLowerCase().includes(searchQuery.toLowerCase());
-    return matchesFilter && matchesSearch;
-  });
 
   return (
     <div className="h-[calc(100vh-8rem)] flex flex-col space-y-4 max-w-[1400px] mx-auto">
@@ -102,143 +21,102 @@ export const GovMap: React.FC = () => {
         <div>
           <h1 className="text-xl font-black text-gov-slate-900 flex items-center gap-2 uppercase tracking-tight">
             <Layers className="w-5 h-5 text-gov-blue-800" />
-            Live State GIS Map (PostGIS Dynamic Rendering)
+            Live State GIS Map
           </h1>
-          <p className="text-xs text-gov-slate-700 mt-1 font-bold uppercase tracking-wider">
-            Geospatial Distribution of Challenges across Jharkhand
-          </p>
+          <p className="text-xs text-gov-slate-700 mt-1 font-bold uppercase tracking-wider">Geospatial Distribution of Challenges</p>
         </div>
-
+        
         <div className="flex gap-2">
           <div className="relative">
             <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-gov-slate-400" />
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search by District or Title..."
+            <input 
+              type="text" 
+              placeholder="Search by District or ID..." 
               className="pl-9 pr-4 py-1.5 border border-gov-slate-300 text-xs font-bold bg-white focus:outline-none focus:border-gov-blue-800 rounded-none w-64"
             />
           </div>
-          <button
-            onClick={loadGeoJSONAndProblems}
-            className="flex items-center gap-2 px-3 py-1.5 border border-gov-slate-300 bg-white text-xs font-bold text-gov-slate-800 uppercase tracking-wider hover:bg-gov-slate-100 transition-colors"
-          >
-            <RefreshCw className={cn('w-4 h-4', loading && 'animate-spin')} /> Refresh PostGIS
+          <button 
+            onClick={() => alert('Filter options would appear here')}
+            className="flex items-center gap-2 px-3 py-1.5 border border-gov-slate-300 bg-white text-xs font-bold text-gov-slate-800 uppercase tracking-wider hover:bg-gov-slate-100 transition-colors">
+            <Filter className="w-4 h-4" /> Filters
           </button>
         </div>
       </div>
 
       <div className="flex-1 flex flex-col lg:flex-row gap-4 min-h-0">
-        {/* Left Side: Real OpenStreetMap Leaflet Component */}
-        <div className="flex-[2] bg-gov-slate-200 border border-gov-slate-200 relative overflow-hidden flex flex-col min-h-[450px]">
-          <div className="absolute top-3 right-3 z-[1000] bg-white/95 backdrop-blur px-3 py-1.5 border border-gov-slate-300 shadow-md text-[11px] font-bold text-gov-slate-800 uppercase tracking-wider flex items-center gap-2">
-            <Compass className="w-4 h-4 text-emerald-600" />
-            <span>PostGIS GIS Layer: {geojsonCount} GeoJSON Features Dynamically Rendered</span>
+        {/* Left Side: Mock Map Container */}
+        <div className="flex-[2] bg-gov-slate-200 border border-gov-slate-200 relative overflow-hidden flex items-center justify-center min-h-[400px]">
+          {/* This is a placeholder for a real Mapbox / Leaflet component */}
+          <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-gov-slate-900 to-transparent background-size-4"></div>
+          
+          <div className="text-center z-10 p-6 bg-white/80 backdrop-blur border border-gov-slate-400 shadow-xl max-w-sm">
+            <MapPin className="w-12 h-12 text-gov-slate-400 mx-auto mb-3" />
+            <h3 className="text-lg font-black text-gov-slate-900 uppercase tracking-tight mb-2">Map Interface Placeholder</h3>
+            <p className="text-xs font-bold text-gov-slate-700 uppercase tracking-wider leading-relaxed">
+              Integrate Mapbox GL JS or React-Leaflet here in the next phase. The backend will serve GeoJSON endpoints for dynamic rendering.
+            </p>
           </div>
 
-          <div className="w-full h-full relative z-0">
-            <MapContainer
-              center={mapCenter}
-              zoom={10}
-              scrollWheelZoom={true}
-              style={{ width: '100%', height: '100%' }}
-            >
-              <MapRecenter center={mapCenter} />
-
-              <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              />
-
-              {filteredProblems.map((p) => (
-                <Marker
-                  key={p.id}
-                  position={[p.location.lat, p.location.lng]}
-                  icon={createMarkerIcon(p.severity)}
-                  eventHandlers={{
-                    click: () => selectPin(p),
-                  }}
-                >
-                  <Popup>
-                    <div className="p-1 space-y-1 font-sans">
-                      <div className="font-bold text-slate-900 text-sm">{p.title}</div>
-                      <div className="text-xs text-slate-600">{p.location.address}</div>
-                      <div className="text-xs font-mono text-emerald-700 mt-1">
-                        GPS: {p.location.lat.toFixed(4)}, {p.location.lng.toFixed(4)}
-                      </div>
-                    </div>
-                  </Popup>
-                </Marker>
-              ))}
-            </MapContainer>
-          </div>
+          {/* Fake Map Markers just for visual aesthetic of the placeholder */}
+          {mapPoints.map((point) => (
+            <div 
+              key={point.id} 
+              className={cn(
+                "absolute w-4 h-4 rounded-full border-2 border-white shadow-lg transform -translate-x-1/2 -translate-y-1/2 cursor-pointer transition-transform hover:scale-150",
+                point.severity === 'Critical' ? "bg-red-600" : 
+                point.severity === 'High' ? "bg-orange-500" : 
+                point.severity === 'Medium' ? "bg-amber-400" : "bg-gov-blue-500"
+              )}
+              style={{ 
+                // Totally arbitrary positions just to look like a map cluster
+                top: `${40 + (point.id * 10)}%`, 
+                left: `${30 + (point.id * 8)}%` 
+              }}
+            />
+          ))}
         </div>
 
-        {/* Right Side: Active Filter & Selected Region Data */}
-        <div className="flex-1 flex flex-col bg-white border border-gov-slate-200 min-w-[340px]">
+        {/* Right Side: Active Region Data */}
+        <div className="flex-1 flex flex-col bg-white border border-gov-slate-200 min-w-[320px]">
           <div className="p-3 border-b border-gov-slate-200 bg-gov-slate-50 flex gap-2">
-            {['All', 'Critical', 'High', 'Medium'].map((filter) => (
-              <button
+            {['All', 'Critical', 'High', 'Medium'].map(filter => (
+              <button 
                 key={filter}
                 onClick={() => setActiveFilter(filter)}
                 className={cn(
-                  'px-3 py-1 text-[10px] font-black uppercase tracking-widest border transition-colors',
-                  activeFilter === filter
-                    ? 'bg-gov-slate-800 text-white border-gov-slate-900'
-                    : 'bg-white text-gov-slate-600 border-gov-slate-300 hover:bg-gov-slate-100'
+                  "px-3 py-1 text-[10px] font-black uppercase tracking-widest border transition-colors",
+                  activeFilter === filter 
+                    ? "bg-gov-slate-800 text-white border-gov-slate-900" 
+                    : "bg-white text-gov-slate-600 border-gov-slate-300 hover:bg-gov-slate-100"
                 )}
               >
                 {filter}
               </button>
             ))}
           </div>
-
+          
           <div className="flex-1 overflow-y-auto p-3 space-y-3">
-            {filteredProblems.map((point) => {
-              const isSelected = selectedProblem?.id === point.id;
-              return (
-                <div
-                  key={point.id}
-                  onClick={() => selectPin(point)}
-                  className={cn(
-                    'border p-3 transition-colors cursor-pointer group',
-                    isSelected
-                      ? 'border-gov-blue-800 bg-gov-blue-50/50 shadow-sm'
-                      : 'border-gov-slate-200 hover:border-gov-blue-400'
-                  )}
-                >
-                  <div className="flex justify-between items-start mb-2">
-                    <span className="text-[9px] font-black uppercase tracking-widest text-gov-slate-400 group-hover:text-gov-blue-600 transition-colors">
-                      ID: {point.id}
-                    </span>
-                    <span
-                      className={cn(
-                        'text-[9px] font-black uppercase tracking-widest px-2 py-0.5 border',
-                        point.severity === 'Critical'
-                          ? 'bg-red-50 text-red-700 border-red-200'
-                          : point.severity === 'High'
-                          ? 'bg-orange-50 text-orange-700 border-orange-200'
-                          : 'bg-amber-50 text-amber-700 border-amber-200'
-                      )}
-                    >
-                      {point.severity}
-                    </span>
-                  </div>
-                  <h4 className="text-sm font-bold text-gov-slate-900 uppercase tracking-tight leading-tight mb-1">
-                    {point.title}
-                  </h4>
-                  <div className="flex items-center justify-between text-[10px] font-bold text-gov-slate-500 uppercase tracking-wider mt-2">
-                    <span className="flex items-center">
-                      <MapPin className="w-3 h-3 mr-1 text-emerald-600" /> {point.location.address}
-                    </span>
-                    <span className="font-mono text-emerald-700">
-                      {point.location.lat.toFixed(2)}, {point.location.lng.toFixed(2)}
-                    </span>
-                  </div>
+            {mapPoints
+              .filter(p => activeFilter === 'All' || p.severity === activeFilter)
+              .map((point) => (
+              <div key={point.id} className="border border-gov-slate-200 p-3 hover:border-gov-blue-400 transition-colors cursor-pointer group">
+                <div className="flex justify-between items-start mb-2">
+                  <span className="text-[9px] font-black uppercase tracking-widest text-gov-slate-400 group-hover:text-gov-blue-600 transition-colors">ID: {point.id * 1028}</span>
+                  <span className={cn(
+                    "text-[9px] font-black uppercase tracking-widest px-2 py-0.5 border",
+                    point.severity === 'Critical' ? "bg-red-50 text-red-700 border-red-200" :
+                    point.severity === 'High' ? "bg-orange-50 text-orange-700 border-orange-200" :
+                    "bg-amber-50 text-amber-700 border-amber-200"
+                  )}>
+                    {point.severity}
+                  </span>
                 </div>
-              );
-            })}
+                <h4 className="text-sm font-bold text-gov-slate-900 uppercase tracking-tight leading-tight mb-1">{point.title}</h4>
+                <div className="flex items-center text-[10px] font-bold text-gov-slate-500 uppercase tracking-wider">
+                  <MapPin className="w-3 h-3 mr-1" /> {point.lat}, {point.lng}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
